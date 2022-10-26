@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.MyWalletActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlMain"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="?actionBarItemBackground"
+            android:layout_marginStart="5dp"
+            android:padding="10dp"
+            android:src="@drawable/backk" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/ivBack"
+            android:fontFamily="@font/opensansbold"
+            android:text="@string/my_wallet"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlMain">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="20dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rlTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="280dp"
+                        android:background="@drawable/card">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/profileImg"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/profi">
+
+                        </de.hdodenhof.circleimageview.CircleImageView>
+
+                        <RelativeLayout
+                            android:id="@+id/rl"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/profileImg"
+                            android:layout_marginTop="10dp">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/txId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:fontFamily="@font/opensansmedium"
+                                android:gravity="center"
+                                android:text="0x7537425155asa...411255"
+                                android:textColor="@color/purple_200"
+                                android:textSize="13sp" />
+
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/tx1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txId"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/opensansmedium"
+                                android:gravity="center"
+                                android:text="@string/total"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/txTotal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tx1"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/opensansbold"
+                                android:gravity="center"
+                                android:text="₹ 7.954L"
+                                android:textColor="@color/green"
+                                android:textSize="20sp" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/btSignup"
+                                android:layout_width="300dp"
+                                android:layout_height="50dp"
+                                android:layout_below="@+id/txTotal"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="25dp"
+                                android:layout_marginBottom="15dp"
+                                android:background="@drawable/gradient"
+                                android:elevation="15dp"
+                                android:fontFamily="@font/opensansmedium"
+                                android:text="@string/add_balance"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                app:backgroundTint="@null"
+                                app:cornerRadius="50dp"
+                                app:elevation="15dp"
+                                app:iconGravity="textStart"
+                                app:iconTint="@color/white" />
+
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rlTop"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/tx4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="25dp"
+                                android:fontFamily="@font/opensansmedium"
+                                android:text="@string/collection"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/txAmount"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="25dp"
+                                android:layout_marginEnd="25dp"
+                                android:fontFamily="@font/opensansmedium"
+                                android:text="Floor Price"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/grey_text" />
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="15dp">
+
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/txCollection"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/robotomedium"
+                                android:text="#VK1805"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/txPrize"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="25dp"
+                                android:layout_alignParentEnd="true"
+                                android:fontFamily="@font/robotomedium"
+                                android:text="₹ 7.954L"
+                                android:textColor="@color/green"
+                                android:textSize="16sp" />
+
+
+
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.8dp"
+                            android:background="@color/grey_text" />
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="15dp">
+
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/txCollection1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/robotomedium"
+                                android:text="#VK1805"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/txPrize1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="25dp"
+                                android:layout_alignParentEnd="true"
+                                android:fontFamily="@font/robotomedium"
+                                android:text="₹ 7.954L"
+                                android:textColor="@color/green"
+                                android:textSize="16sp" />
+
+
+
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.8dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:background="@color/grey_text" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="15dp">
+
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/txCollection2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/robotomedium"
+                                android:text="#VK1805"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/txPrize2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="25dp"
+                                android:layout_alignParentEnd="true"
+                                android:fontFamily="@font/robotomedium"
+                                android:text="₹ 7.954L"
+                                android:textColor="@color/green"
+                                android:textSize="16sp" />
+
+
+
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.8dp"
+                            android:background="@color/grey_text" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

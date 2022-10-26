@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NftsTablayoutFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:weightSum="2">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="160dp"
+                android:id="@+id/cd11"
+                android:layout_marginTop="2dp"
+                android:layout_height="190dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="3dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/dy2"
+                    android:scaleType="fitXY"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/cd11"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp">
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txCountLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensansregular"
+                    android:text="700 "
+                    android:textColor="@color/purple_700"
+                    android:textSize="11sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/txCountLike"
+                    android:fontFamily="@font/opensansregular"
+                    android:text="@string/like"
+                    android:textColor="@color/text"
+                    android:textSize="11sp" />
+
+
+                <ImageView
+                    android:id="@+id/ivDot"
+                    android:layout_width="15dp"
+                    android:scaleType="fitXY"
+                    android:layout_toEndOf="@+id/txLike"
+                    android:layout_height="15dp"
+                    android:src="@drawable/dot">
+                </ImageView>
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txCountComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensansregular"
+                    android:text="800  "
+                    android:layout_toEndOf="@+id/ivDot"
+                    android:textColor="@color/purple_700"
+                    android:textSize="11sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/txCountComment"
+                    android:fontFamily="@font/opensansregular"
+                    android:text="@string/comments"
+                    android:textColor="@color/text"
+                    android:textSize="11sp" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="160dp"
+                android:id="@+id/cd12"
+                android:layout_marginTop="2dp"
+                android:layout_height="190dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="3dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/dy2"
+                    android:scaleType="fitXY"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/cd12"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp">
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txCountLike1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensansregular"
+                    android:text="700 "
+                    android:textColor="@color/purple_700"
+                    android:textSize="11sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txLike1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/txCountLike1"
+                    android:fontFamily="@font/opensansregular"
+                    android:text="@string/like"
+                    android:textColor="@color/text"
+                    android:textSize="11sp" />
+
+
+                <ImageView
+                    android:id="@+id/ivDot1"
+                    android:layout_width="15dp"
+                    android:scaleType="fitXY"
+                    android:layout_toEndOf="@+id/txLike1"
+                    android:layout_height="15dp"
+                    android:src="@drawable/dot">
+                </ImageView>
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txCountComment1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensansregular"
+                    android:text="800  "
+                    android:layout_toEndOf="@+id/ivDot1"
+                    android:textColor="@color/purple_700"
+                    android:textSize="11sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txComment1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/txCountComment1"
+                    android:fontFamily="@font/opensansregular"
+                    android:text="@string/comments"
+                    android:textColor="@color/text"
+                    android:textSize="11sp" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activity.StoryDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlMain"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:background="?actionBarItemBackground"
+            android:padding="10dp"
+            android:src="@drawable/backk" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/opensansbold"
+            android:text="@string/storys"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvStoryCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlMain" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rvStoryCategory"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rlTop"
+                android:layout_width="match_parent"
+                android:layout_height="420dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="420dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bgnew">
+
+                </ImageView>
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:id="@+id/rlCat"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="15dp"
+                        android:background="@drawable/black_trns_btn">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txNotification1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/opensansregular"
+                            android:paddingStart="15dp"
+                            android:paddingTop="5dp"
+                            android:paddingEnd="15dp"
+                            android:paddingBottom="5dp"
+                            android:text="Travels"
+                            android:textColor="@color/white"
+                            android:textSize="13sp" />
+
+                    </RelativeLayout>
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txTittle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_below="@+id/rlCat"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/opensansbold"
+                        android:text="Umaid Bhawan Palace- A Must-See Royal Residence in Jodhpur"
+                        android:textColor="@color/yellow"
+                        android:textSize="18sp" />
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivProfile"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/txTittle"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginBottom="40dp"
+                        android:src="@drawable/profi">
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txBy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txTittle"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="40dp"
+                        android:layout_toEndOf="@+id/ivProfile"
+                        android:fontFamily="@font/opensansmedium"
+                        android:text="By Harsh Dubey"
+                        android:textColor="@color/textDesc"
+                        android:textSize="12sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txTittle"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="40dp"
+                        android:layout_toEndOf="@+id/txBy"
+                        android:fontFamily="@font/opensansmedium"
+                        android:text="October 21, 2022"
+                        android:textColor="@color/textDesc"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/ivView"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:layout_below="@+id/txTittle"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_toStartOf="@+id/txView"
+                        android:src="@drawable/view">
+
+                    </ImageView>
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txTittle"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="15dp"
+                        android:fontFamily="@font/opensansregular"
+                        android:text="100K"
+                        android:textColor="@color/white"
+                        android:textSize="13sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/bottomSheet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="400dp"
+                android:background="@drawable/white_round"
+                android:elevation="10dp"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_round">
+
+
+                    <com.google.android.material.textview.MaterialTextView
+
+                        android:id="@+id/txDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:fontFamily="@font/opensansmedium"
+                        android:text="Umaid Bhawan Palace Hotel in Jodhpur is a place where royalty and Rajasthan’s history exist at their best. The moment you step here, an unusual sense of royalty embraces you.
+
+Entire atmosphere is very dramatic and transcendental here.  And hospitality at the royal hotel will mesmerize you further.
+
+First, a royal vintage car will take you to the palace hotel where doormen at the entrance gate greet you with ‘Khammaghani.’"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+
+                    <ImageView
+                        android:id="@+id/ivStory"
+                        android:layout_width="match_parent"
+                        android:layout_height="380dp"
+                        android:layout_below="@+id/txDescription"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img1">
+
+                    </ImageView>
+
+                    <com.google.android.material.textview.MaterialTextView
+
+                        android:id="@+id/txMore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivStory"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:fontFamily="@font/opensansmedium"
+                        android:text="Umaid Bhawan Palace Hotel in Jodhpur is a place where royalty and Rajasthan’s history exist at their best. The moment you step here, an unusual sense of royalty embraces you.
+
+Entire atmosphere is very dramatic and transcendental here.  And hospitality at the royal hotel will mesmerize you further.
+
+First, a royal vintage car will take you to the palace hotel where doormen at the entrance gate greet you with ‘Khammaghani.’"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <ImageView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="380dp"
+                        android:layout_below="@+id/txMore"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img1">
+
+                    </ImageView>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

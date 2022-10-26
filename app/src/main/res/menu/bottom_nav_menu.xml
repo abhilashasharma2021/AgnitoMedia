@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/homeblack"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/Video"
+        android:icon="@drawable/play1"
+        android:title="@string/video" />
+
+    <item
+        android:id="@+id/placeholder"
+        android:title="" />
+
+    <item
+        android:id="@+id/nft"
+        android:icon="@drawable/nft_selector"
+        android:title="NFT"
+       />
+
+
+    <item
+        android:id="@+id/Profile"
+        android:icon="@drawable/user1"
+        android:iconTint="@color/black"
+        android:title="@string/profile" />
+    </group>
+
+</menu>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rl_11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_Img1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/profi">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/profile_Img1"
+            android:fontFamily="@font/opensansbold"
+            android:text="Aditiya Gupta"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txPosition1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txName1"
+            android:layout_marginStart="10dp"
+
+            android:layout_toEndOf="@+id/profile_Img1"
+            android:fontFamily="@font/opensansregular"
+            android:text="Artist"
+            android:textColor="@color/text"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivPost"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/real">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/ivPlay"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:padding="2dp"
+        android:src="@drawable/videoplay" />
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txLike1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/opensansregular"
+                android:text="Pushpendra And "
+                android:textColor="@color/text"
+                android:textSize="11sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txCountLike1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/txLike1"
+                android:fontFamily="@font/opensansbold"
+                android:text="202K"
+                android:textColor="@color/purple_700"
+                android:textSize="12sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/txCountLike1"
+                android:fontFamily="@font/opensansregular"
+                android:text=" Others "
+                android:textColor="@color/text"
+                android:textSize="11sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/ivDot1">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txCountComment1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensansbold"
+                android:text="800  "
+                android:textColor="@color/purple_700"
+                android:textSize="11sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txComment1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/txCountComment1"
+                android:fontFamily="@font/opensansregular"
+                android:text="@string/comments"
+                android:textColor="@color/text"
+                android:textSize="11sp" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/ivDot1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_toStartOf="@+id/rlShare1"
+            android:src="@drawable/dot">
+
+        </ImageView>
+
+        <RelativeLayout
+            android:id="@+id/rlShare1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txCountShare1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensansbold"
+                android:text="500 "
+                android:textColor="@color/purple_700"
+                android:textSize="11sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/txCountShare1"
+                android:fontFamily="@font/opensansregular"
+                android:text="@string/shares"
+
+                android:textColor="@color/text"
+                android:textSize="11sp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey_new"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ivLike1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:padding="10dp"
+                    android:src="@drawable/like" />
+
+                <ImageView
+                    android:id="@+id/ivLikeNew1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:padding="8dp"
+                    android:src="@drawable/like"
+                    android:visibility="gone"
+                    app:tint="@color/purple_700" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@+id/ivLike1"
+                    android:fontFamily="@font/opensansmedium"
+                    android:text="@string/like"
+                    android:textColor="@color/text"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ivComment1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:src="@drawable/comment" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@+id/ivComment1"
+                    android:fontFamily="@font/opensansmedium"
+                    android:text="@string/comment"
+                    android:textColor="@color/text"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+
+                <ImageView
+                    android:id="@+id/ivShare1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+                    android:src="@drawable/share" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txShare1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_toEndOf="@+id/ivShare1"
+                    android:fontFamily="@font/opensansmedium"
+                    android:text="@string/share"
+                    android:textColor="@color/text"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/opensansregular"
+        android:textColor="@color/text"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/view" />
+</LinearLayout>

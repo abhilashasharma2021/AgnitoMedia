@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".activity.RoughActivity">
+
+    <HorizontalScrollView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/greyline"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginStart="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txEvent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/opensansbold"
+                    android:text="@string/event"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txUnit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:layout_toEndOf="@+id/txEvent"
+                    android:fontFamily="@font/opensansbold"
+                    android:text="@string/unit_price"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txqualitu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:layout_toEndOf="@+id/txUnit"
+                    android:fontFamily="@font/opensansbold"
+                    android:text="@string/quantity"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txfrom1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_toEndOf="@+id/txqualitu"
+                    android:fontFamily="@font/opensansbold"
+                    android:text="@string/from"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txTo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="100dp"
+                    android:layout_toEndOf="@+id/txfrom1"
+                    android:fontFamily="@font/opensansbold"
+                    android:text="@string/to"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="115dp"
+                    android:layout_toEndOf="@+id/txTo1"
+                    android:fontFamily="@font/opensansbold"
+                    android:text="@string/date"
+                    android:layout_marginEnd="80dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rlFilter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/green_background">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txNew"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_toEndOf="@+id/ivv"
+                            android:fontFamily="@font/opensansmedium"
+                            android:gravity="center_vertical"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="15dp"
+                            android:text="@string/transfer"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/ivv"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:padding="5dp"
+                            android:src="@drawable/trans" />
+
+
+                    </RelativeLayout>
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txUnitPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_toEndOf="@+id/rlFilter"
+                        android:fontFamily="@font/opensansmedium"
+                        android:text="₹ 7.954L"
+                        android:textColor="@color/purple_200"
+                        android:textSize="14sp" />
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/txQuantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_toEndOf="@+id/txUnitPrice"
+                        android:fontFamily="@font/opensansmedium"
+                        android:text="1"
+                        android:textColor="@color/purple_200"
+                        android:textSize="16sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="30dp"
+                        android:id="@+id/txFrom"
+                        android:layout_toEndOf="@+id/txQuantity"
+                        android:fontFamily="@font/opensansmedium"
+                        android:text="AdityaVishwas1"
+                        android:textColor="@color/purple_200"
+                        android:textSize="14sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="30dp"
+                         android:id="@+id/txTo"
+                        android:layout_toEndOf="@+id/txFrom"
+                        android:fontFamily="@font/opensansmedium"
+                        android:text="Abhishek125NFT"
+                        android:textColor="@color/purple_200"
+                        android:textSize="14sp" />
+
+
+                    <RelativeLayout
+                        android:layout_toEndOf="@+id/txTo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/trans_backgrounds">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:fontFamily="@font/opensansmedium"
+                            android:gravity="center_vertical"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="15dp"
+                            android:text="2 Day Before"
+                            android:textColor="@color/purple_200"
+                            android:textSize="14sp" />
+
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/rlFilter"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/grey1">
+
+                    </View>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/rlFilter1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/green_light_background">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txNew1"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_toEndOf="@+id/ivv1"
+                android:fontFamily="@font/opensansmedium"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:paddingEnd="15dp"
+                android:text="@string/sale"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/ivv1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:padding="4dp"
+                android:src="@drawable/cart" />
+
+
+        </RelativeLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txUnitPrice1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@+id/rlFilter1"
+            android:fontFamily="@font/opensansmedium"
+            android:text="₹ 7.954L"
+            android:textColor="@color/purple_200"
+            android:textSize="14sp" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txQuantity1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@+id/txUnitPrice1"
+            android:fontFamily="@font/opensansmedium"
+            android:text="1"
+            android:textColor="@color/purple_200"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/txFrom1"
+            android:layout_toEndOf="@+id/txQuantity1"
+            android:fontFamily="@font/opensansmedium"
+            android:text="AdityaVishwas1"
+            android:textColor="@color/purple_200"
+            android:textSize="14sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/txTo11"
+            android:layout_toEndOf="@+id/txFrom1"
+            android:fontFamily="@font/opensansmedium"
+            android:text="Abhishek125NFT"
+            android:textColor="@color/purple_200"
+            android:textSize="14sp" />
+
+
+        <RelativeLayout
+            android:layout_toEndOf="@+id/txTo11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/trans_backgrounds">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:fontFamily="@font/opensansmedium"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:paddingEnd="15dp"
+                android:text="2 Day Before"
+                android:textColor="@color/purple_200"
+                android:textSize="14sp" />
+
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/rlFilter1"
+            android:background="@color/grey1">
+
+        </View>
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/grey_strok"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/trans"
+            android:id="@+id/rlMain"
+
+
+            android:layout_height="70dp">
+
+            <ImageView
+                android:id="@+id/ivM"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:padding="2dp"
+                android:src="@drawable/bag" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="18dp"
+                android:layout_centerVertical="true"
+
+                android:layout_toEndOf="@+id/ivM"
+                android:fontFamily="@font/opensansbold"
+                android:text="@string/more_from_this_collection"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+            android:layout_below="@+id/rlMain"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="30dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/rlNew"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/ivNft"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dummy2">
+
+                </ImageView>
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txNftName"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivNft"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/opensansbold"
+                    android:text="Cristiano Ronaldo
+Virat Kohyli
+"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txNftName"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/opensansmedium"
+                    android:text="#CR0722"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ivNft"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/opensansmedium"
+                    android:text="@string/prize"
+                    android:id="@+id/txPrize1"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txPrize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txPrize1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/opensansmedium"
+                    android:text="₹ 10.253LL"
+                    android:textColor="@color/purple_200"
+                    android:textSize="16sp" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txPrize"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/opensansmedium"
+                    android:text="Last Sale :"
+                    android:layout_toStartOf="@+id/txLastSale"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txLastSale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txPrize"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/opensansmedium"
+                    android:text="6.954L"
+                    android:textColor="@color/purple_200"
+                    android:textSize="12sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:background="@color/purple_200"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="40dp">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/opensansbold"
+                        android:text="@string/buy_now"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/splash_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_weight="8"
+        android:src="@drawable/loogo"
+        />
+
+
+    <ProgressBar
+        android:layout_weight="2"
+        android:id="@+id/splash_progress_bar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="30dp"
+        android:indeterminateTint="#FFEB3B"
+        android:layout_height="0dp"
+        android:visibility="visible"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:rotation="180"
+        android:background="@drawable/greyback"
+        android:layout_height="200dp">
+
+        <TextView
+            android:id="@+id/tv_splash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/opensansbold"
+            android:gravity="center"
+            android:rotation="180"
+            android:text="An Initiate by Company Name"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>

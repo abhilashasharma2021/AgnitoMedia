@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.NotificationActivity">
+    <RelativeLayout
+        android:id="@+id/rlMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:background="?actionBarItemBackground"
+            android:padding="10dp"
+            android:src="@drawable/backk" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/opensansbold"
+            android:text="@string/notification"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlMain">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/trans"
+            android:orientation="vertical">
+
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/opensansbold"
+                android:text="Today"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="25dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+                <View
+                    android:layout_width="5dp"
+                    android:background="@color/purple_200"
+                    android:layout_height="match_parent"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp">
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/ivNotification"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/profi">
+
+                        </de.hdodenhof.circleimageview.CircleImageView>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txTime"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ivNotification"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="12dp"
+                            android:fontFamily="@font/opensansbold"
+                            android:text="12:00"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:id="@+id/rlNEw"
+                            android:layout_marginEnd="40dp"
+                            android:layout_toEndOf="@+id/ivNotification"
+                            android:layout_height="wrap_content">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/txNotification"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+
+                                android:fontFamily="@font/opensansregular"
+                                android:text="Lorem ipsum dolor sit , consectetuer adipiscing elit. Aenean commodo ligula  ipsummmm dolor sit amet."
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+
+                        </RelativeLayout>
+
+
+
+
+
+                        <RelativeLayout
+                            android:id="@+id/rlEnd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+
+                            <ImageView
+                                android:id="@+id/ivMenu"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="5dp"
+                                android:src="@drawable/more" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/txDay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/ivMenu"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="26dp"
+                                android:layout_marginEnd="15dp"
+                                android:fontFamily="@font/opensansregular"
+                                android:text="12-12-2022"
+                                android:textColor="@color/black"
+                                android:textSize="11sp" />
+
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/opensansbold"
+                android:text="Yesterday"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="15dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp">
+                <View
+                    android:layout_width="5dp"
+                    android:background="@color/grey_text"
+                    android:layout_height="match_parent"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/rl1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp">
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/ivNotification1"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="15dp"
+                            android:src="@drawable/profi">
+
+                        </de.hdodenhof.circleimageview.CircleImageView>
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txNotification1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="60dp"
+                            android:layout_toEndOf="@+id/ivNotification1"
+                            android:fontFamily="@font/opensansregular"
+                            android:text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txTime1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ivNotification1"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="12dp"
+                            android:fontFamily="@font/opensansbold"
+                            android:text="12:00"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+
+
+
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlEnd1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:id="@+id/ivMenu1"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="5dp"
+                            android:src="@drawable/more" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txDay1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ivMenu1"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="26dp"
+                            android:layout_marginEnd="15dp"
+                            android:fontFamily="@font/opensansregular"
+                            android:text="Today"
+                            android:textColor="@color/black"
+                            android:textSize="11sp" />
+
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
