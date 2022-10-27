@@ -52,171 +52,217 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
+        android:background="@color/trans"
+        android:gravity="center_vertical"
         android:orientation="horizontal"
         android:weightSum="3">
 
-
         <RelativeLayout
-            android:id="@+id/rlStory"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1">
-
-            <com.google.android.material.button.MaterialButton
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:background="@drawable/black_round_btn"
                 android:id="@+id/btStoryBlack"
-                android:layout_width="wrap_content"
-                android:layout_height="35dp"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/blackbtn"
-                android:fontFamily="@font/opensansmedium"
-                android:text="@string/storys"
-                android:textAlignment="inherit"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:textSize="14sp"
-                app:backgroundTint="@null"
-                app:icon="@drawable/storynew"
-                app:iconGravity="textStart"
-                app:iconSize="18dp"
-                app:iconTint="@color/white" />
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
 
+                <ImageView
+                    android:id="@+id/ivStory"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/storynew">
 
-            <com.google.android.material.button.MaterialButton
+                </ImageView>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@+id/ivStory"
+                    android:fontFamily="@font/opensansregular"
+                    android:gravity="center_vertical"
+                    android:text="@string/stories"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:background="@drawable/blue_round_btn"
                 android:id="@+id/btStoryBlue"
-                android:layout_width="wrap_content"
-                android:layout_height="35dp"
-                android:layout_gravity="center"
+                android:visibility="gone"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/bluebtn"
-                android:fontFamily="@font/opensansmedium"
-                android:text="@string/storys"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:textSize="14sp"
-                android:visibility="gone"
-                app:backgroundTint="@null"
-                app:elevation="15dp"
-                app:icon="@drawable/storynew"
-                app:iconGravity="textStart"
-                app:iconSize="18dp"
-                app:iconTint="@color/white" />
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivStory1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/storynew">
+
+                </ImageView>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@+id/ivStory1"
+                    android:fontFamily="@font/opensansregular"
+                    android:gravity="center_vertical"
+                    android:text="@string/stories"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
 
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/rlNft"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/rlStory"
             android:layout_weight="1">
-
-            <com.google.android.material.button.MaterialButton
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:background="@drawable/black_round_btn"
                 android:id="@+id/btNftBlack"
-                android:layout_width="wrap_content"
-                android:layout_height="35dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/blackbtn"
-                android:fontFamily="@font/opensansmedium"
-                android:text="@string/nfts"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:textSize="14sp"
-                app:backgroundTint="@null"
-                app:elevation="15dp"
-                app:icon="@drawable/nftnew"
-                app:iconGravity="textStart"
-                app:iconSize="18dp"
-                app:iconTint="@color/white" />
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
 
+                <ImageView
+                    android:layout_width="20dp"
+                    android:src="@drawable/nfft"
+                    android:id="@+id/ivNft"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="20dp"
+                    app:tint="@color/white">
 
-            <com.google.android.material.button.MaterialButton
+                </ImageView>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@+id/ivNft"
+                    android:fontFamily="@font/opensansregular"
+                    android:gravity="center_vertical"
+                    android:text="@string/nfts"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:background="@drawable/blue_round_btn"
                 android:id="@+id/btNftBlue"
-                android:layout_width="wrap_content"
-                android:layout_height="35dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/bluebtn"
-                android:fontFamily="@font/opensansmedium"
-                android:text="@string/nfts"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:textSize="14sp"
+                android:layout_marginTop="5dp"
                 android:visibility="gone"
-                app:backgroundTint="@null"
-                app:elevation="15dp"
-                app:icon="@drawable/nftnew"
-                app:iconGravity="textStart"
-                app:iconSize="18dp"
-                app:iconTint="@color/white" />
+                android:layout_height="wrap_content">
 
+                <ImageView
+                    android:layout_width="20dp"
+                    android:src="@drawable/nfft"
+                    android:id="@+id/ivNft1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="20dp"
+                    app:tint="@color/white">
+
+                </ImageView>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@+id/ivNft1"
+                    android:fontFamily="@font/opensansregular"
+                    android:gravity="center_vertical"
+                    android:text="@string/nfts"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/rlVideo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/rlPost"
             android:layout_weight="1">
-
-            <com.google.android.material.button.MaterialButton
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:background="@drawable/black_round_btn"
                 android:id="@+id/btVideoBlack"
-                android:layout_width="wrap_content"
-                android:layout_height="35dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="15dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/blackbtn"
-                android:fontFamily="@font/opensansmedium"
-                android:text="@string/video"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:textSize="14sp"
-                app:backgroundTint="@null"
-                app:elevation="15dp"
-                app:icon="@drawable/playnew"
-                app:iconGravity="textStart"
-                app:iconSize="18dp"
-                app:iconTint="@color/white" />
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
 
+                <ImageView
+                    android:id="@+id/ivVideos"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/videoplay">
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btVideoBlue"
-                android:layout_width="wrap_content"
-                android:layout_height="35dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="15dp"
-                android:layout_marginBottom="10dp"
-                android:background="@drawable/bluebtn"
-                android:fontFamily="@font/opensansmedium"
-                android:paddingBottom="1dp"
-                android:text="@string/video"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:textSize="14sp"
+                </ImageView>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@+id/ivVideos"
+                    android:fontFamily="@font/opensansregular"
+                    android:gravity="center_vertical"
+                    android:text="@string/video"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="100dp"
                 android:visibility="gone"
-                app:backgroundTint="@null"
-                app:elevation="15dp"
-                app:icon="@drawable/playnew"
-                app:iconGravity="textStart"
-                app:iconSize="18dp"
-                app:iconTint="@color/white" />
+                android:background="@drawable/blue_round_btn"
+                android:id="@+id/btVideoBlue"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content">
 
+                <ImageView
+                    android:id="@+id/ivVideos1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/videoplay">
+
+                </ImageView>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@+id/ivVideos1"
+                    android:fontFamily="@font/opensansregular"
+                    android:gravity="center_vertical"
+                    android:text="@string/video"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
         </RelativeLayout>
-
     </LinearLayout>
 
     <RelativeLayout
@@ -336,7 +382,6 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/txName1"
                         android:layout_marginStart="10dp"
-
                         android:layout_toEndOf="@+id/profile_Img1"
                         android:fontFamily="@font/opensansregular"
                         android:text="Developer"
@@ -346,18 +391,17 @@
 
                 </RelativeLayout>
 
+                <pl.droidsonroids.gif.GifImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:scaleX="2"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/reell" />
+
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
-
-                    <ImageView
-                        android:id="@+id/ivVideo"
-                        android:layout_width="match_parent"
-                        android:layout_height="380dp"
-                        android:scaleType="fitXY"
-                        android:src="@drawable/real">
-
-                    </ImageView>
 
                     <ImageView
                         android:id="@+id/ivPlay"
@@ -365,6 +409,7 @@
                         android:layout_height="40dp"
                         android:layout_centerInParent="true"
                         android:padding="2dp"
+                        android:visibility="gone"
                         android:src="@drawable/videoplay" />
                 </RelativeLayout>
 

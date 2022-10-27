@@ -43,7 +43,7 @@ ActivityStoryDetailsBinding binding;
 
     private void all_CategoryData() {
         categoryDataList = new ArrayList<>();
-        categoryDataList.add(new AllStoryCategoryData("Latest News"));
+        categoryDataList.add(new AllStoryCategoryData("Travels"));
 
         categoryAdapter = new AllStoryCategoryAdapter(categoryDataList,this);
         binding.rvStoryCategory.setHasFixedSize(true);

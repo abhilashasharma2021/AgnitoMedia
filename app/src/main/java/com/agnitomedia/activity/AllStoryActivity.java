@@ -38,13 +38,7 @@ public class AllStoryActivity extends AppCompatActivity {
         binding=ActivityAllStoryBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        binding. ivBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
 
-            }
-        });
         all_StoryData();
         all_CategoryData();
     }

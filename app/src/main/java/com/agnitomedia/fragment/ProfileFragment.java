@@ -14,6 +14,8 @@ import android.view.ViewGroup;
 import com.agnitomedia.MainActivity;
 import com.agnitomedia.NftsTablayoutFragment;
 import com.agnitomedia.R;
+import com.agnitomedia.activity.EditProfileActivity;
+import com.agnitomedia.activity.SavedActivity;
 import com.agnitomedia.adapers.TablayoutAdapter;
 import com.agnitomedia.databinding.FragmentProfileBinding;
 import com.example.readmoretextview.ReadMoreTextView;
@@ -71,7 +73,19 @@ public class ProfileFragment extends Fragment {
             }
         });
 
+        binding.rlSaved.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+              startActivity(new Intent(getActivity(), SavedActivity.class));
+            }
+        });
 
+        binding.rlEdit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), EditProfileActivity.class));
+            }
+        });
 
         final TablayoutAdapter adapter = new TablayoutAdapter(getActivity(), getActivity().getSupportFragmentManager(), binding.tabLayout.getTabCount());
         binding.viewPager.setAdapter(adapter);
@@ -95,7 +109,7 @@ public class ProfileFragment extends Fragment {
             }
         });
 
-       binding. tabLayout.setupWithViewPager(binding.viewPager);
+        binding. tabLayout.setupWithViewPager(binding.viewPager);
         binding.tabLayout.addTab(binding.tabLayout.newTab().setText("Story"));
         binding.tabLayout.addTab(binding.tabLayout.newTab().setText("Video"));
         binding.tabLayout.addTab(binding.tabLayout.newTab().setText("Nfts"));

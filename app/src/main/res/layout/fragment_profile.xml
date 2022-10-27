@@ -6,7 +6,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragment.ProfileFragment">
 
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:background="@drawable/white_drawer"
@@ -26,27 +25,25 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+
                 android:orientation="vertical">
 
-
-
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="match_parent"
+                    android:orientation="vertical"
                     android:layout_height="wrap_content">
 
                     <RelativeLayout
-                        android:id="@+id/rlSetting"
                         android:layout_width="match_parent"
-                        android:layout_height="60dp"
-                        android:background="@drawable/trans_backgroud">
+                        android:layout_height="50dp"
+                        android:background="@drawable/blue_drawer">
 
                         <ImageView
-
-                            android:id="@+id/ivSet"
+                            android:id="@+id/profile"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             android:layout_centerVertical="true"
-                            android:layout_marginStart="15dp"
+                            android:layout_marginStart="20dp"
                             android:padding="8dp"
                             android:src="@drawable/set">
 
@@ -58,7 +55,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_marginStart="10dp"
-                            android:layout_toEndOf="@+id/ivSet"
+                            android:layout_toEndOf="@+id/profile"
                             android:fontFamily="@font/robotomedium"
                             android:gravity="center_vertical"
                             android:text="@string/setting"
@@ -84,18 +81,17 @@
 
 
                     <RelativeLayout
-                        android:layout_width="match_parent"
                         android:id="@+id/rlSaved"
-                        android:layout_below="@+id/rlSetting"
+                        android:layout_width="match_parent"
                         android:layout_height="50dp">
 
                         <ImageView
                             android:id="@+id/ivSaved"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:layout_centerVertical="true"
-                            android:layout_marginStart="15dp"
+                            android:layout_marginStart="20dp"
                             android:padding="8dp"
+                            android:layout_centerVertical="true"
                             android:src="@drawable/mark">
 
                         </ImageView>
@@ -119,23 +115,54 @@
                         android:layout_width="match_parent"
                         android:layout_height="0.6dp"
                         android:layout_marginTop="5dp"
-                        android:id="@+id/v1"
-                        android:layout_below="@+id/rlSaved"
                         android:background="@color/grey_text" />
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_below="@+id/v1"
-                        android:id="@+id/rlPrivacy"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:id="@+id/ivDetails"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:padding="8dp"
+                            android:src="@drawable/details">
+
+                        </ImageView>
+
+
+                        <com.google.android.material.textview.MaterialTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dp"
+                            android:layout_toEndOf="@+id/ivDetails"
+                            android:fontFamily="@font/robotomedium"
+                            android:gravity="center_vertical"
+                            android:text="@string/personal_details"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/grey_text" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
                         android:layout_height="50dp">
 
                         <ImageView
                             android:id="@+id/ivPrivacy"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:layout_marginStart="15dp"
-                            android:padding="8dp"
                             android:layout_centerVertical="true"
-                            android:src="@drawable/privacy">
+                            android:layout_marginStart="20dp"
+                            android:padding="8dp"
+                            android:src="@drawable/security">
 
                         </ImageView>
 
@@ -148,32 +175,104 @@
                             android:layout_toEndOf="@+id/ivPrivacy"
                             android:fontFamily="@font/robotomedium"
                             android:gravity="center_vertical"
-                            android:text="@string/privacy"
+                            android:text="@string/security"
                             android:textColor="@color/black"
                             android:textSize="14sp" />
 
                     </RelativeLayout>
-
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="0.6dp"
-                        android:layout_marginTop="4dp"
-                        android:id="@+id/v2"
-                        android:layout_below="@+id/rlPrivacy"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/grey_text" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:id="@+id/ivNoti"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:padding="8dp"
+                            android:src="@drawable/noti">
+
+                        </ImageView>
+
+
+                        <com.google.android.material.textview.MaterialTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dp"
+                            android:layout_toEndOf="@+id/ivNoti"
+                            android:fontFamily="@font/robotomedium"
+                            android:gravity="center_vertical"
+                            android:text="@string/notification"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <Switch
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="10dp"/>
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/grey_text" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:id="@+id/ivTerms"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:padding="8dp"
+                            android:src="@drawable/terms">
+
+                        </ImageView>
+
+
+                        <com.google.android.material.textview.MaterialTextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dp"
+                            android:layout_toEndOf="@+id/ivTerms"
+                            android:fontFamily="@font/robotomedium"
+                            android:gravity="center_vertical"
+                            android:text="@string/terms_amp_conditions"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:layout_marginTop="5dp"
                         android:background="@color/grey_text" />
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_below="@+id/v2"
-                        android:id="@+id/rlHelp"
                         android:layout_height="50dp">
 
                         <ImageView
                             android:id="@+id/ivHelp"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:layout_marginStart="15dp"
-                            android:padding="8dp"
+                            android:layout_marginStart="20dp"
                             android:layout_centerVertical="true"
+                            android:padding="8dp"
                             android:src="@drawable/hlp">
 
                         </ImageView>
@@ -197,23 +296,19 @@
                         android:layout_width="match_parent"
                         android:layout_height="0.6dp"
                         android:layout_marginTop="5dp"
-                        android:layout_below="@+id/rlHelp"
-                        android:id="@+id/v4"
                         android:background="@color/grey_text" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_below="@+id/v4"
-                        android:id="@+id/rlAbout"
                         android:layout_height="50dp">
 
                         <ImageView
                             android:id="@+id/ivAbout"
                             android:layout_width="40dp"
                             android:layout_height="40dp"
-                            android:layout_marginStart="15dp"
-                            android:padding="8dp"
+                            android:layout_marginStart="20dp"
                             android:layout_centerVertical="true"
+                            android:padding="8dp"
                             android:src="@drawable/about">
 
                         </ImageView>
@@ -236,15 +331,41 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="0.6dp"
-                        android:layout_marginTop="4dp"
-                        android:layout_below="@+id/rlAbout"
+                        android:layout_marginTop="5dp"
                         android:background="@color/grey_text" />
-                </RelativeLayout>
 
 
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:id="@+id/ivContact"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="20dp"
+                            android:padding="8dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/contact">
+
+                        </ImageView>
 
 
+                        <com.google.android.material.textview.MaterialTextView
 
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="10dp"
+                            android:layout_toEndOf="@+id/ivContact"
+                            android:fontFamily="@font/robotomedium"
+                            android:gravity="center_vertical"
+                            android:text="@string/contact_us"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -260,14 +381,14 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:gravity="bottom"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:gravity="bottom">
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0.6dp"
-                android:layout_marginBottom="10dp"
                 android:layout_above="@+id/ivLogout"
+                android:layout_marginBottom="10dp"
                 android:background="@color/grey_text" />
 
 
@@ -422,7 +543,7 @@
 
             <RelativeLayout
                 android:layout_width="40dp"
-                android:layout_height="45dp"
+                android:layout_height="35dp"
                 android:layout_marginEnd="15dp"
                 android:layout_toStartOf="@+id/rlSend"
                 android:background="@drawable/black_strok">
@@ -432,13 +553,13 @@
                     android:layout_height="40dp"
                     android:layout_centerInParent="true"
                     android:padding="10dp"
-                    android:src="@drawable/newshare" />
+                    android:src="@drawable/sharenew" />
             </RelativeLayout>
 
             <RelativeLayout
-                android:layout_width="120dp"
                 android:id="@+id/rlSend"
-                android:layout_height="42dp"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="15dp"
                 android:background="@drawable/black_strok">
@@ -466,26 +587,31 @@
             android:fontFamily="@font/opensansregular"
             android:textColor="@color/text"
             android:textSize="13sp" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:tabTextColor="@color/black"
-            app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
-            app:tabSelectedTextColor="@color/purple_200"
-            android:background="@color/trans">
-        </com.google.android.material.tabs.TabLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/trans"
+        app:tabSelectedTextColor="@color/purple_200"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+        app:tabTextColor="@color/black"/>
 
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/viewPager"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintTop_toBottomOf="@+id/tabLayout"
-            tools:layout_editor_absoluteX="8dp" />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_below="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+        tools:layout_editor_absoluteX="8dp" />
 
 
 
+
+</RelativeLayout>
 
 
 

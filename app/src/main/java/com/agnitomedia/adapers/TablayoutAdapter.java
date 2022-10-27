@@ -5,20 +5,17 @@ import android.content.Context;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
-
-import com.agnitomedia.databinding.FragmentStoryBinding;
-import com.agnitomedia.fragment.ProfileFragment;
-import com.agnitomedia.fragment.StoryFragment;
-import com.agnitomedia.fragment.VideoFragment;
+import com.agnitomedia.NftsTablayoutFragment;
+import com.agnitomedia.fragment.ProfileStoryFragment;
 
 public class TablayoutAdapter  extends FragmentPagerAdapter {
 
-    private Context myContext;
+    private Context context;
     int totalTabs;
 
     public TablayoutAdapter(Context context, FragmentManager fm, int totalTabs) {
         super(fm);
-        myContext = context;
+        context = context;
         this.totalTabs = totalTabs;
     }
 
@@ -27,13 +24,14 @@ public class TablayoutAdapter  extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                StoryFragment storyFragment =new StoryFragment();
+                ProfileStoryFragment storyFragment =new ProfileStoryFragment();
                 return  storyFragment;
             case 1:
 
             case 2:
-                VideoFragment videoFragment = new VideoFragment();
-                return videoFragment;
+                NftsTablayoutFragment tablayoutFragment=new NftsTablayoutFragment();
+                return  tablayoutFragment;
+
             default:
                 return null;
         }

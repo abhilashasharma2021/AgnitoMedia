@@ -1,6 +1,5 @@
 package com.agnitomedia;
 
-import static com.agnitomedia.activity.SettingActivity.drawerlayout;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -43,11 +42,9 @@ BottomNavigationView bottomNavigationView;
             case R.id.home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.container, new HomeFragment()).commit();
                // bottomNavigationView.setItemTextColor(ColorStateList.valueOf(getResources().getColor(R.color.purple_700)));
-
-
                 return true;
             case R.id.Video:
-          getSupportFragmentManager().beginTransaction().replace(R.id.container, new VideoFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.container, new VideoFragment()).commit();
 
                 return true;
           case R.id.nft:
@@ -58,8 +55,7 @@ BottomNavigationView bottomNavigationView;
 
             case R.id.Profile:
 
-              //  startActivity(new Intent(MainActivity.this, WelcomeActivity.class));
-            getSupportFragmentManager().beginTransaction().replace(R.id.container, new ProfileFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.container, new ProfileFragment()).commit();
 
                 return true;
         }

@@ -2,8 +2,11 @@ package com.agnitomedia.fragment;
 
 import android.content.Context;
 import android.content.Intent;
+import android.media.MediaPlayer;
+import android.media.session.MediaController;
+import android.net.Uri;
 import android.os.Bundle;
-
+import android.widget.VideoView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -61,6 +64,21 @@ public class HomeFragment extends Fragment {
   /*      binding.rvAll.setLayoutManager(new LinearLayoutManager(getActivity()));
         layoutManagerAll = new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false);
 */
+       /* Uri video = Uri.parse("http://www.servername.com/projects/projectname/videos/1361439400.mp4");
+        MediaController mediaController = new MediaController(getActivity());
+        mediaController.setAnchorView(mVideoView);
+       binding. videoView.setMediaController(mediaController);
+        mVideoView.setVideoURI(uriVideo);
+        mVideoView.requestFocus();
+
+        mVideoView.setOnPreparedListener(new MediaPlayer.OnPreparedListener()
+        {
+            @Override
+            public void onPrepared(MediaPlayer mp)
+            {
+                mVideoView.start();
+            }
+        });*/
         ReadMoreTextView readMoreTextView = new ReadMoreTextView();
         binding.textView.setText(getResources().getString(R.string.dummy_text));
         readMoreTextView.setTextView(binding.textView);
