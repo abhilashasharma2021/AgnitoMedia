@@ -13,8 +13,8 @@
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile_Img2"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
             android:layout_marginStart="10dp"
             android:layout_marginTop="15dp"
             android:src="@drawable/dymm">
@@ -27,12 +27,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="18dp"
             android:layout_toEndOf="@+id/profile_Img2"
-            android:fontFamily="@font/opensansmedium"
+            android:fontFamily="@font/opensansbold"
             android:text="Pooja Surywanshi"
             android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:textSize="15.5dp" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/txPosition2"
@@ -44,7 +44,7 @@
             android:fontFamily="@font/opensansregular"
             android:text="Writer"
             android:textColor="@color/text"
-            android:textSize="14sp" />
+            android:textSize="13.5dp" />
 
         <ImageView
             android:id="@+id/ivBookMark"

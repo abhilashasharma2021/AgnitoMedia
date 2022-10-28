@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/trans"
+    tools:context=".activity.ContactUsActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlMain"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:background="?actionBarItemBackground"
+            android:padding="10dp"
+            android:src="@drawable/backk" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/opensansbold"
+            android:gravity="center"
+            android:text="@string/contact_us"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlMain">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/whiteround_btn">
+
+
+                <ImageView
+
+                    android:id="@+id/ivWeb"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"
+                    android:padding="2dp"
+                    android:src="@drawable/website" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tx1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_toEndOf="@+id/ivWeb"
+                    android:fontFamily="@font/opensansmedium"
+                    android:text="@string/website"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txWebsite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tx1"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/ivWeb"
+                    android:fontFamily="@font/opensansmedium"
+                    android:text="www.agnitotechnologies.com"
+                    android:textColor="@color/purple_200"
+                    android:textSize="14sp" />
+
+                <View
+                    android:id="@+id/v"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/txWebsite"
+                    android:layout_marginEnd="110dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_toEndOf="@+id/ivEmail"
+                    android:background="@color/purple_200" />
+
+
+                <ImageView
+
+                    android:id="@+id/ivEmail"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/v"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="2dp"
+                    android:src="@drawable/mails" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tx2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/v"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_toEndOf="@+id/ivEmail"
+                    android:fontFamily="@font/opensansmedium"
+                    android:text="@string/emails"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tx2"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/ivEmail"
+                    android:fontFamily="@font/opensansmedium"
+                    android:text="contact@agnitotechnologies.com"
+                    android:textColor="@color/purple_200"
+                    android:textSize="14sp" />
+
+
+                <ImageView
+
+                    android:id="@+id/ivContact"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/txEmail"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="2dp"
+                    android:src="@drawable/callnew" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tx3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txEmail"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_toEndOf="@+id/ivContact"
+                    android:fontFamily="@font/opensansmedium"
+                    android:text="@string/contact_number"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tx3"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/ivContact"
+                    android:fontFamily="@font/opensansmedium"
+                    android:text="+91-7554927642"
+                    android:textColor="@color/purple_200"
+                    android:textSize="14sp" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txContact"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="@font/opensansmedium"
+                    android:text="@string/social_media"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+
+                <ImageView
+
+                    android:id="@+id/ivtwitter"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/txContact"
+                    android:padding="2dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="22dp"
+                    android:src="@drawable/twitter" />
+
+                <ImageView
+
+                    android:id="@+id/ivFb"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_toStartOf="@+id/ivtwitter"
+                    android:layout_below="@+id/txContact"
+                    android:padding="2dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="22dp"
+                    android:src="@drawable/ffb" />
+                <ImageView
+
+                    android:id="@+id/ivIndeed"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_toStartOf="@+id/ivFb"
+                    android:layout_below="@+id/txContact"
+                    android:padding="2dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginTop="22dp"
+                    android:src="@drawable/indeed" />
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

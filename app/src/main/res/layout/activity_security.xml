@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/trans"
+    tools:context=".activity.SecurityActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/rlMain"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:background="?actionBarItemBackground"
+            android:padding="10dp"
+            android:src="@drawable/backk" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/opensansbold"
+            android:gravity="center"
+            android:text="@string/security"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlMain">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/whiteround_btn">
+
+                <ImageView
+
+                    android:id="@+id/ivEmail"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="2dp"
+                    android:src="@drawable/pass" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tx1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/ivEmail"
+                    android:fontFamily="@font/opensansmedium"
+                    android:text="@string/change_password"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/etCurrentPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tx1"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="@color/grey_text"
+                    android:fontFamily="@font/opensansregular"
+                    android:hint="@string/current_password"
+                    android:inputType="textPassword"
+                    android:maxLength="40"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey_text"
+                    android:textSize="14sp">
+
+
+                </EditText>
+
+
+                <EditText
+                    android:id="@+id/etNewPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etCurrentPass"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="@color/grey_text"
+                    android:fontFamily="@font/opensansregular"
+                    android:hint="@string/new_password"
+                    android:inputType="textPassword"
+                    android:maxLength="40"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey_text"
+                    android:textSize="14sp">
+
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/etReTypePass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/etNewPass"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="@color/grey_text"
+                    android:fontFamily="@font/opensansregular"
+                    android:hint="@string/re_type_new_password"
+                    android:inputType="textPassword"
+                    android:maxLength="40"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey_text"
+                    android:textSize="14sp">
+
+
+                </EditText>
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btUpdate"
+                    android:layout_width="250dp"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/etReTypePass"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/gradient"
+                    android:elevation="15dp"
+                    android:fontFamily="@font/opensansmedium"
+                    android:text="@string/update_password"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="50dp"
+                    app:elevation="15dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btCancel"
+                    android:layout_width="250dp"
+                    android:layout_height="45dp"
+                    android:layout_below="@+id/btUpdate"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/grey_btn"
+                    android:elevation="15dp"
+                    android:fontFamily="@font/opensansmedium"
+                    android:text="@string/cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="50dp"
+                    app:elevation="15dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

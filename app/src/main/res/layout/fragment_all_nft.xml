@@ -110,7 +110,7 @@
 
                         <com.google.android.material.card.MaterialCardView
                             android:id="@+id/cd1"
-                            android:layout_width="100dp"
+                            android:layout_width="120dp"
                             android:layout_height="150dp"
                             android:layout_above="@+id/rlCard"
                             android:layout_marginTop="2dp"
@@ -136,7 +136,7 @@
                             android:layout_height="wrap_content">
 
                             <com.google.android.material.card.MaterialCardView
-                                android:layout_width="100dp"
+                                android:layout_width="120dp"
                                 android:layout_height="150dp"
                                 android:layout_marginBottom="2dp"
                                 app:cardBackgroundColor="@color/trans"
@@ -170,7 +170,7 @@
 
                         <com.google.android.material.card.MaterialCardView
                             android:id="@+id/cd11"
-                            android:layout_width="100dp"
+                            android:layout_width="120dp"
                             android:layout_height="150dp"
                             android:layout_above="@+id/rlCard1"
                             android:layout_marginTop="2dp"
@@ -196,8 +196,8 @@
                             android:layout_height="wrap_content">
 
                             <com.google.android.material.card.MaterialCardView
-                                android:layout_width="100dp"
-                                android:layout_height="160dp"
+                                android:layout_width="120dp"
+                                android:layout_height="150dp"
                                 android:layout_marginBottom="2dp"
                                 app:cardBackgroundColor="@color/trans"
                                 app:cardCornerRadius="15dp"
@@ -230,7 +230,7 @@
 
                         <com.google.android.material.card.MaterialCardView
                             android:id="@+id/cd12"
-                            android:layout_width="100dp"
+                            android:layout_width="120dp"
                             android:layout_height="150dp"
                             android:layout_above="@+id/rlCard2"
                             android:layout_marginTop="2dp"
@@ -256,8 +256,8 @@
                             android:layout_height="wrap_content">
 
                             <com.google.android.material.card.MaterialCardView
-                                android:layout_width="100dp"
-                                android:layout_height="160dp"
+                                android:layout_width="120dp"
+                                android:layout_height="150dp"
                                 android:layout_marginBottom="2dp"
                                 app:cardBackgroundColor="@color/trans"
                                 app:cardCornerRadius="15dp"
@@ -291,7 +291,7 @@
 
                         <com.google.android.material.card.MaterialCardView
                             android:id="@+id/cd13"
-                            android:layout_width="100dp"
+                            android:layout_width="120dp"
                             android:layout_height="150dp"
                             android:layout_above="@+id/rlCard3"
                             android:layout_marginTop="2dp"
@@ -317,8 +317,8 @@
                             android:layout_height="wrap_content">
 
                             <com.google.android.material.card.MaterialCardView
-                                android:layout_width="100dp"
-                                android:layout_height="160dp"
+                                android:layout_width="120dp"
+                                android:layout_height="150dp"
                                 android:layout_marginBottom="2dp"
                                 app:cardBackgroundColor="@color/trans"
                                 app:cardCornerRadius="15dp"
@@ -368,7 +368,7 @@
                     android:fontFamily="@font/opensansbold"
                     android:text="Featured"
                     android:textColor="@color/text"
-                    android:textSize="18sp" />
+                    android:textSize="20sp" />
 
 
                 <com.google.android.material.textview.MaterialTextView
@@ -380,7 +380,7 @@
                     android:fontFamily="@font/opensansbold"
                     android:text="NFTs"
                     android:textColor="@color/purple_200"
-                    android:textSize="18sp" />
+                    android:textSize="20sp" />
 
                 <pl.droidsonroids.gif.GifImageView
                     android:layout_width="40dp"
@@ -395,12 +395,13 @@
             <RelativeLayout
                 android:id="@+id/rel"
                 android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
                 android:layout_height="wrap_content">
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rvAllNft"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
 
                 </androidx.recyclerview.widget.RecyclerView>
             </RelativeLayout>

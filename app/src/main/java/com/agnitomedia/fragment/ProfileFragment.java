@@ -14,8 +14,12 @@ import android.view.ViewGroup;
 import com.agnitomedia.MainActivity;
 import com.agnitomedia.NftsTablayoutFragment;
 import com.agnitomedia.R;
+import com.agnitomedia.activity.ContactUsActivity;
 import com.agnitomedia.activity.EditProfileActivity;
+import com.agnitomedia.activity.HelpActivity;
+import com.agnitomedia.activity.PersonalDetailsActivity;
 import com.agnitomedia.activity.SavedActivity;
+import com.agnitomedia.activity.SecurityActivity;
 import com.agnitomedia.adapers.TablayoutAdapter;
 import com.agnitomedia.databinding.FragmentProfileBinding;
 import com.example.readmoretextview.ReadMoreTextView;
@@ -77,6 +81,34 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onClick(View view) {
               startActivity(new Intent(getActivity(), SavedActivity.class));
+            }
+        });
+        binding.rlPersonal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), PersonalDetailsActivity.class));
+            }
+        });
+
+        binding.rlHelp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), HelpActivity.class));
+            }
+        });
+
+
+        binding.rlSecurity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), SecurityActivity.class));
+            }
+        });
+
+        binding.rlContact.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), ContactUsActivity.class));
             }
         });
 

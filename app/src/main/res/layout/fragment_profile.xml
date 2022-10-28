@@ -118,6 +118,7 @@
                         android:background="@color/grey_text" />
                     <RelativeLayout
                         android:layout_width="match_parent"
+                        android:id="@+id/rlPersonal"
                         android:layout_height="50dp">
 
                         <ImageView
@@ -153,6 +154,7 @@
 
                     <RelativeLayout
                         android:layout_width="match_parent"
+                        android:id="@+id/rlSecurity"
                         android:layout_height="50dp">
 
                         <ImageView
@@ -264,6 +266,7 @@
                         android:background="@color/grey_text" />
                     <RelativeLayout
                         android:layout_width="match_parent"
+                        android:id="@+id/rlHelp"
                         android:layout_height="50dp">
 
                         <ImageView
@@ -337,6 +340,7 @@
 
                     <RelativeLayout
                         android:layout_width="match_parent"
+                        android:id="@+id/rlContact"
                         android:layout_height="50dp">
 
                         <ImageView

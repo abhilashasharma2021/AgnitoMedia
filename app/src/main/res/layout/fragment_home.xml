@@ -52,23 +52,20 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="55dp"
         android:background="@color/trans"
         android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:weightSum="3">
+        android:orientation="horizontal">
 
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_height="wrap_content">
             <RelativeLayout
                 android:layout_width="100dp"
-                android:background="@drawable/black_round_btn"
+                android:background="@drawable/transstory"
                 android:id="@+id/btStoryBlack"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="5dp"
-                android:layout_height="wrap_content">
+                android:layout_height="35dp">
 
                 <ImageView
                     android:id="@+id/ivStory"
@@ -86,7 +83,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="10dp"
                     android:layout_toEndOf="@+id/ivStory"
-                    android:fontFamily="@font/opensansregular"
+                    android:fontFamily="@font/opensansbold"
                     android:gravity="center_vertical"
                     android:text="@string/stories"
                     android:textColor="@color/white"
@@ -99,7 +96,6 @@
                 android:id="@+id/btStoryBlue"
                 android:visibility="gone"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="5dp"
                 android:layout_height="wrap_content">
 
                 <ImageView
@@ -130,22 +126,21 @@
 
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_marginStart="5dp"
+            android:layout_height="wrap_content">
             <RelativeLayout
                 android:layout_width="100dp"
-                android:background="@drawable/black_round_btn"
+                android:background="@drawable/transblack"
                 android:id="@+id/btNftBlack"
-                android:layout_marginTop="5dp"
-                android:layout_height="wrap_content">
+                android:layout_height="35dp">
 
                 <ImageView
-                    android:layout_width="20dp"
-                    android:src="@drawable/nfft"
                     android:id="@+id/ivNft"
-                    android:layout_centerVertical="true"
-                    android:layout_marginStart="10dp"
+                    android:layout_width="20dp"
                     android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12dp"
+                    android:src="@drawable/nfft"
                     app:tint="@color/white">
 
                 </ImageView>
@@ -153,10 +148,10 @@
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_toEndOf="@+id/ivNft"
-                    android:fontFamily="@font/opensansregular"
+                    android:fontFamily="@font/opensansbold"
                     android:gravity="center_vertical"
                     android:text="@string/nfts"
                     android:textColor="@color/white"
@@ -167,7 +162,6 @@
                 android:layout_width="100dp"
                 android:background="@drawable/blue_round_btn"
                 android:id="@+id/btNftBlue"
-                android:layout_marginTop="5dp"
                 android:visibility="gone"
                 android:layout_height="wrap_content">
 
@@ -200,13 +194,13 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_marginStart="5dp">
+
             <RelativeLayout
-                android:layout_width="100dp"
-                android:background="@drawable/black_round_btn"
                 android:id="@+id/btVideoBlack"
-                android:layout_marginTop="5dp"
-                android:layout_height="wrap_content">
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:background="@drawable/transblack">
 
                 <ImageView
                     android:id="@+id/ivVideos"
@@ -224,7 +218,7 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="10dp"
                     android:layout_toEndOf="@+id/ivVideos"
-                    android:fontFamily="@font/opensansregular"
+                    android:fontFamily="@font/opensansbold"
                     android:gravity="center_vertical"
                     android:text="@string/video"
                     android:textColor="@color/white"
@@ -236,7 +230,6 @@
                 android:visibility="gone"
                 android:background="@drawable/blue_round_btn"
                 android:id="@+id/btVideoBlue"
-                android:layout_marginTop="5dp"
                 android:layout_height="wrap_content">
 
                 <ImageView
@@ -355,38 +348,44 @@
 
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/profile_Img1"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="15dp"
                         android:src="@drawable/profi">
 
                     </de.hdodenhof.circleimageview.CircleImageView>
 
-
-                    <com.google.android.material.textview.MaterialTextView
-                        android:id="@+id/txName1"
+                    <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="18dp"
                         android:layout_toEndOf="@+id/profile_Img1"
-                        android:fontFamily="@font/opensansbold"
-                        android:text="Satyam Mishra"
-                        android:textColor="@color/black"
-                        android:textSize="16sp" />
+                        android:layout_height="wrap_content">
 
-                    <com.google.android.material.textview.MaterialTextView
-                        android:id="@+id/txPosition1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/txName1"
-                        android:layout_marginStart="10dp"
-                        android:layout_toEndOf="@+id/profile_Img1"
-                        android:fontFamily="@font/opensansregular"
-                        android:text="Developer"
-                        android:textColor="@color/text"
-                        android:textSize="14sp" />
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txName1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/opensansbold"
+                            android:text="Satyam Mishra"
+                            android:textColor="@color/black"
+                            android:textSize="15.5dp" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txPosition1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txName1"
+                            android:layout_marginStart="10dp"
+                            android:fontFamily="@font/opensansregular"
+                            android:text="Developer"
+                            android:textColor="@color/text"
+                            android:textSize="13.5dp" />
+
+
+
+                    </RelativeLayout>
 
 
                 </RelativeLayout>
@@ -655,8 +654,8 @@
 
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/profile_Img2"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="15dp"
                         android:src="@drawable/dymm">
@@ -669,12 +668,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="18dp"
                         android:layout_toEndOf="@+id/profile_Img2"
-                        android:fontFamily="@font/opensansmedium"
+                        android:fontFamily="@font/opensansbold"
                         android:text="Pooja Surywanshi"
                         android:textColor="@color/black"
-                        android:textSize="16sp" />
+                        android:textSize="15.5dp" />
 
                     <com.google.android.material.textview.MaterialTextView
                         android:id="@+id/txPosition2"
@@ -686,7 +685,7 @@
                         android:fontFamily="@font/opensansregular"
                         android:text="Writer"
                         android:textColor="@color/text"
-                        android:textSize="14sp" />
+                        android:textSize="13.5dp" />
 
                     <ImageView
                         android:id="@+id/ivBookMark"
@@ -702,6 +701,7 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
                     android:layout_height="wrap_content">
 
                     <ImageView
@@ -991,8 +991,8 @@
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/profile_Img"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="15dp"
                     android:src="@drawable/profi">
@@ -1005,13 +1005,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="18dp"
 
                     android:layout_toEndOf="@+id/profile_Img"
                     android:fontFamily="@font/opensansbold"
                     android:text="Satyam Mishra"
                     android:textColor="@color/black"
-                    android:textSize="16sp" />
+                    android:textSize="15.5dp" />
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/txPosition"
@@ -1023,7 +1023,7 @@
                     android:fontFamily="@font/opensansregular"
                     android:text="Developer"
                     android:textColor="@color/text"
-                    android:textSize="14sp" />
+                    android:textSize="13.5dp" />
 
 
                 <pl.droidsonroids.gif.GifImageView
