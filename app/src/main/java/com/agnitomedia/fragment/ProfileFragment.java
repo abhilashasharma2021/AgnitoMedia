@@ -101,14 +101,14 @@ public class ProfileFragment extends Fragment {
         binding.rlSecurity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getActivity(), SecurityActivity.class));
+               // startActivity(new Intent(getActivity(), SecurityActivity.class));
             }
         });
 
         binding.rlContact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getActivity(), ContactUsActivity.class));
+               // startActivity(new Intent(getActivity(), ContactUsActivity.class));
             }
         });
 

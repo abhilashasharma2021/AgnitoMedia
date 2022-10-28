@@ -135,6 +135,8 @@ public class HomeFragment extends Fragment {
                 binding.relNFT.setVisibility(View.GONE);
                 binding.btNftBlack.setVisibility(View.VISIBLE);
                 binding.btNftBlue.setVisibility(View.GONE);
+                binding.btVideoBlack.setVisibility(View.VISIBLE);
+                binding.btVideoBlue.setVisibility(View.GONE);
                 binding.relStory.setVisibility(View.VISIBLE);
                 binding.relPost.setVisibility(View.GONE);
                 binding.relVideo.setVisibility(View.GONE);
