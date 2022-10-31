@@ -1115,7 +1115,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/opensansbold"
-                        android:text="800  "
+                        android:text="800   "
                         android:textColor="@color/purple_700"
                         android:textSize="11sp" />
 
@@ -1163,7 +1163,6 @@
                         android:layout_toEndOf="@+id/txCountShare"
                         android:fontFamily="@font/opensansregular"
                         android:text="@string/shares"
-
                         android:textColor="@color/text"
                         android:textSize="11sp" />
 
