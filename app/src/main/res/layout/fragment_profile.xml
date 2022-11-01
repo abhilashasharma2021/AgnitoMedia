@@ -16,8 +16,6 @@
         android:id="@+id/rlVisibleSetting"
         android:layout_height="match_parent">
 
-
-
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -25,7 +23,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -598,11 +595,10 @@
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:background="@color/trans"
-        app:tabSelectedTextColor="@color/purple_200"
-        app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
-        app:tabTextColor="@color/black"/>
+        app:tabMinWidth="400dp"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
@@ -611,7 +607,6 @@
         android:layout_height="match_parent"
         app:layout_constraintTop_toBottomOf="@+id/tabLayout"
         tools:layout_editor_absoluteX="8dp" />
-
 
 
 

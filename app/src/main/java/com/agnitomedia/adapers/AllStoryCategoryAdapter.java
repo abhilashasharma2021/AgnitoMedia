@@ -3,6 +3,7 @@ package com.agnitomedia.adapers;
 import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -39,6 +40,32 @@ public class AllStoryCategoryAdapter extends RecyclerView.Adapter<AllStoryCatego
         Log.e("yukmk", "check: " + allStoryCategoryData);
         if (allStoryCategoryData != null) {
 
+            holder.rowstorycategorylayoutBinding.rlCategory.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                 /*  SharedPreferences.Editor editor = AppsContants.sharedpreferences.edit();
+                editor.putString(AppsContants.CatId, dataAdapterOBJ.getCat_id());
+                        editor.putString(AppsContants.Product_id, productsPogos.get(position).getProduct_id());
+                editor.commit();
+                context.startActivity(new Intent(context, ShowProductsActivity.class));*/
+
+                    /* if (context instanceof ShowProductsActivity) {
+                    ShowProductsActivity.recycler_all_products.setVisibility(View.GONE);
+                    //Viewholder.txt_sub_cat_name.setBackground(context.getResources().getDrawable(R.drawable.black_grey_bordershape));
+                   // Viewholder.txt_sub_cat_name.setTextColor(context.getResources().getColor(R.color.white));
+
+                    selectedPosition = position;
+                    notifyDataSetChanged();
+                   // ((ShowProductsActivity)context).ShowProduct(dataAdapterOBJ.getCat_id(),dataAdapterOBJ.getSub_cat_id());
+
+                    ((ShowProductsActivity)context).ShowProduct(dataAdapterOBJ.getChild_cat_id());
+                }
+
+            }
+        });
+*/
+                }
+            });
 
         }
     }
@@ -48,6 +75,17 @@ public class AllStoryCategoryAdapter extends RecyclerView.Adapter<AllStoryCatego
     public int getItemCount() {
         return allStoryCategoryDataList == null ? 0 : allStoryCategoryDataList.size();
     }
+
+    @Override
+    public long getItemId(int position) {
+        return position;
+    }
+
+    @Override
+    public int getItemViewType(int position) {
+        return position;
+    }
+
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         private RowstorycategorylayoutBinding rowstorycategorylayoutBinding;

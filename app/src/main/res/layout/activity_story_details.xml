@@ -4,12 +4,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/white"
     tools:context=".activity.StoryDetailsActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/rl"
+        android:background="@color/purple_700">
 
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:padding="7dp"
+            android:src="@drawable/homelogo">
+
+        </ImageView>
+
+
+        <ImageView
+            android:id="@+id/ivNotification"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:padding="4dp"
+            android:src="@drawable/notification">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/ivNotification"
+            android:padding="4dp"
+            android:src="@drawable/search"
+            app:tint="@color/white">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/ivchat"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/ivSearch"
+            android:padding="4dp"
+            android:src="@drawable/chat"
+            app:tint="@color/white">
+
+        </ImageView>
+    </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/rlMain"
+        android:visibility="gone"
         android:layout_marginTop="15dp">
 
         <ImageView
@@ -19,6 +75,7 @@
             android:layout_marginStart="5dp"
             android:background="?actionBarItemBackground"
             android:padding="10dp"
+            android:visibility="gone"
             android:src="@drawable/backk" />
 
         <com.google.android.material.textview.MaterialTextView
@@ -28,6 +85,7 @@
             android:layout_marginTop="10dp"
             android:fontFamily="@font/opensansbold"
             android:text="@string/storys"
+            android:visibility="gone"
             android:textColor="@color/black"
             android:textSize="18sp" />
 
@@ -35,13 +93,13 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvStoryCategory"
-        android:layout_width="match_parent"
-        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/rlMain" />
+        android:layout_below="@+id/rl" />
 
     <ScrollView
         android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
         android:layout_below="@+id/rvStoryCategory"
         android:layout_height="match_parent">
 
@@ -109,7 +167,7 @@
                         android:layout_below="@+id/rlCat"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
-                        android:layout_marginBottom="20dp"
+                        android:layout_marginBottom="15dp"
                         android:fontFamily="@font/opensansbold"
                         android:text="Umaid Bhawan Palace- A Must-See Royal Residence in Jodhpur"
                         android:textColor="@color/yellow"
@@ -165,7 +223,8 @@
                         android:layout_marginTop="5dp"
                         android:layout_marginEnd="5dp"
                         android:layout_toStartOf="@+id/txView"
-                        android:src="@drawable/view">
+                        android:src="@drawable/view"
+                        app:tint="@color/textDesc">
 
                     </ImageView>
 
@@ -176,10 +235,10 @@
                         android:layout_below="@+id/txTittle"
                         android:layout_alignParentEnd="true"
                         android:layout_marginTop="5dp"
-                        android:layout_marginEnd="15dp"
+                        android:layout_marginEnd="20dp"
                         android:fontFamily="@font/opensansregular"
                         android:text="100K"
-                        android:textColor="@color/white"
+                        android:textColor="@color/textDesc"
                         android:textSize="13sp" />
 
                 </RelativeLayout>
@@ -224,13 +283,11 @@ First, a royal vintage car will take you to the palace hotel where doormen at th
                     <ImageView
                         android:id="@+id/ivStory"
                         android:layout_width="match_parent"
-                        android:layout_height="380dp"
+                        android:layout_height="270dp"
                         android:layout_below="@+id/txDescription"
                         android:layout_marginStart="15dp"
-                        android:layout_marginTop="15dp"
                         android:layout_marginEnd="15dp"
-                        android:layout_marginBottom="15dp"
-                        android:scaleType="fitXY"
+
                         android:src="@drawable/img1">
 
                     </ImageView>
@@ -256,16 +313,46 @@ First, a royal vintage car will take you to the palace hotel where doormen at th
                     <ImageView
 
                         android:layout_width="match_parent"
-                        android:layout_height="380dp"
+                        android:layout_height="270dp"
+                        android:id="@+id/ivSec"
                         android:layout_below="@+id/txMore"
                         android:layout_marginStart="15dp"
-                        android:layout_marginTop="15dp"
                         android:layout_marginEnd="15dp"
-                        android:layout_marginBottom="15dp"
-                        android:scaleType="fitXY"
                         android:src="@drawable/img1">
 
                     </ImageView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:layout_marginLeft="15dp"
+
+                        android:layout_below="@+id/ivSec"
+                        app:cardBackgroundColor="@color/white"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="5dp"
+                        app:cardCornerRadius="6dp">
+
+                        <com.smarteist.autoimageslider.SliderView
+
+                            android:id="@+id/imageSlider"
+                            android:layout_width="match_parent"
+                            android:layout_height="350dp"
+                            app:sliderAnimationDuration="200"
+                            app:sliderAutoCycleDirection="back_and_forth"
+                            app:sliderAutoCycleEnabled="true"
+                            app:sliderIndicatorPadding="2dp"
+                            app:sliderIndicatorRadius="1dp"
+                            app:sliderCircularHandlerEnabled="true"
+                            app:sliderIndicatorAnimationDuration="200"
+                            app:sliderScrollTimeInSec="1"
+                            app:sliderStartAutoCycle="true" />
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
 
                 </RelativeLayout>
             </LinearLayout>

@@ -44,10 +44,10 @@
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_below="@+id/cd11"
-                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
                 android:layout_height="wrap_content"
-
                 android:layout_marginTop="10dp">
+
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/txCountLike"
                     android:layout_width="wrap_content"
@@ -129,8 +129,9 @@
                 android:layout_width="wrap_content"
                 android:layout_below="@+id/cd12"
                 android:layout_height="wrap_content"
-
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp">
+
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/txCountLike1"
                     android:layout_width="wrap_content"

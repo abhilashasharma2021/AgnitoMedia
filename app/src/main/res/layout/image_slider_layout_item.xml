@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="350dp">
+
+        <ImageView
+            android:id="@+id/ivSlide"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/bgg">
+
+        </ImageView>
+        <RelativeLayout
+            android:id="@+id/rlCat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/black_trns_btn">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txNotification1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/opensansregular"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
+                android:text="Travels"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:background="@drawable/gradient_black">
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txTittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/opensansbold"
+                android:text="Umaid Bhawan Palace- A Must-See Royal Residence in Jodhpur"
+                android:textColor="@color/yellow"
+                android:textSize="16sp" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txTittle"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/opensansmedium"
+                android:text="By Harsh Dubey"
+                android:textColor="@color/textDesc"
+                android:textSize="12sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txTittle"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toEndOf="@+id/txBy"
+                android:fontFamily="@font/opensansmedium"
+                android:text="October 21, 2022"
+                android:textColor="@color/textDesc"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/ivView"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/txTittle"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_toStartOf="@+id/txView"
+                android:src="@drawable/view"
+                app:tint="@color/textDesc">
+
+            </ImageView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txTittle"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/opensansregular"
+                android:text="100K"
+                android:textColor="@color/textDesc"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

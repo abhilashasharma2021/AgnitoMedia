@@ -88,14 +88,12 @@ ActivitySavedBinding binding;
         }
 
         nftsAdapter = new SavedNftsAdapter(nftsDataList,SavedActivity.this);
-
-
         binding.rvNft.setAdapter(nftsAdapter);
 
     }
 
     private void show_SavedVideo() {
-        SavedVideoData videoData=new SavedVideoData("Videos Title here, dance with me.","100K",getResources().getDrawable(R.drawable.dummy3));
+        SavedVideoData videoData=new SavedVideoData("Videos Title here, da0nce with me.","100K",getResources().getDrawable(R.drawable.dummy3));
         for (int i = 0; i <5 ; i++) {
             videosDataList.add(videoData);
         }

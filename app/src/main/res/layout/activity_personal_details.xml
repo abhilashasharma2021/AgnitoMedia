@@ -7,8 +7,8 @@
     android:background="@color/trans"
     tools:context=".activity.PersonalDetailsActivity">
     <RelativeLayout
-        android:layout_width="wrap_content"
         android:id="@+id/rlMain"
+        android:layout_width="wrap_content"
         android:layout_height="60dp">
 
         <ImageView
@@ -35,12 +35,12 @@
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:fontFamily="@font/opensansmedium"
-            android:text="@string/done"
-            android:layout_marginEnd="15dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/opensansmedium"
+            android:gravity="center_horizontal"
+            android:text="@string/done"
             android:textColor="@color/purple_200"
             android:textSize="14sp" />
 
@@ -226,15 +226,16 @@
                         android:textSize="14sp" />
 
                 </RelativeLayout>
+
                 <RelativeLayout
                     android:id="@+id/btBlueMale"
                     android:layout_width="90dp"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:visibility="gone"
                     android:layout_marginStart="15dp"
                     android:layout_toEndOf="@+id/ivGender"
-                    android:background="@drawable/bluebtn">
+                    android:background="@drawable/bluebtn"
+                    android:visibility="gone">
 
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
@@ -247,6 +248,7 @@
                         android:textSize="14sp" />
 
                 </RelativeLayout>
+
                 <RelativeLayout
                     android:id="@+id/btTransfemale"
                     android:layout_width="90dp"
@@ -268,15 +270,16 @@
                         android:textSize="14sp" />
 
                 </RelativeLayout>
+
                 <RelativeLayout
                     android:id="@+id/btBluefemale"
                     android:layout_width="90dp"
-                    android:visibility="gone"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="10dp"
                     android:layout_toEndOf="@+id/btBlueMale"
-                    android:background="@drawable/bluebtn">
+                    android:background="@drawable/bluebtn"
+                    android:visibility="gone">
 
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
@@ -289,6 +292,7 @@
                         android:textSize="14sp" />
 
                 </RelativeLayout>
+
                 <RelativeLayout
                     android:id="@+id/btTransother"
                     android:layout_width="90dp"
@@ -310,15 +314,16 @@
                         android:textSize="14sp" />
 
                 </RelativeLayout>
+
                 <RelativeLayout
                     android:id="@+id/btBlueother"
                     android:layout_width="90dp"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="10dp"
-                    android:visibility="gone"
                     android:layout_toEndOf="@+id/btBluefemale"
-                    android:background="@drawable/bluebtn">
+                    android:background="@drawable/bluebtn"
+                    android:visibility="gone">
 
                     <com.google.android.material.textview.MaterialTextView
                         android:layout_width="wrap_content"
@@ -345,6 +350,7 @@
                 android:textColor="@color/black"
                 android:textSize="12sp" />
 
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
@@ -364,30 +370,232 @@
                     android:src="@drawable/birthday" />
 
                 <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txBirth"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
                     android:layout_marginStart="20dp"
                     android:layout_toEndOf="@+id/ivBirth"
-                    android:fontFamily="@font/opensansmedium"
+                    android:fontFamily="@font/opensansregular"
                     android:text="@string/dd_mm_yyyy"
-                    android:id="@+id/txBirth"
-                    android:layout_centerVertical="true"
                     android:textColor="@color/grey_text"
                     android:textSize="14sp" />
 
                 <View
                     android:layout_width="match_parent"
-                    android:background="@color/grey_text"
+                    android:layout_height="1dp"
                     android:layout_below="@+id/txBirth"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="15dp"
                     android:layout_toEndOf="@+id/ivBirth"
-                    android:layout_height="1dp">
+                    android:background="@color/grey_text">
 
                 </View>
             </RelativeLayout>
 
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/opensansmedium"
+                android:text="@string/education"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/whiteround_btn">
+
+                <ImageView
+
+                    android:id="@+id/ivEdu"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:padding="2dp"
+                    android:src="@drawable/education" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txEduction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@+id/ivEdu"
+                    android:fontFamily="@font/opensansregular"
+                    android:text="@string/ex_bachelor_s"
+                    android:textColor="@color/grey_text"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/txEduction"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@+id/ivEdu"
+                    android:background="@color/grey_text">
+
+                </View>
+
+                <EditText
+                    android:id="@+id/txUr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/ivEdu"
+                    android:fontFamily="@font/opensansregular"
+                    android:hint="@string/ex_university"
+                    android:textColor="@color/grey_text"
+                    android:textSize="14sp" />
+
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txUr"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@+id/ivEdu"
+                    android:fontFamily="@font/opensansregular"
+                    android:text="@string/year_of_passing"
+                    android:textColor="@color/grey_text"
+                    android:textSize="14sp" />
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txUr"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/txYear"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@+id/ivEdu"
+                    android:background="@color/grey_text">
+
+                </View>
+
+            </RelativeLayout>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/opensansmedium"
+                android:gravity="center_horizontal"
+                android:text="@string/awards"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/whiteround_btn">
+
+                <ImageView
+
+                    android:id="@+id/ivCerti"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:padding="2dp"
+                    android:src="@drawable/award" />
+
+                <EditText
+                    android:id="@+id/EtCertiName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/ivCerti"
+                    android:singleLine="true"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/opensansregular"
+                    android:hint="@string/certificate_name"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+                <EditText
+                    android:id="@+id/EtIssuing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/EtCertiName"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@+id/ivCerti"
+                    android:fontFamily="@font/opensansregular"
+                    android:hint="@string/issuning_organization"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/EtId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/EtIssuing"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@+id/ivCerti"
+                    android:fontFamily="@font/opensansregular"
+                    android:hint="@string/credential_id"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+                <EditText
+                    android:id="@+id/EtUrl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/EtId"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toEndOf="@+id/ivCerti"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/opensansregular"
+                    android:hint="@string/credential_url"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+
+
+            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

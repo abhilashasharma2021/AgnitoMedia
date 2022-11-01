@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.agnitomedia.R;
 import com.agnitomedia.activity.AllStoryActivity;
+import com.agnitomedia.activity.StoryDetailsActivity;
 import com.agnitomedia.data.HomeNftData;
 import com.agnitomedia.data.HomeStoryData;
 import com.agnitomedia.databinding.RowhomenftlayoutBinding;
@@ -55,7 +56,7 @@ public class HomeStoryFAdapter extends RecyclerView.Adapter<HomeStoryFAdapter.My
         holder.rowhomestorytlayoutBinding.rlClick.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                context.startActivity(new Intent(context, AllStoryActivity.class));
+                context.startActivity(new Intent(context, StoryDetailsActivity.class));
             }
         });
         if (nftobj != null) {

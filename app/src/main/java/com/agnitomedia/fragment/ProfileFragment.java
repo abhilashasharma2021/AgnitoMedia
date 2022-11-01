@@ -119,7 +119,13 @@ public class ProfileFragment extends Fragment {
             }
         });
 
-        final TablayoutAdapter adapter = new TablayoutAdapter(getActivity(), getActivity().getSupportFragmentManager(), binding.tabLayout.getTabCount());
+
+        binding.tabLayout.addTab(binding.tabLayout.newTab().setText("Story"));
+        binding.tabLayout.addTab(binding.tabLayout.newTab().setText("Video"));
+        binding.tabLayout.addTab(binding.tabLayout.newTab().setText("Nfts"));
+        binding.tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+        binding. tabLayout.setupWithViewPager(binding.viewPager);
+        final TablayoutAdapter adapter = new TablayoutAdapter(getActivity().getSupportFragmentManager(), binding.tabLayout.getTabCount());
         binding.viewPager.setAdapter(adapter);
 
         binding.viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(binding.tabLayout));
@@ -141,12 +147,8 @@ public class ProfileFragment extends Fragment {
             }
         });
 
-        binding. tabLayout.setupWithViewPager(binding.viewPager);
-        binding.tabLayout.addTab(binding.tabLayout.newTab().setText("Story"));
-        binding.tabLayout.addTab(binding.tabLayout.newTab().setText("Video"));
-        binding.tabLayout.addTab(binding.tabLayout.newTab().setText("Nfts"));
-        binding.tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
         setupTabIcons();
+
         return view;
 
     }

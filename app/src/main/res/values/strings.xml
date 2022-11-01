@@ -129,4 +129,13 @@
     <string name="social_media">Social Media :</string>
     <string name="add_a_reply">Add a Reply</string>
     <string name="write_a_comment">Write a comment</string>
+    <string name="ex_bachelor_s">Ex: Bachelor\'s</string>
+    <string name="education">Education</string>
+    <string name="ex_university">Ex: University</string>
+    <string name="year_of_passing">Year of Passing</string>
+    <string name="awards">Awards</string>
+    <string name="certificate_name">Certificate Name</string>
+    <string name="issuning_organization">Issuing Organization</string>
+    <string name="credential_id">Credential ID</string>
+    <string name="credential_url">Credential URL</string>
 </resources>
