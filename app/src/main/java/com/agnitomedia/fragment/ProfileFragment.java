@@ -1,18 +1,14 @@
 package com.agnitomedia.fragment;
-
 import android.content.Context;
 import android.content.Intent;
-import android.os.Binder;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
-
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.agnitomedia.MainActivity;
-import com.agnitomedia.NftsTablayoutFragment;
 import com.agnitomedia.R;
 import com.agnitomedia.activity.ContactUsActivity;
 import com.agnitomedia.activity.EditProfileActivity;
@@ -58,6 +54,7 @@ public class ProfileFragment extends Fragment {
                 startActivity(new Intent(getActivity(), MainActivity.class));
             }
         });
+
 
 
        /* getActivity().getSupportFragmentManager().beginTransaction()
@@ -119,11 +116,9 @@ public class ProfileFragment extends Fragment {
             }
         });
 
-
         binding.tabLayout.addTab(binding.tabLayout.newTab().setText("Story"));
         binding.tabLayout.addTab(binding.tabLayout.newTab().setText("Video"));
         binding.tabLayout.addTab(binding.tabLayout.newTab().setText("Nfts"));
-        binding.tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
         binding. tabLayout.setupWithViewPager(binding.viewPager);
         final TablayoutAdapter adapter = new TablayoutAdapter(getActivity().getSupportFragmentManager(), binding.tabLayout.getTabCount());
         binding.viewPager.setAdapter(adapter);
@@ -134,11 +129,14 @@ public class ProfileFragment extends Fragment {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 binding.viewPager.setCurrentItem(tab.getPosition());
+                int tabIconColor = ContextCompat.getColor(context, R.color.purple_700);
+                tab.getIcon().setColorFilter(tabIconColor, PorterDuff.Mode.SRC_IN);
             }
 
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
-
+                int tabIconColor = ContextCompat.getColor(context, R.color.black);
+                tab.getIcon().setColorFilter(tabIconColor, PorterDuff.Mode.SRC_IN);
             }
 
             @Override
@@ -147,7 +145,9 @@ public class ProfileFragment extends Fragment {
             }
         });
 
-        setupTabIcons();
+
+      //  binding.tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
+       setupTabIcons();
 
         return view;
 
@@ -157,5 +157,8 @@ public class ProfileFragment extends Fragment {
         binding. tabLayout.getTabAt(1).setIcon(tabIcons[1]);
         binding.tabLayout.getTabAt(2).setIcon(tabIcons[2]);
     }
+
+
+
 
 }

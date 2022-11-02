@@ -1,34 +1,27 @@
 package com.agnitomedia.activity;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
 import com.agnitomedia.R;
 import com.agnitomedia.adapers.AllStoryAdapter;
-import com.agnitomedia.adapers.AllStoryCategoryAdapter;
-import com.agnitomedia.adapers.HomeNftFAdapter;
-import com.agnitomedia.adapers.HomeVideoAdapter;
+import com.agnitomedia.adapers.AllStoryListCategoryAdapter;
 import com.agnitomedia.data.AllStoryCategoryData;
 import com.agnitomedia.data.AllStoryData;
-import com.agnitomedia.data.HomeNftData;
-import com.agnitomedia.data.HomeVideoData;
 import com.agnitomedia.databinding.ActivityAllStoryBinding;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class AllStoryActivity extends AppCompatActivity {
+
     ActivityAllStoryBinding binding;
     List<AllStoryData> allStoryDataList ;
     AllStoryAdapter allStoryAdapter;
     RecyclerView.LayoutManager layoutManagerAllStory;
-
-    List<AllStoryCategoryData> categoryDataList ;
-    AllStoryCategoryAdapter categoryAdapter;
+    List<AllStoryCategoryData> categoryDataList=new ArrayList<>() ;
+    AllStoryListCategoryAdapter categoryAdapter;
     RecyclerView.LayoutManager layoutManagerCategory;
 
 
@@ -37,10 +30,17 @@ public class AllStoryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding=ActivityAllStoryBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
-
+        binding.ivNotification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+             startActivity(new Intent(AllStoryActivity.this, NotificationActivity.class));
+            }
+        });
+        layoutManagerCategory = new LinearLayoutManager(AllStoryActivity.this, LinearLayoutManager.HORIZONTAL, false);
+        binding.rvStoryCategory.setLayoutManager(layoutManagerCategory);
         all_StoryData();
         all_CategoryData();
+
     }
 
     private void all_StoryData() {
@@ -58,19 +58,29 @@ public class AllStoryActivity extends AppCompatActivity {
 
         binding.rvAllStory.setAdapter(allStoryAdapter);
 
+
+
+
     }
 
 
     private void all_CategoryData() {
-        categoryDataList = new ArrayList<>();
-        categoryDataList.add(new AllStoryCategoryData("Latest News"));
-
-        categoryAdapter = new AllStoryCategoryAdapter(categoryDataList,this);
-        binding.rvStoryCategory.setHasFixedSize(true);
-        layoutManagerCategory = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
-        binding.rvStoryCategory.setLayoutManager(new LinearLayoutManager(this));
-
+        AllStoryCategoryData data=new AllStoryCategoryData("Travels");
+        for (int i = 0; i < 5; i++) {
+            categoryDataList.add(data);
+        }
+        categoryAdapter = new AllStoryListCategoryAdapter(categoryDataList,AllStoryActivity.this);
         binding.rvStoryCategory.setAdapter(categoryAdapter);
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(AllStoryActivity.this, StoryDetailsActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+
 
     }
 }

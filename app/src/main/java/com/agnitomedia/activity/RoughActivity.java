@@ -1,24 +1,13 @@
 package com.agnitomedia.activity;
-
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
-import com.agnitomedia.MainActivity;
 import com.agnitomedia.R;
-import com.agnitomedia.adapers.AllNftAdapter;
 import com.agnitomedia.adapers.VideoAdapter;
-import com.agnitomedia.data.AllNftData;
 import com.agnitomedia.data.VideoData;
-import com.example.readmoretextview.ReadMoreTextView;
-
 import java.util.ArrayList;
 import java.util.List;
 

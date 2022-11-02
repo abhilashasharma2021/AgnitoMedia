@@ -1,25 +1,16 @@
 package com.agnitomedia.activity;
-
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.TextView;
-
-import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.agnitomedia.MainActivity;
 import com.agnitomedia.R;
 import com.agnitomedia.adapers.NftItemAdapter;
 import com.agnitomedia.data.NftItemData;
 import com.agnitomedia.databinding.ActivityNftItemBinding;
 import com.example.readmoretextview.ReadMoreTextView;
 import com.google.android.material.appbar.AppBarLayout;
-
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,13 +1,9 @@
 package com.agnitomedia.activity;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
-
-import com.agnitomedia.R;
 import com.agnitomedia.databinding.ActivityPersonalDetailsBinding;
-import com.agnitomedia.databinding.ActivityStoryDetailsBinding;
+
 
 public class PersonalDetailsActivity extends AppCompatActivity {
 ActivityPersonalDetailsBinding binding;

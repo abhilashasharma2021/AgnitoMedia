@@ -1,16 +1,10 @@
 package com.agnitomedia.activity;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
-
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
-
 import com.agnitomedia.R;
-import com.agnitomedia.activity.OTPVerifyActivity;
-import com.agnitomedia.activity.SignUpActivity;
 import com.agnitomedia.databinding.ActivityWelcomeBinding;
 
 public class WelcomeActivity extends AppCompatActivity {

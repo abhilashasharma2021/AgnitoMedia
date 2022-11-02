@@ -312,9 +312,9 @@ First, a royal vintage car will take you to the palace hotel where doormen at th
 
                     <ImageView
 
+                        android:id="@+id/ivSec"
                         android:layout_width="match_parent"
                         android:layout_height="270dp"
-                        android:id="@+id/ivSec"
                         android:layout_below="@+id/txMore"
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
@@ -322,35 +322,190 @@ First, a royal vintage car will take you to the palace hotel where doormen at th
 
                     </ImageView>
 
-                    <com.google.android.material.card.MaterialCardView
+                    <View
                         android:layout_width="match_parent"
-                        android:layout_height="350dp"
-                        android:layout_marginLeft="15dp"
-
+                        android:layout_height="0.8dp"
+                        android:id="@+id/view"
                         android:layout_below="@+id/ivSec"
-                        app:cardBackgroundColor="@color/white"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="15dp"
-                        android:layout_marginBottom="5dp"
-                        app:cardCornerRadius="6dp">
+                        android:layout_marginTop="15dp"
+                        android:background="@color/icon" />
 
-                        <com.smarteist.autoimageslider.SliderView
+                    <RelativeLayout
+                        android:id="@+id/rlcomment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view">
 
-                            android:id="@+id/imageSlider"
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/ivMeRply"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/profi">
+
+                        </de.hdodenhof.circleimageview.CircleImageView>
+
+                        <EditText
+                            android:id="@+id/etEmail"
                             android:layout_width="match_parent"
-                            android:layout_height="350dp"
-                            app:sliderAnimationDuration="200"
-                            app:sliderAutoCycleDirection="back_and_forth"
-                            app:sliderAutoCycleEnabled="true"
-                            app:sliderIndicatorPadding="2dp"
-                            app:sliderIndicatorRadius="1dp"
-                            app:sliderCircularHandlerEnabled="true"
-                            app:sliderIndicatorAnimationDuration="200"
-                            app:sliderScrollTimeInSec="1"
-                            app:sliderStartAutoCycle="true" />
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_toEndOf="@+id/ivMeRply"
+                            android:backgroundTint="@color/grey_text"
+                            android:fontFamily="@font/opensansregular"
+                            android:hint="@string/write_a_comment"
+                            android:inputType="textShortMessage"
+                            android:maxLength="200"
+                            android:maxLines="200"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/grey_text"
+                            android:textSize="14sp">
 
 
-                    </com.google.android.material.card.MaterialCardView>
+                        </EditText>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_below="@+id/rlcomment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/ivRply"
+                            android:layout_width="42dp"
+                            android:layout_height="42dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/profi">
+
+                        </de.hdodenhof.circleimageview.CircleImageView>
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txRplyName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+
+                            android:layout_toEndOf="@+id/ivRply"
+                            android:fontFamily="@font/opensansbold"
+                            android:text="Aditya Vaishnav"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txReplyday"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:fontFamily="@font/opensansregular"
+                            android:text="2 Day Ago"
+                            android:textColor="@color/text"
+                            android:textSize="14sp" />
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txMsg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txRplyName"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_toEndOf="@+id/ivRply"
+                            android:fontFamily="@font/opensansregular"
+                            android:text="You’re Stunning!\nHow are you always so perfect?"
+                            android:textColor="@color/text"
+                            android:textSize="14sp" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txMsg"
+                            android:layout_toEndOf="@+id/ivRply"
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/ll"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="10dp"
+                                android:gravity="center">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/txRplyCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/opensansmedium"
+                                    android:text="2"
+                                    android:textColor="@color/purple_200"
+                                    android:textSize="13sp" />
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_toEndOf="@+id/txRplyCount"
+                                    android:fontFamily="@font/opensansmedium"
+                                    android:text="Reply"
+                                    android:textColor="@color/purple_200"
+                                    android:textSize="13sp" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/ivLike2"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_marginEnd="15dp"
+                                    android:layout_alignParentEnd="true"
+                                    android:src="@drawable/comment" />
+
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/txLike1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/opensansmedium"
+                                    android:text="@string/like"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_toStartOf="@+id/txLikeCount"
+                                    android:textColor="@color/text"
+                                    android:textSize="12sp" />
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/txLikeCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="3dp"
+                                    android:layout_toStartOf="@+id/ivLike2"
+                                    android:fontFamily="@font/opensansmedium"
+                                    android:text="21"
+                                    android:textColor="@color/text"
+                                    android:textSize="12sp" />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+
+
+                    </RelativeLayout>
 
 
 
@@ -364,6 +519,55 @@ First, a royal vintage car will take you to the palace hotel where doormen at th
 
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/trans">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/opensansbold"
+                    android:text="You Might Also Like"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_below="@+id/tx"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="5dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="6dp">
+
+                    <com.smarteist.autoimageslider.SliderView
+
+                        android:id="@+id/imageSlider"
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        app:sliderAnimationDuration="200"
+                        app:sliderAutoCycleDirection="back_and_forth"
+                        app:sliderAutoCycleEnabled="true"
+                        app:sliderCircularHandlerEnabled="true"
+                        app:sliderIndicatorAnimationDuration="200"
+                        app:sliderIndicatorPadding="2dp"
+                        app:sliderIndicatorRadius="1dp"
+                        app:sliderScrollTimeInSec="1"
+                        app:sliderStartAutoCycle="true" />
+
+
+                </com.google.android.material.card.MaterialCardView>
+            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

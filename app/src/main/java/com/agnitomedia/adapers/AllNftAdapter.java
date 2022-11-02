@@ -1,19 +1,15 @@
 package com.agnitomedia.adapers;
-
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.agnitomedia.activity.NftItemActivity;
 import com.agnitomedia.data.AllNftData;
 import com.agnitomedia.databinding.RowallnftlayoutBinding;
-
 import java.util.List;
 
 public class AllNftAdapter extends RecyclerView.Adapter<AllNftAdapter.MyViewHolder> {

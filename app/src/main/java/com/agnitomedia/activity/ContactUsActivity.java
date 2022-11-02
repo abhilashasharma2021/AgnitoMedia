@@ -1,12 +1,8 @@
 package com.agnitomedia.activity;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
-
 import com.agnitomedia.databinding.ActivityContactUsBinding;
-import com.agnitomedia.databinding.ActivitySecurityBinding;
 
 public class ContactUsActivity extends AppCompatActivity {
 ActivityContactUsBinding binding;

@@ -1,23 +1,18 @@
 package com.agnitomedia.fragment;
-
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.agnitomedia.MainActivity;
 import com.agnitomedia.R;
 import com.agnitomedia.adapers.VideoAdapter;
 import com.agnitomedia.data.VideoData;
 import com.agnitomedia.databinding.FragmentVideoBinding;
-import com.example.readmoretextview.ReadMoreTextView;
-
 import java.util.ArrayList;
 import java.util.List;
 

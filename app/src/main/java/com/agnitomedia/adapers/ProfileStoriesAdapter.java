@@ -5,17 +5,17 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import com.agnitomedia.data.SavedStoriesData;
-import com.agnitomedia.databinding.RowsavedstorieslayoutBinding;
-import java.util.List;
+import com.agnitomedia.data.ProfileStoriesData;
+import com.agnitomedia.databinding.RowProfileStoryLayoutBinding;
+import java.util.ArrayList;
 
-public class SavedStoriesAdapter extends RecyclerView.Adapter<SavedStoriesAdapter.MyViewHolder> {
+public class ProfileStoriesAdapter extends RecyclerView.Adapter<ProfileStoriesAdapter.MyViewHolder> {
 
 
-    List<SavedStoriesData> storiesDataList;
+    ArrayList<ProfileStoriesData> storiesDataList;
     Context context;
 
-    public SavedStoriesAdapter(List<SavedStoriesData> storiesDataList, Context context) {
+    public ProfileStoriesAdapter(ArrayList<ProfileStoriesData> storiesDataList, Context context) {
         this.storiesDataList = storiesDataList;
         this.context = context;
     }
@@ -24,12 +24,12 @@ public class SavedStoriesAdapter extends RecyclerView.Adapter<SavedStoriesAdapte
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new MyViewHolder(RowsavedstorieslayoutBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false));
+        return new MyViewHolder(RowProfileStoryLayoutBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false));
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        SavedStoriesData storyobj = storiesDataList.get(position);
+        ProfileStoriesData storyobj = storiesDataList.get(position);
         Log.e("yukmk", "check: " + storyobj);
 
 
@@ -53,11 +53,11 @@ public class SavedStoriesAdapter extends RecyclerView.Adapter<SavedStoriesAdapte
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        private RowsavedstorieslayoutBinding rowsavedstorieslayoutBinding;
+        private RowProfileStoryLayoutBinding rowProfileStoryLayoutBinding;
 
-        public MyViewHolder(RowsavedstorieslayoutBinding rowsavedstorieslayoutBinding) {
-            super(rowsavedstorieslayoutBinding.getRoot());
-            this.rowsavedstorieslayoutBinding = rowsavedstorieslayoutBinding;
+        public MyViewHolder(RowProfileStoryLayoutBinding rowProfileStoryLayoutBinding) {
+            super(rowProfileStoryLayoutBinding.getRoot());
+            this.rowProfileStoryLayoutBinding = rowProfileStoryLayoutBinding;
         }
     }
 

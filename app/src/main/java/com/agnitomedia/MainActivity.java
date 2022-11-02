@@ -1,15 +1,8 @@
 package com.agnitomedia;
-
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.GravityCompat;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-
-import com.agnitomedia.activity.WelcomeActivity;
 import com.agnitomedia.fragment.HomeFragment;
 import com.agnitomedia.fragment.AllNftFragment;
 import com.agnitomedia.fragment.ProfileFragment;
@@ -61,6 +54,5 @@ BottomNavigationView bottomNavigationView;
         }
         return true;
     }
-
 
 }

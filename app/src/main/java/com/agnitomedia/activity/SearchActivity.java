@@ -1,9 +1,6 @@
 package com.agnitomedia.activity;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-
 import com.agnitomedia.R;
 
 public class SearchActivity extends AppCompatActivity {

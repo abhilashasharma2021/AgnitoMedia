@@ -1,5 +1,4 @@
 package com.agnitomedia.adapers;
-
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
@@ -8,13 +7,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.agnitomedia.activity.CompleteCheckOutActivity;
 import com.agnitomedia.activity.NFTDetailsActivity;
-import com.agnitomedia.activity.NftItemActivity;
 import com.agnitomedia.data.NftItemData;
 import com.agnitomedia.databinding.RownftitemlayoutBinding;
-
 import java.util.List;
 
 public class NftItemAdapter extends RecyclerView.Adapter<NftItemAdapter.MyViewHolder> {

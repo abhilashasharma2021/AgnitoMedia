@@ -1,25 +1,17 @@
 package com.agnitomedia.adapers;
-
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.agnitomedia.R;
-import com.agnitomedia.activity.AllStoryActivity;
 import com.agnitomedia.activity.StoryDetailsActivity;
-import com.agnitomedia.data.HomeNftData;
 import com.agnitomedia.data.HomeStoryData;
-import com.agnitomedia.databinding.RowhomenftlayoutBinding;
 import com.agnitomedia.databinding.RowhomestorytlayoutBinding;
 import com.example.readmoretextview.ReadMoreTextView;
-
-import java.util.ArrayList;
 import java.util.List;
 
 public class HomeStoryFAdapter extends RecyclerView.Adapter<HomeStoryFAdapter.MyViewHolder> {

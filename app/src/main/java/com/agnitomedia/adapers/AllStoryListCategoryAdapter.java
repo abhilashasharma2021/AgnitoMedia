@@ -1,30 +1,24 @@
 package com.agnitomedia.adapers;
-
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.agnitomedia.activity.AllStoryActivity;
 import com.agnitomedia.data.AllStoryCategoryData;
-import com.agnitomedia.data.AllStoryData;
-import com.agnitomedia.databinding.RowallstorylayoutBinding;
 import com.agnitomedia.databinding.RowstorycategorylayoutBinding;
-
 import java.util.List;
 
-public class AllStoryCategoryAdapter extends RecyclerView.Adapter<AllStoryCategoryAdapter.MyViewHolder> {
+public class AllStoryListCategoryAdapter extends RecyclerView.Adapter<AllStoryListCategoryAdapter.MyViewHolder> {
 
 
    List<AllStoryCategoryData> allStoryCategoryDataList;
     Context context;
 
-    public AllStoryCategoryAdapter(List<AllStoryCategoryData> allStoryCategoryDataList, Context context) {
+    public AllStoryListCategoryAdapter(List<AllStoryCategoryData> allStoryCategoryDataList, Context context) {
         this.allStoryCategoryDataList = allStoryCategoryDataList;
         this.context = context;
     }

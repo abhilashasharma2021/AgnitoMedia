@@ -1,20 +1,13 @@
 package com.agnitomedia.fragment;
-
 import android.content.Context;
 import android.content.Intent;
-import android.media.MediaPlayer;
-import android.media.session.MediaController;
-import android.net.Uri;
 import android.os.Bundle;
-import android.widget.VideoView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.agnitomedia.R;
 import com.agnitomedia.activity.NotificationActivity;
 import com.agnitomedia.adapers.HomeAllAdapter;
@@ -27,7 +20,6 @@ import com.agnitomedia.data.HomeStoryData;
 import com.agnitomedia.data.HomeVideoData;
 import com.agnitomedia.databinding.FragmentHomeBinding;
 import com.example.readmoretextview.ReadMoreTextView;
-
 import java.util.ArrayList;
 import java.util.List;
 

@@ -1,21 +1,12 @@
 package com.agnitomedia.adapers;
-
 import android.content.Context;
-import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.agnitomedia.activity.NftItemActivity;
-import com.agnitomedia.data.AllNftData;
 import com.agnitomedia.data.HomeAlltData;
-import com.agnitomedia.databinding.RowallnftlayoutBinding;
 import com.agnitomedia.databinding.RowhomealllayoutBinding;
-
 import java.util.List;
 
 public class HomeAllAdapter extends RecyclerView.Adapter<HomeAllAdapter.MyViewHolder> {

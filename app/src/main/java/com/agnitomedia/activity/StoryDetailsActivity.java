@@ -5,10 +5,12 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 
+import com.agnitomedia.MainActivity;
 import com.agnitomedia.R;
 import com.agnitomedia.adapers.AllStoryCategoryAdapter;
 import com.agnitomedia.adapers.SavedNftsAdapter;
@@ -37,7 +39,12 @@ public class StoryDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding= ActivityStoryDetailsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-
+        binding.ivNotification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(StoryDetailsActivity.this, NotificationActivity.class));
+            }
+        });
         binding.ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -71,5 +78,15 @@ public class StoryDetailsActivity extends AppCompatActivity {
         binding.rvStoryCategory.setAdapter(categoryAdapter);
 
     }
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(StoryDetailsActivity.this,MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+        finish();
 
+    }
 }

@@ -1,12 +1,9 @@
 package com.agnitomedia.activity;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
-
 import com.agnitomedia.MainActivity;
 import com.agnitomedia.R;
 

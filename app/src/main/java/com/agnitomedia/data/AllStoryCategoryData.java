@@ -1,7 +1,5 @@
 package com.agnitomedia.data;
 
-import android.graphics.drawable.Drawable;
-
 public class AllStoryCategoryData {
     public String getCatName() {
         return catName;

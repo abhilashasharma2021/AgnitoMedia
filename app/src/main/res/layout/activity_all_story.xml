@@ -10,7 +10,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:id="@+id/rlMain"
+        android:id="@+id/rl"
         android:background="@color/purple_700">
 
         <ImageView
@@ -66,10 +66,9 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvStoryCategory"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/rlMain" />
+        android:layout_below="@+id/rl" />
 
 
     <RelativeLayout

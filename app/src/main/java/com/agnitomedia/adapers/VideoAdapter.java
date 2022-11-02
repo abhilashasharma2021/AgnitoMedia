@@ -1,23 +1,14 @@
 package com.agnitomedia.adapers;
-
 import android.content.Context;
-import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.agnitomedia.R;
-import com.agnitomedia.activity.NftItemActivity;
-import com.agnitomedia.data.AllNftData;
 import com.agnitomedia.data.VideoData;
-import com.agnitomedia.databinding.RowallnftlayoutBinding;
 import com.agnitomedia.databinding.RowvideolayoutBinding;
 import com.example.readmoretextview.ReadMoreTextView;
-
 import java.util.List;
 
 public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.MyViewHolder> {

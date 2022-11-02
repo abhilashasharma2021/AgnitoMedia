@@ -1,18 +1,14 @@
 package com.agnitomedia.adapers;
-
 import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.agnitomedia.R;
 import com.agnitomedia.data.HomeVideoData;
 import com.agnitomedia.databinding.RowhomevideolayoutBinding;
 import com.example.readmoretextview.ReadMoreTextView;
-
 import java.util.List;
 
 public class HomeVideoAdapter extends RecyclerView.Adapter<HomeVideoAdapter.MyViewHolder> {

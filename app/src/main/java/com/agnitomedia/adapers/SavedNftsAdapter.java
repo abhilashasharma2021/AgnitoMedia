@@ -1,18 +1,12 @@
 package com.agnitomedia.adapers;
-
 import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.agnitomedia.data.SavedNftsData;
-import com.agnitomedia.data.SavedVideoData;
 import com.agnitomedia.databinding.RowsavednftslayoutBinding;
-import com.agnitomedia.databinding.RowsavedvideoslayoutBinding;
-
 import java.util.List;
 
 public class SavedNftsAdapter extends RecyclerView.Adapter<SavedNftsAdapter.MyViewHolder> {

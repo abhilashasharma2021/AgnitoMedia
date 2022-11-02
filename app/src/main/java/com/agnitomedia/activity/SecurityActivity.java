@@ -1,12 +1,7 @@
 package com.agnitomedia.activity;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
-
-import com.agnitomedia.R;
-import com.agnitomedia.databinding.ActivityHelpBinding;
 import com.agnitomedia.databinding.ActivitySecurityBinding;
 
 public class SecurityActivity extends AppCompatActivity {

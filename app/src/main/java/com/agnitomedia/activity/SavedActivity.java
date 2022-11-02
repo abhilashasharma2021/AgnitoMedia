@@ -3,23 +3,15 @@ package com.agnitomedia.activity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.StaggeredGridLayoutManager;
-
 import android.os.Bundle;
 import android.view.View;
-
 import com.agnitomedia.R;
-import com.agnitomedia.adapers.HomeAllAdapter;
-import com.agnitomedia.adapers.HomeNftFAdapter;
 import com.agnitomedia.adapers.SavedNftsAdapter;
 import com.agnitomedia.adapers.SavedStoriesAdapter;
 import com.agnitomedia.adapers.SavedVideoAdapter;
-import com.agnitomedia.data.HomeAlltData;
-import com.agnitomedia.data.HomeNftData;
 import com.agnitomedia.data.SavedNftsData;
 import com.agnitomedia.data.SavedStoriesData;
 import com.agnitomedia.data.SavedVideoData;
-import com.agnitomedia.databinding.ActivityAllStoryBinding;
 import com.agnitomedia.databinding.ActivitySavedBinding;
 
 import java.util.ArrayList;

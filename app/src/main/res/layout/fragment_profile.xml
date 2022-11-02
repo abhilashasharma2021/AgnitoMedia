@@ -37,11 +37,10 @@
 
                         <ImageView
                             android:id="@+id/profile"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
                             android:layout_centerVertical="true"
                             android:layout_marginStart="20dp"
-                            android:padding="8dp"
                             android:src="@drawable/set">
 
                         </ImageView>
@@ -84,11 +83,10 @@
 
                         <ImageView
                             android:id="@+id/ivSaved"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_marginStart="20dp"
-                            android:padding="8dp"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
                             android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
                             android:src="@drawable/mark">
 
                         </ImageView>
@@ -120,11 +118,10 @@
 
                         <ImageView
                             android:id="@+id/ivDetails"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
                             android:layout_centerVertical="true"
                             android:layout_marginStart="20dp"
-                            android:padding="8dp"
                             android:src="@drawable/details">
 
                         </ImageView>
@@ -156,11 +153,10 @@
 
                         <ImageView
                             android:id="@+id/ivPrivacy"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
                             android:layout_centerVertical="true"
                             android:layout_marginStart="20dp"
-                            android:padding="8dp"
                             android:src="@drawable/security">
 
                         </ImageView>
@@ -191,11 +187,10 @@
 
                         <ImageView
                             android:id="@+id/ivNoti"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
                             android:layout_centerVertical="true"
                             android:layout_marginStart="20dp"
-                            android:padding="8dp"
                             android:src="@drawable/noti">
 
                         </ImageView>
@@ -233,11 +228,10 @@
 
                         <ImageView
                             android:id="@+id/ivTerms"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
                             android:layout_centerVertical="true"
                             android:layout_marginStart="20dp"
-                            android:padding="8dp"
                             android:src="@drawable/terms">
 
                         </ImageView>
@@ -268,11 +262,10 @@
 
                         <ImageView
                             android:id="@+id/ivHelp"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_marginStart="20dp"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
                             android:layout_centerVertical="true"
-                            android:padding="8dp"
+                            android:layout_marginStart="20dp"
                             android:src="@drawable/hlp">
 
                         </ImageView>
@@ -304,11 +297,10 @@
 
                         <ImageView
                             android:id="@+id/ivAbout"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_marginStart="20dp"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
                             android:layout_centerVertical="true"
-                            android:padding="8dp"
+                            android:layout_marginStart="20dp"
                             android:src="@drawable/about">
 
                         </ImageView>
@@ -342,11 +334,10 @@
 
                         <ImageView
                             android:id="@+id/ivContact"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_marginStart="20dp"
-                            android:padding="8dp"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
                             android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
                             android:src="@drawable/contact">
 
                         </ImageView>
@@ -597,14 +588,17 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@color/trans"
+        app:tabIconTint="@color/black"
+        app:tabIndicatorColor="@color/purple_700"
         app:tabMinWidth="400dp"
-        app:tabTextAppearance="@style/MyTabLayoutTextAppearance" />
-
+        app:tabSelectedTextColor="@color/purple_700"
+        app:tabTextColor="@color/purple_700" />
+ <!--   app:tabTextAppearance="@style/MyTabLayoutTextAppearance"-->
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
-        android:layout_below="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@+id/tabLayout"
         app:layout_constraintTop_toBottomOf="@+id/tabLayout"
         tools:layout_editor_absoluteX="8dp" />
 

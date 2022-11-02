@@ -1,18 +1,12 @@
 package com.agnitomedia.adapers;
-
 import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.agnitomedia.data.SavedStoriesData;
 import com.agnitomedia.data.SavedVideoData;
-import com.agnitomedia.databinding.RowallnftlayoutBinding;
 import com.agnitomedia.databinding.RowsavedvideoslayoutBinding;
-
 import java.util.List;
 
 public class SavedVideoAdapter extends RecyclerView.Adapter<SavedVideoAdapter.MyViewHolder> {
