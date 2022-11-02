@@ -4,6 +4,323 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/trans"
     tools:context=".activity.SearchActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/rlMain"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:background="?actionBarItemBackground"
+            android:padding="10dp"
+            android:src="@drawable/backk" />
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_toEndOf="@+id/ivBack"
+            android:id="@+id/cardSearch"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="6dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgSearch"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/search"
+                    app:tint="@color/purple_700" />
+
+
+                <TextView
+                    android:id="@+id/etSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imgSearch"
+                    android:background="@null"
+                    android:layout_marginStart="15dp"
+                    android:hint="@string/search"
+                    android:singleLine="true"
+                    android:fontFamily="@font/opensansmedium"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/ivCancel"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/crosss" />
+
+
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlMain">
+
+        <LinearLayout
+            android:id="@+id/bottomSheet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/white_round"
+            android:elevation="5dp"
+            android:orientation="vertical"
+            android:padding="15dp"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/opensansbold"
+                        android:gravity="center_horizontal"
+                        android:text="@string/profiles"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_toStartOf="@+id/ivProfile"
+                        android:fontFamily="@font/opensansbold"
+                        android:gravity="center_horizontal"
+                        android:text="@string/view_all"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/ivProfile"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="20dp"
+                        android:src="@drawable/bluearrow" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/opensansbold"
+                        android:gravity="center_horizontal"
+                        android:text="@string/stories"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_toStartOf="@+id/iv"
+                        android:fontFamily="@font/opensansbold"
+                        android:gravity="center_horizontal"
+                        android:text="@string/view_all"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/iv"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="20dp"
+                        android:src="@drawable/bluearrow" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl1">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvStory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl2">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/opensansbold"
+                        android:gravity="center_horizontal"
+                        android:text="@string/nfts"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_toStartOf="@+id/iv1"
+                        android:fontFamily="@font/opensansbold"
+                        android:gravity="center_horizontal"
+                        android:text="@string/view_all"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/iv1"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:src="@drawable/bluearrow" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl3">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvNft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/rl5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl4">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/opensansbold"
+                        android:gravity="center_horizontal"
+                        android:text="@string/videos"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_toStartOf="@+id/iv2"
+                        android:fontFamily="@font/opensansbold"
+                        android:gravity="center_horizontal"
+                        android:text="@string/view_all"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/iv2"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:src="@drawable/bluearrow" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl5">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvVideo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"></androidx.recyclerview.widget.RecyclerView>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>

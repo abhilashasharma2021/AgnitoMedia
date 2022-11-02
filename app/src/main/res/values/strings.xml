@@ -138,4 +138,5 @@
     <string name="issuning_organization">Issuing Organization</string>
     <string name="credential_id">Credential ID</string>
     <string name="credential_url">Credential URL</string>
+    <string name="profiles">Profiles</string>
 </resources>

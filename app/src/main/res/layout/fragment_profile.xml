@@ -118,8 +118,8 @@
 
                         <ImageView
                             android:id="@+id/ivDetails"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:layout_centerVertical="true"
                             android:layout_marginStart="20dp"
                             android:src="@drawable/details">
@@ -187,8 +187,8 @@
 
                         <ImageView
                             android:id="@+id/ivNoti"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:layout_centerVertical="true"
                             android:layout_marginStart="20dp"
                             android:src="@drawable/noti">
@@ -262,8 +262,8 @@
 
                         <ImageView
                             android:id="@+id/ivHelp"
-                            android:layout_width="25dp"
-                            android:layout_height="25dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:layout_centerVertical="true"
                             android:layout_marginStart="20dp"
                             android:src="@drawable/hlp">

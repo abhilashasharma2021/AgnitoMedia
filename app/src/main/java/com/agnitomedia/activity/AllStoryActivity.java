@@ -20,7 +20,7 @@ public class AllStoryActivity extends AppCompatActivity {
     List<AllStoryData> allStoryDataList ;
     AllStoryAdapter allStoryAdapter;
     RecyclerView.LayoutManager layoutManagerAllStory;
-    List<AllStoryCategoryData> categoryDataList=new ArrayList<>() ;
+    ArrayList<AllStoryCategoryData> categoryDataList=new ArrayList<>() ;
     AllStoryListCategoryAdapter categoryAdapter;
     RecyclerView.LayoutManager layoutManagerCategory;
 

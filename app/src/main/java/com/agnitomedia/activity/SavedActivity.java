@@ -89,11 +89,7 @@ ActivitySavedBinding binding;
         for (int i = 0; i <5 ; i++) {
             videosDataList.add(videoData);
         }
-
         videosAdapter = new SavedVideoAdapter(videosDataList,SavedActivity.this);
-
-
-
         binding.rvVideo.setAdapter(videosAdapter);
 
     }

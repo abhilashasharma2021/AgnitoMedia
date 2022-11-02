@@ -261,12 +261,63 @@
                     android:layout_height="wrap_content"
                     android:background="@drawable/white_round">
 
+                    <RelativeLayout
+                        android:id="@+id/rlShare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dp"
+                        android:layout_marginStart="15dp"
+                        android:background="@drawable/trans_btnnew">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/txShare"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="10dp"
+                            android:fontFamily="@font/opensansbold"
+                            android:text="@string/share"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <ImageView
+                            android:id="@+id/ivFb"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="15dp"
+                            android:layout_toEndOf="@+id/txShare"
+                            android:src="@drawable/facebook" />
+
+
+                        <ImageView
+                            android:id="@+id/ivWhatsapp"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_toEndOf="@+id/ivFb"
+                            android:src="@drawable/whatsapp" />
+
+                        <ImageView
+                            android:id="@+id/ivTwitter"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_toEndOf="@+id/ivWhatsapp"
+                            android:src="@drawable/twitt" />
+
+
+                    </RelativeLayout>
 
                     <com.google.android.material.textview.MaterialTextView
 
                         android:id="@+id/txDescription"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_below="@+id/rlShare"
                         android:layout_marginStart="15dp"
                         android:layout_marginTop="15dp"
                         android:layout_marginEnd="15dp"

@@ -524,24 +524,23 @@
                 <ImageView
 
                     android:id="@+id/ivCerti"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="15dp"
-                    android:padding="2dp"
                     android:src="@drawable/award" />
 
                 <EditText
                     android:id="@+id/EtCertiName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
                     android:layout_marginStart="20dp"
-                    android:layout_toEndOf="@+id/ivCerti"
-                    android:singleLine="true"
+                    android:layout_marginTop="15dp"
                     android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@+id/ivCerti"
                     android:fontFamily="@font/opensansregular"
                     android:hint="@string/certificate_name"
+                    android:singleLine="true"
                     android:textColor="@color/black"
                     android:textSize="14sp" />
 
@@ -584,15 +583,13 @@
                     android:layout_below="@+id/EtId"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="10dp"
-                    android:layout_toEndOf="@+id/ivCerti"
                     android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@+id/ivCerti"
                     android:fontFamily="@font/opensansregular"
                     android:hint="@string/credential_url"
                     android:singleLine="true"
                     android:textColor="@color/black"
                     android:textSize="14sp" />
-
-
 
 
             </RelativeLayout>
