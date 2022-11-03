@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/rlNew"
+        android:gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/searchpro">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/ivProfile"
+            android:fontFamily="@font/opensansbold"
+            android:text="Samantha Vaishnav"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txName"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/ivProfile"
+            android:fontFamily="@font/opensansregular"
+            android:maxLines="2"
+            android:text="If you’re into non-fungible tokens (NFTs), you probably have pondered at some point"
+            android:textColor="@color/des"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btSend"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/rlNew"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/white"
+        android:elevation="15dp"
+        android:fontFamily="@font/opensansbold"
+        android:text="@string/send_request"
+        android:textAllCaps="false"
+        android:textColor="@color/text"
+        android:textSize="14sp"
+        app:cornerRadius="5dp"
+        app:elevation="5dp"
+        app:strokeColor="@color/grey_text"
+        app:strokeWidth="1dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/rlNew"
+        android:elevation="15dp"
+        android:id="@+id/btSendBlue"
+        android:visibility="gone"
+        android:fontFamily="@font/opensansbold"
+        android:text="@string/send_request"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:cornerRadius="5dp"
+        app:elevation="5dp" />
+
+</RelativeLayout>

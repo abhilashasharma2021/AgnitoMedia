@@ -9,17 +9,20 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/app_logo"
         android:label="@string/app_name"
+        android:noHistory="true"
         android:roundIcon="@drawable/app_logo"
         android:supportsRtl="true"
-        android:noHistory = "true"
         android:theme="@style/Theme.AgnitoMedia"
         tools:targetApi="31">
         <activity
-            android:name=".activity.CommentActivity"
-            android:exported="true" >
+            android:name=".activity.SearchViewAllActivity"
+            android:exported="false" >
 
 
         </activity>
+        <activity
+            android:name=".activity.CommentActivity"
+            android:exported="true"></activity>
         <activity
             android:name=".activity.ContactUsActivity"
             android:exported="false" />
@@ -85,7 +88,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".MainActivity"

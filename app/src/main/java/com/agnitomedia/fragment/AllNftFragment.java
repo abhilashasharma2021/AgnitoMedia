@@ -14,14 +14,14 @@ import com.agnitomedia.adapers.AllNftAdapter;
 import com.agnitomedia.data.AllNftData;
 import com.agnitomedia.databinding.FragmentAllNftBinding;
 import java.util.ArrayList;
-import java.util.List;
+
 
 
 public class AllNftFragment extends Fragment {
     FragmentAllNftBinding binding;
     View view;
     Context context;
-    List<AllNftData> allnftDataList =new ArrayList<>();
+    ArrayList<AllNftData> allnftDataList =new ArrayList<>();
     AllNftAdapter adapter;
     RecyclerView.LayoutManager layoutManager;
     @Override

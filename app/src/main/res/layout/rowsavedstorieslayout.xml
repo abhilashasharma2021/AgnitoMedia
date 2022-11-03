@@ -7,12 +7,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="1dp"
+        android:layout_marginBottom="20dp"
         app:cardBackgroundColor="@color/trans"
-        app:cardCornerRadius="15dp"
-        app:cardElevation="5dp">
+        app:cardCornerRadius="15dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -21,8 +19,8 @@
             <ImageView
                 android:id="@+id/ivStory"
                 android:layout_width="100dp"
-                android:layout_height="110dp"
-                android:scaleY="1.1"
+                android:layout_height="100dp"
+                android:scaleY="1.4"
                 android:src="@drawable/dummynew" />
 
 
@@ -31,26 +29,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_toEndOf="@+id/ivStory"
-                android:fontFamily="@font/opensansbold"
-                android:text="20 Unknown Facts About Turkey That Every First-Timer Must Know"
-                android:textColor="@color/black"
-                android:textSize="13sp" />
-
-            <com.google.android.material.textview.MaterialTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txTittle"
-                android:layout_marginStart="15dp"
                 android:layout_marginTop="15dp"
-                android:layout_marginEnd="10dp"
+                android:layout_marginEnd="15dp"
+                android:maxLines="3"
+                android:layout_marginBottom="15dp"
                 android:layout_toEndOf="@+id/ivStory"
                 android:fontFamily="@font/opensansbold"
-                android:text="20 Unknown Facts About Turkey That Every First-Timer Must Know"
-                android:textColor="@color/text"
-                android:textSize="11sp" />
+                android:text="20 Unknown Facts About Turkey That Every First-Timer Must Know
+20 Unknown Facts About Turkey That Every First-Timer Must Know"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
         </RelativeLayout>
 
 

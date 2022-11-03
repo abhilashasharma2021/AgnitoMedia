@@ -7,15 +7,17 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.agnitomedia.data.SavedStoriesData;
 import com.agnitomedia.databinding.RowsavedstorieslayoutBinding;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class SavedStoriesAdapter extends RecyclerView.Adapter<SavedStoriesAdapter.MyViewHolder> {
 
 
-    List<SavedStoriesData> storiesDataList;
+    ArrayList<SavedStoriesData> storiesDataList;
     Context context;
 
-    public SavedStoriesAdapter(List<SavedStoriesData> storiesDataList, Context context) {
+    public SavedStoriesAdapter(ArrayList<SavedStoriesData> storiesDataList, Context context) {
         this.storiesDataList = storiesDataList;
         this.context = context;
     }

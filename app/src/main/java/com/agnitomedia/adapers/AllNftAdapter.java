@@ -10,15 +10,17 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.agnitomedia.activity.NftItemActivity;
 import com.agnitomedia.data.AllNftData;
 import com.agnitomedia.databinding.RowallnftlayoutBinding;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class AllNftAdapter extends RecyclerView.Adapter<AllNftAdapter.MyViewHolder> {
 
 
-    List<AllNftData> nftItemDataList;
+    ArrayList<AllNftData> nftItemDataList;
     Context context;
 
-    public AllNftAdapter(List<AllNftData> nftItemDataList, Context context) {
+    public AllNftAdapter(ArrayList<AllNftData> nftItemDataList, Context context) {
         this.nftItemDataList = nftItemDataList;
         this.context = context;
     }

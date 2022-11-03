@@ -144,7 +144,7 @@
             android:layout_height="wrap_content">
             <RelativeLayout
                 android:layout_width="100dp"
-                android:background="@drawable/transblack"
+                android:background="@drawable/nftbtn"
                 android:id="@+id/btNftBlack"
                 android:layout_height="35dp">
 

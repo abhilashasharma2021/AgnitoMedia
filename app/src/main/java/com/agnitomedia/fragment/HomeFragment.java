@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import com.agnitomedia.R;
 import com.agnitomedia.activity.NotificationActivity;
+import com.agnitomedia.activity.SearchActivity;
 import com.agnitomedia.adapers.HomeAllAdapter;
 import com.agnitomedia.adapers.HomeNftFAdapter;
 import com.agnitomedia.adapers.HomeStoryFAdapter;
@@ -162,6 +163,14 @@ public class HomeFragment extends Fragment {
                 context.startActivity(new Intent(getActivity(), NotificationActivity.class));
             }
         });
+
+        binding.ivSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                context.startActivity(new Intent(getActivity(), SearchActivity.class));
+            }
+        });
+
         //  show_AllData();
 
 
