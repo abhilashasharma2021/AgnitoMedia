@@ -60,7 +60,7 @@ public class SearchActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 SharedHelper.putKey(getApplicationContext(), AppConstant.VIEW_ALL_STATUS,"Profile");
-           startActivity(new Intent(SearchActivity.this,SearchViewAllActivity.class));
+            startActivity(new Intent(SearchActivity.this,SearchViewAllActivity.class));
 
             }
         });
@@ -86,7 +86,7 @@ public class SearchActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 SharedHelper.putKey(getApplicationContext(), AppConstant.VIEW_ALL_STATUS,"Videos");
-                startActivity(new Intent(SearchActivity.this,SearchViewAllActivity.class));
+               startActivity(new Intent(SearchActivity.this,SearchViewAllActivity.class));
 
             }
         });

@@ -15,14 +15,16 @@
         android:theme="@style/Theme.AgnitoMedia"
         tools:targetApi="31">
         <activity
+            android:name=".activity.ViewAllSavedActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.SearchViewAllActivity"
-            android:exported="false" >
-
-
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".activity.CommentActivity"
-            android:exported="true"></activity>
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".activity.ContactUsActivity"
             android:exported="false" />
@@ -88,6 +90,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
             android:name=".MainActivity"

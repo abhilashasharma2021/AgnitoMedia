@@ -76,6 +76,7 @@
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_splash.xml" value="0.203125" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_story_details.xml" value="0.22" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_testing.xml" value="0.203125" />
+        <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_view_all_saved.xml" value="0.203125" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_welcome.xml" value="0.203125" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/fragment_all_nft.xml" value="0.203125" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/fragment_home.xml" value="0.2" />
@@ -92,7 +93,10 @@
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/row_profile_nft_layout.xml" value="0.1890625" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/row_profile_story_layout.xml" value="0.203125" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/row_profile_video_layout.xml" value="0.203125" />
+        <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/row_reply.xml" value="0.1890625" />
+        <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/row_reply_more.xml" value="0.22" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/row_search_profile_layout.xml" value="0.1890625" />
+        <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/row_show_reply.xml" value="0.25" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/row_viewall_profile_layout.xml" value="0.1890625" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/rowallnftlayout.xml" value="0.18" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/rowallstorylayout.xml" value="0.203125" />

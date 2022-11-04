@@ -310,6 +310,7 @@
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
                     android:layout_below="@+id/rl5">
 
                     <androidx.recyclerview.widget.RecyclerView

@@ -3,6 +3,8 @@ package com.agnitomedia.activity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import com.agnitomedia.R;
@@ -13,6 +15,8 @@ import com.agnitomedia.data.SavedNftsData;
 import com.agnitomedia.data.SavedStoriesData;
 import com.agnitomedia.data.SavedVideoData;
 import com.agnitomedia.databinding.ActivitySavedBinding;
+import com.agnitomedia.utils.AppConstant;
+import com.agnitomedia.utils.SharedHelper;
 
 import java.util.ArrayList;
 
@@ -42,6 +46,35 @@ ActivitySavedBinding binding;
 
             }
         });
+
+        binding. viewStories.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                 SharedHelper.putKey(getApplicationContext(), AppConstant.VIEW_ALL_STATUS,"SavedStories");
+               // startActivity(new Intent(SavedActivity.this,ViewAllSavedActivity.class));
+
+            }
+        });
+
+        binding. viewNft.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SharedHelper.putKey(getApplicationContext(), AppConstant.VIEW_ALL_STATUS,"SavedNft");
+                //startActivity(new Intent(SavedActivity.this,ViewAllSavedActivity.class));
+
+            }
+        });
+
+        binding. viewVideos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SharedHelper.putKey(getApplicationContext(), AppConstant.VIEW_ALL_STATUS,"SavedVideo");
+               // startActivity(new Intent(SavedActivity.this,ViewAllSavedActivity.class));
+
+            }
+        });
+
+
         layoutManagerNfts = new LinearLayoutManager(SavedActivity.this, LinearLayoutManager.HORIZONTAL, false);
         binding.rvNft.setLayoutManager(layoutManagerNfts);
 

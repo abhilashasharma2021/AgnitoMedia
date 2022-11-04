@@ -78,7 +78,12 @@ public class SearchViewAllActivity extends AppCompatActivity {
             binding.btVideoBlue  .setVisibility(View.VISIBLE);
 
         }
+        else if (stview_All_Status.equals("SavedStories")){
+            binding.rlStories.setVisibility(View.VISIBLE);
+            binding.rlMain.setVisibility(View.GONE);
+            binding.hv.setVisibility(View.GONE);
 
+        }
 
         binding.ivBack.setOnClickListener(new View.OnClickListener() {
             @Override

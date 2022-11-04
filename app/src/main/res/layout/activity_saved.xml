@@ -64,9 +64,9 @@
             android:textSize="16sp" />
 
         <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/viewStories"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:layout_marginTop="10dp"
             android:layout_marginEnd="5dp"
             android:layout_toStartOf="@+id/iv"
@@ -90,12 +90,13 @@
         android:layout_width="match_parent"
         android:layout_below="@+id/rl1"
         android:id="@+id/rl2"
+        android:layout_marginTop="10dp"
         android:layout_height="wrap_content">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rvStory"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
 
     </RelativeLayout>
 
@@ -120,7 +121,7 @@
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            android:id="@+id/viewNft"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="5dp"
             android:layout_toStartOf="@+id/iv1"
@@ -179,6 +180,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="5dp"
+            android:id="@+id/viewVideos"
             android:layout_toStartOf="@+id/iv2"
             android:fontFamily="@font/opensansbold"
             android:gravity="center_horizontal"
