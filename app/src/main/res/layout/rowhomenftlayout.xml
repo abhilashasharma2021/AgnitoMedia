@@ -100,6 +100,7 @@
                 android:layout_marginStart="10dp"
                 android:fontFamily="@font/opensansregular"
                 android:text="Pushpendra And "
+                android:visibility="gone"
                 android:textColor="@color/text"
                 android:textSize="11sp" />
 
@@ -107,10 +108,11 @@
                 android:id="@+id/txCountLike"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
                 android:layout_toEndOf="@+id/txLike"
                 android:fontFamily="@font/opensansbold"
-                android:text="2022K"
-                android:textColor="@color/purple_700"
+                android:text="202K"
+                android:textColor="@color/text"
                 android:textSize="12sp" />
 
             <com.google.android.material.textview.MaterialTextView
@@ -118,9 +120,10 @@
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@+id/txCountLike"
                 android:fontFamily="@font/opensansregular"
-                android:text=" Others "
+                android:text="@string/like"
+                android:layout_marginStart="5dp"
                 android:textColor="@color/text"
-                android:textSize="11sp" />
+                android:textSize="12sp" />
 
 
         </RelativeLayout>
@@ -137,8 +140,8 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/opensansbold"
                 android:text="800  "
-                android:textColor="@color/purple_700"
-                android:textSize="11sp" />
+                android:textColor="@color/text"
+                android:textSize="12sp" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/txComment"
@@ -167,7 +170,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="10dp">
+            android:layout_marginEnd="15dp">
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/txCountShare"
@@ -175,8 +178,8 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/opensansbold"
                 android:text="500 "
-                android:textColor="@color/purple_700"
-                android:textSize="11sp" />
+                android:textColor="@color/text"
+                android:textSize="12sp" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
@@ -254,7 +257,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:padding="10dp"
-                    android:src="@drawable/comment" />
+                    android:src="@drawable/comments" />
 
 
                 <com.google.android.material.textview.MaterialTextView

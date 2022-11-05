@@ -9,6 +9,8 @@ import com.agnitomedia.R;
 import com.agnitomedia.adapers.ReplyShowAdapter;
 import com.agnitomedia.data.ReplyShowData;
 import com.agnitomedia.databinding.ActivityCommentBinding;
+import com.example.readmoretextview.ReadMoreTextView;
+
 import java.util.ArrayList;
 
 public class CommentActivity extends AppCompatActivity {
@@ -22,6 +24,16 @@ ActivityCommentBinding binding;
         super.onCreate(savedInstanceState);
         binding= ActivityCommentBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        ReadMoreTextView readMoreTextView = new ReadMoreTextView();
+        binding.txDescription.setText(getResources().getString(R.string.dummy_new));
+        readMoreTextView.setTextView(binding.txDescription);
+        readMoreTextView.setMaximumLine(2);
+        readMoreTextView.setCollapseText("See Less");
+        readMoreTextView.setExpandText("See More");
+        readMoreTextView.setColorCode("#2CA6E9");
+        readMoreTextView.setReadMore();
+
 
         binding.ivSend.setOnClickListener(new View.OnClickListener() {
             @Override

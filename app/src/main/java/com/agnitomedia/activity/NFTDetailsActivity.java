@@ -26,8 +26,9 @@ ActivityNftdetailsBinding binding;
         setContentView(binding.getRoot());
 
 
-        binding.rvNft.setLayoutManager(new LinearLayoutManager(NFTDetailsActivity.this));
-        layoutManager = new LinearLayoutManager(NFTDetailsActivity.this, LinearLayoutManager.VERTICAL, false);
+
+        layoutManager = new LinearLayoutManager(NFTDetailsActivity.this, LinearLayoutManager.HORIZONTAL, false);
+        binding.rvNft.setLayoutManager(layoutManager);
         binding. ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

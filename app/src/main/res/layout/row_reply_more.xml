@@ -1,18 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:layout_marginStart="35dp"
     android:layout_height="wrap_content">
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
+        <RelativeLayout
+            android:id="@+id/rlNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivComment"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/virat">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txCommentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+
+                android:layout_toEndOf="@+id/ivComment"
+                android:fontFamily="@font/opensansregular"
+                android:text="Anil Yadav"
+                android:textColor="@color/text"
+                android:textSize="15sp" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txCommentday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/opensansregular"
+                android:text="2 Days Ago"
+                android:textColor="@color/text"
+                android:textSize="15sp" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txCommentmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txCommentName"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/ivComment"
+                android:fontFamily="@font/opensansmedium"
+                android:text="This picture made my day"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/ivAddRply"
-            android:layout_width="42dp"
-            android:layout_height="42dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/rlNew"
             android:layout_marginStart="10dp"
             android:layout_marginTop="15dp"
-            android:src="@drawable/profi">
+            android:src="@drawable/virat">
 
         </de.hdodenhof.circleimageview.CircleImageView>
 
@@ -21,7 +85,8 @@
             android:id="@+id/etMsg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:layout_below="@+id/rlNew"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="10dp"
             android:layout_toEndOf="@+id/ivAddRply"
@@ -38,69 +103,17 @@
 
         </EditText>
 
-        <RelativeLayout
-            android:id="@+id/rlNew"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/ivAddRply"
-            android:layout_below="@+id/etMsg">
-
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/ivComment"
-                android:layout_width="42dp"
-                android:layout_height="42dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="15dp"
-                android:src="@drawable/profi">
-
-            </de.hdodenhof.circleimageview.CircleImageView>
-
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/txCommentName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="10dp"
-
-                android:layout_toEndOf="@+id/ivComment"
-                android:fontFamily="@font/opensansbold"
-                android:text="Anil Yadav"
-                android:textColor="@color/black"
-                android:textSize="14sp" />
-
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/txCommentday"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="15dp"
-                android:fontFamily="@font/opensansregular"
-                android:text="2 Days Ago"
-                android:textColor="@color/text"
-                android:textSize="14sp" />
-
-
-            <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/txCommentmsg"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/txCommentName"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_toEndOf="@+id/ivComment"
-                android:fontFamily="@font/opensansregular"
-                android:text="This picture made my day"
-                android:textColor="@color/text"
-                android:textSize="14sp" />
-
-
-        </RelativeLayout>
-
+        <ImageView
+            android:id="@+id/ivSend"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/rlNew"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/send"
+            app:tint="@color/purple_700" />
 
     </RelativeLayout>
 </RelativeLayout>

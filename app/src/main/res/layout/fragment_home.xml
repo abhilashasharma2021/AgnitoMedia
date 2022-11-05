@@ -51,8 +51,8 @@
 
         <ImageView
             android:id="@+id/ivchat"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_centerVertical="true"
             android:layout_marginEnd="10dp"
             android:layout_toStartOf="@+id/ivSearch"
@@ -79,7 +79,7 @@
                 android:layout_width="100dp"
                 android:layout_height="35dp"
                 android:layout_marginStart="15dp"
-                android:background="@drawable/transstory">
+                android:background="@drawable/transblack">
 
                 <ImageView
                     android:id="@+id/ivStory"
@@ -184,7 +184,7 @@
                     android:src="@drawable/nfft"
                     android:id="@+id/ivNft1"
                     android:layout_centerVertical="true"
-                    android:layout_marginStart="10dp"
+                    android:layout_marginStart="12dp"
                     android:layout_height="20dp"
                     app:tint="@color/white">
 
@@ -193,7 +193,7 @@
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="15dp"
                     android:layout_marginEnd="10dp"
                     android:layout_toEndOf="@+id/ivNft1"
                     android:fontFamily="@font/opensansregular"
@@ -214,7 +214,7 @@
                 android:id="@+id/btVideoBlack"
                 android:layout_width="100dp"
                 android:layout_height="35dp"
-                android:background="@drawable/transblack">
+                android:background="@drawable/transstory">
 
                 <ImageView
                     android:id="@+id/ivVideos"
@@ -597,7 +597,7 @@
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
                                 android:padding="10dp"
-                                android:src="@drawable/comment" />
+                                android:src="@drawable/comments" />
 
 
                             <com.google.android.material.textview.MaterialTextView
@@ -932,7 +932,7 @@
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
                                 android:padding="10dp"
-                                android:src="@drawable/comment" />
+                                android:src="@drawable/comments" />
 
 
                             <com.google.android.material.textview.MaterialTextView
@@ -1244,7 +1244,7 @@
                             android:layout_width="40dp"
                             android:layout_height="40dp"
                             android:padding="10dp"
-                            android:src="@drawable/comment" />
+                            android:src="@drawable/comments" />
 
 
                         <com.google.android.material.textview.MaterialTextView

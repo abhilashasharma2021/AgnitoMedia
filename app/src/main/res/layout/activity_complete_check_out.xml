@@ -90,20 +90,20 @@
                               android:layout_height="wrap_content"
 
                               android:layout_marginStart="10dp"
-                              android:fontFamily="@font/opensansmedium"
+                              android:fontFamily="@font/opensansregular"
                               android:text="ID Name :"
                               android:textColor="@color/black"
-                              android:textSize="13sp" />
+                              android:textSize="15sp" />
 
                           <com.google.android.material.textview.MaterialTextView
                               android:layout_width="wrap_content"
                               android:layout_height="wrap_content"
                               android:layout_marginStart="10dp"
                               android:layout_toEndOf="@+id/tx1"
-                              android:fontFamily="@font/opensansmedium"
-                              android:text=" #VK1805"
-                              android:textColor="@color/purple_200"
-                              android:textSize="13sp" />
+                              android:fontFamily="@font/opensansbold"
+                              android:text="#VK1805"
+                              android:textColor="@color/black"
+                              android:textSize="15sp" />
 
 
                       </RelativeLayout>
@@ -111,7 +111,7 @@
                       <View
                           android:id="@+id/view"
                           android:layout_width="match_parent"
-                          android:layout_height="2dp"
+                          android:layout_height="0.8dp"
                           android:layout_below="@id/rl"
                           android:layout_marginTop="15dp"
                           android:background="@color/grey_text" />
@@ -127,7 +127,7 @@
                           android:fontFamily="@font/opensansmedium"
                           android:text="@string/name"
                           android:textColor="@color/black"
-                          android:textSize="14sp" />
+                          android:textSize="15sp" />
 
                       <com.google.android.material.textview.MaterialTextView
                           android:id="@+id/txName"
@@ -135,10 +135,10 @@
                           android:layout_height="wrap_content"
                           android:layout_below="@+id/tx2"
                           android:layout_marginStart="15dp"
-                          android:fontFamily="@font/opensansmedium"
+                          android:fontFamily="@font/opensansbold"
                           android:text="King Kohli"
                           android:textColor="@color/black"
-                          android:textSize="14sp" />
+                          android:textSize="15sp" />
 
 
                       <com.google.android.material.textview.MaterialTextView
@@ -152,7 +152,7 @@
                           android:fontFamily="@font/opensansmedium"
                           android:text="@string/royalties"
                           android:textColor="@color/black"
-                          android:textSize="14sp" />
+                          android:textSize="15sp" />
 
                       <com.google.android.material.textview.MaterialTextView
                           android:id="@+id/txRoyality"
@@ -161,17 +161,17 @@
                           android:layout_below="@+id/tx3"
                           android:layout_alignParentEnd="true"
                           android:layout_marginEnd="15dp"
-                          android:fontFamily="@font/opensansmedium"
+                          android:fontFamily="@font/opensansbold"
                           android:text="12.10%"
                           android:textColor="@color/black"
-                          android:textSize="14sp" />
+                          android:textSize="15sp" />
 
 
                   </RelativeLayout>
                   <View
                       android:id="@+id/view1"
                       android:layout_width="match_parent"
-                      android:layout_height="1.2dp"
+                      android:layout_height="0.8dp"
                       android:layout_below="@id/rlTop"
                       android:background="@color/grey_text" />
 
@@ -186,7 +186,7 @@
                           android:layout_width="wrap_content"
                           android:layout_height="wrap_content"
                           android:layout_gravity="center_horizontal"
-                          android:layout_marginTop="10dp"
+                          android:layout_marginTop="15dp"
                           android:fontFamily="@font/opensansmedium"
                           android:text="@string/subtotal"
                           android:textColor="@color/black"
@@ -197,7 +197,7 @@
                           android:layout_width="wrap_content"
                           android:layout_height="wrap_content"
                           android:layout_gravity="center_horizontal"
-                          android:layout_marginTop="5dp"
+                          android:layout_marginTop="3dp"
                           android:fontFamily="@font/opensansbold"
                           android:text="₹ 7.954L"
                           android:textColor="@color/black"
@@ -218,7 +218,7 @@
                           android:layout_width="wrap_content"
                           android:layout_height="wrap_content"
                           android:layout_gravity="center_horizontal"
-                          android:layout_marginTop="5dp"
+                          android:layout_marginTop="3dp"
                           android:fontFamily="@font/opensansbold"
                           android:text="₹ 7.954L"
                           android:textColor="@color/green"
@@ -229,6 +229,7 @@
                           android:layout_width="match_parent"
                           android:layout_height="0.6dp"
                           android:layout_marginStart="15dp"
+                          android:layout_marginTop="15dp"
                           android:layout_marginEnd="15dp"
                           android:background="@color/grey_text" />
 
@@ -236,12 +237,13 @@
                       <RelativeLayout
                           android:layout_width="match_parent"
                           android:layout_height="50dp"
-                          android:layout_marginTop="15dp">
+                          android:layout_marginTop="5dp">
 
                           <de.hdodenhof.circleimageview.CircleImageView
                               android:id="@+id/profile_Img"
-                              android:layout_width="50dp"
-                              android:layout_height="50dp"
+                              android:layout_width="35dp"
+                              android:layout_centerVertical="true"
+                              android:layout_height="35dp"
                               android:layout_marginStart="20dp"
                               android:src="@drawable/profi">
 
@@ -274,7 +276,7 @@
                           android:layout_width="match_parent"
                           android:layout_height="0.8dp"
                           android:layout_marginStart="15dp"
-                          android:layout_marginTop="5dp"
+                          android:layout_marginTop="10dp"
                           android:layout_marginEnd="15dp"
                           android:background="@color/grey_text" />
 
@@ -282,14 +284,15 @@
                       <RelativeLayout
                           android:layout_width="match_parent"
                           android:layout_height="50dp"
-                          android:layout_marginTop="15dp">
+                          android:layout_marginTop="5dp">
 
                           <de.hdodenhof.circleimageview.CircleImageView
                               android:id="@+id/ivUpi"
-                              android:layout_width="50dp"
-                              android:layout_height="50dp"
+                              android:layout_width="35dp"
+                              android:layout_height="35dp"
                               android:layout_marginStart="20dp"
                               android:padding="2dp"
+                              android:layout_centerVertical="true"
                               android:src="@drawable/phonepay">
 
                           </de.hdodenhof.circleimageview.CircleImageView>
@@ -321,21 +324,22 @@
                           android:layout_width="match_parent"
                           android:layout_height="0.6dp"
                           android:layout_marginStart="15dp"
-                          android:layout_marginTop="6dp"
+                          android:layout_marginTop="10dp"
                           android:layout_marginEnd="15dp"
                           android:background="@color/grey_text" />
 
                       <RelativeLayout
                           android:layout_width="match_parent"
                           android:layout_height="50dp"
-                          android:layout_marginTop="15dp">
+                          android:layout_marginTop="5dp">
 
                           <de.hdodenhof.circleimageview.CircleImageView
                               android:id="@+id/ivCredit"
-                              android:layout_width="50dp"
-                              android:layout_height="50dp"
+                              android:layout_width="35dp"
+                              android:layout_height="35dp"
                               android:layout_marginStart="20dp"
                               android:padding="2dp"
+                              android:layout_centerVertical="true"
                               android:src="@drawable/credit">
 
                           </de.hdodenhof.circleimageview.CircleImageView>
@@ -368,7 +372,7 @@
                           android:layout_width="match_parent"
                           android:layout_height="0.6dp"
                           android:layout_marginStart="15dp"
-                          android:layout_marginTop="6dp"
+                          android:layout_marginTop="10dp"
                           android:layout_marginEnd="15dp"
                           android:background="@color/grey_text" />
 

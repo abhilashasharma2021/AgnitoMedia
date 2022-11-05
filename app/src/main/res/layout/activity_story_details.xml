@@ -6,10 +6,11 @@
     android:layout_height="wrap_content"
     android:background="@color/white"
     tools:context=".activity.StoryDetailsActivity">
+
     <RelativeLayout
+        android:id="@+id/rl"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:id="@+id/rl"
         android:background="@color/purple_700">
 
         <ImageView
@@ -50,8 +51,8 @@
 
         <ImageView
             android:id="@+id/ivchat"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_centerVertical="true"
             android:layout_marginEnd="10dp"
             android:layout_toStartOf="@+id/ivSearch"
@@ -95,6 +96,7 @@
         android:id="@+id/rvStoryCategory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
         android:layout_below="@+id/rl" />
 
     <ScrollView
@@ -418,6 +420,15 @@ First, a royal vintage car will take you to the palace hotel where doormen at th
 
                         </EditText>
 
+                        <ImageView
+                            android:id="@+id/ivSend"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:src="@drawable/send" />
                     </RelativeLayout>
 
 

@@ -217,10 +217,7 @@ public class SearchViewAllActivity extends AppCompatActivity {
         }
 
         storiesAdapter = new SavedStoriesAdapter(storiesDataList, SearchViewAllActivity.this);
-
         binding.rvStories.setHasFixedSize(true);
-
-
         binding.rvStories.setAdapter(storiesAdapter);
 
     }

@@ -30,6 +30,8 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="dummy_text">If you’re into non-fungible tokens (NFTs), you probably have pondered at some point – where can I find the best captions to display my NFT collection?Well, you’re in luck</string>
+    <string name="dummy_new">If you’re into non-fungible tokens (NFTs), you probably have pondered at some point – where can I find the best captions to display my NFT collection?Well, you’re in luck,If you’re into non-fungible tokens (NFTs), you probably have pondered at some point – where can I find the best captions to display my NFT collection?Well, you’re in luck,If you’re into non-fungible tokens (NFTs), you probably have pondered at some point – where can I find the best captions to display my NFT collection?Well, you’re in luck,If you’re into non-fungible tokens (NFTs), you probably have pondered at some point – where can I find the best captions to display my NFT collection?Well, you’re in luck,If you’re into non-fungible tokens (NFTs), you probably have pondered at some point – where can I find the best captions to display my NFT collection?Well, you’re in luck,If you’re into non-fungible tokens (NFTs), you probably have pondered at some point – where can I find the best captions to display my NFT collection?Well, you’re in luck,If you’re into non-fungible tokens (NFTs), you probably have pondered at some point – where can I find the best captions to display my NFT collection?Well, you’re in luck</string>
+
     <string name="like">Like</string>
     <string name="comment">Comment</string>
     <string name="share">Share</string>
@@ -37,7 +39,7 @@
     <string name="shares">Shares</string>
     <string name="send_request">Send Request</string>
     <string name="created">Created</string>
-    <string name="item">item</string>
+    <string name="item">Item</string>
     <string name="creator_fee">Creator fee</string>
     <string name="collection">Collection</string>
     <string name="floor_price">Floor Price</string>

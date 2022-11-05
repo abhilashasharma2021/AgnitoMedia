@@ -200,6 +200,7 @@
                     android:id="@+id/rl2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:layout_below="@+id/rl1">
 
                     <androidx.recyclerview.widget.RecyclerView

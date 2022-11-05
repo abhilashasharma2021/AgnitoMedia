@@ -13,6 +13,7 @@
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/drawable/black_strok.xml" value="0.135" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/drawable/black_trns_btn.xml" value="0.143" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/drawable/blackbtn.xml" value="0.143" />
+        <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/drawable/blacknew_round_btn.xml" value="0.151" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/drawable/blue_background.xml" value="0.143" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/drawable/blue_circel.xml" value="0.135" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/drawable/blue_drawer.xml" value="0.125" />
@@ -59,9 +60,9 @@
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_login.xml" value="0.203125" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_main.xml" value="0.203125" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_my_wallet.xml" value="0.203125" />
-        <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_nft_item.xml" value="0.2" />
+        <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_nft_item.xml" value="0.22" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_nftactivity.xml" value="0.203125" />
-        <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_nftdetails.xml" value="0.17584994138335286" />
+        <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_nftdetails.xml" value="0.25" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_notification.xml" value="0.33" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_otpverify.xml" value="0.1890625" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_personal_details.xml" value="0.25" />
@@ -72,14 +73,14 @@
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_search_view_all.xml" value="0.203125" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_security.xml" value="0.203125" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_setting.xml" value="0.203125" />
-        <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_sign_up.xml" value="0.22" />
+        <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_splash.xml" value="0.203125" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_story_details.xml" value="0.22" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_testing.xml" value="0.203125" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_view_all_saved.xml" value="0.203125" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_welcome.xml" value="0.203125" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/fragment_all_nft.xml" value="0.203125" />
-        <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/fragment_nft.xml" value="0.2" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/fragment_nfts_tablayout.xml" value="0.22" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/fragment_post.xml" value="0.203125" />
@@ -104,12 +105,12 @@
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/rowhomenftlayout.xml" value="0.1890625" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/rowhomepostlayout.xml" value="0.1890625" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/rowhomestorytlayout.xml" value="0.1890625" />
-        <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/rowhomevideolayout.xml" value="0.1890625" />
+        <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/rowhomevideolayout.xml" value="0.25" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/rownftitemlayout.xml" value="0.203125" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/rowsavednftslayout.xml" value="0.203125" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/rowsavedstorieslayout.xml" value="0.203125" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/rowsavedvideoslayout.xml" value="0.22" />
-        <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/rowstorycategorylayout.xml" value="0.1890625" />
+        <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/rowstorycategorylayout.xml" value="0.22" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/rowvideolayout.xml" value="0.1890625" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/rowviewallvideoslayout.xml" value="0.203125" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/tab_bar.xml" value="0.25" />

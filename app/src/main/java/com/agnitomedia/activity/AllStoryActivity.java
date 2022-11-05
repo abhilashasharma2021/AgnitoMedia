@@ -36,6 +36,13 @@ public class AllStoryActivity extends AppCompatActivity {
              startActivity(new Intent(AllStoryActivity.this, NotificationActivity.class));
             }
         });
+
+        binding.ivSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(AllStoryActivity.this, SearchActivity.class));
+            }
+        });
         layoutManagerCategory = new LinearLayoutManager(AllStoryActivity.this, LinearLayoutManager.HORIZONTAL, false);
         binding.rvStoryCategory.setLayoutManager(layoutManagerCategory);
         all_StoryData();

@@ -8,6 +8,8 @@
         android:layout_height="wrap_content"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="15dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
         android:layout_marginBottom="15dp">
         <LinearLayout
             android:layout_width="match_parent"
@@ -15,13 +17,13 @@
             android:id="@+id/llNft"
             android:orientation="vertical">
 
-
             <com.google.android.material.card.MaterialCardView
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="380dp"
-                android:layout_marginBottom="1dp"
-                app:cardBackgroundColor="@color/white"
-                app:cardCornerRadius="15dp">
+                android:layout_marginBottom="1dp">
 
                 <ImageView
                     android:layout_width="match_parent"
@@ -31,7 +33,9 @@
 
                 </ImageView>
 
+
             </com.google.android.material.card.MaterialCardView>
+
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -47,27 +51,26 @@
                     android:fontFamily="@font/opensansbold"
                     android:text="Globe Hassan"
                     android:textColor="@color/text"
-                    android:textSize="14sp" />
-
+                    android:textSize="15dp" />
 
 
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:fontFamily="@font/robotoregular"
-                    android:text="Prize"
-                    android:layout_marginEnd="15dp"
                     android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/opensansregular"
+                    android:text="Prize"
                     android:textColor="@color/text"
-                    android:textSize="12sp" />
+                    android:textSize="15dp" />
 
 
             </RelativeLayout>
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="15dp"
                 android:layout_marginStart="10dp">
 
                 <com.google.android.material.textview.MaterialTextView
@@ -75,10 +78,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="2dp"
-                    android:fontFamily="@font/robotoregular"
+                    android:fontFamily="@font/opensansregular"
                     android:text="#KH0121"
                     android:textColor="@color/text"
-                    android:textSize="11sp" />
+                    android:textSize="15dp" />
 
 
                 <com.google.android.material.textview.MaterialTextView
@@ -87,10 +90,10 @@
                     android:layout_alignParentEnd="true"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="15dp"
-                    android:fontFamily="@font/opensansmedium"
+                    android:fontFamily="@font/opensansbold"
                     android:text="₹ 0.375L"
                     android:textColor="@color/purple_200"
-                    android:textSize="12sp" />
+                    android:textSize="15dp" />
 
 
             </RelativeLayout>

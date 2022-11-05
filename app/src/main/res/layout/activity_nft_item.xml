@@ -129,79 +129,81 @@
                       android:layout_marginStart="15dp"
                       android:fontFamily="@font/opensansregular"
                       android:text="@string/item"
-                      android:textColor="@color/black"
+                      android:textColor="@color/text"
                       android:textSize="12sp" />
+
                   <com.google.android.material.textview.MaterialTextView
+                      android:id="@+id/txItemCount"
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
                       android:layout_marginStart="3dp"
-                      android:fontFamily="@font/opensansmedium"
-                      android:text="15"
-                      android:id="@+id/txItemCount"
                       android:layout_toEndOf="@+id/tx1"
-                      android:textColor="@color/black"
+                      android:fontFamily="@font/opensansbold"
+                      android:text="15"
+                      android:textColor="@color/text"
                       android:textSize="12sp" />
 
                   <ImageView
                       android:id="@+id/ivDot"
                       android:layout_width="15dp"
                       android:layout_height="15dp"
+                      android:layout_toStartOf="@+id/tx2"
                       android:layout_marginEnd="10dp"
-                      android:layout_marginStart="15dp"
-                      android:layout_toEndOf="@+id/txItemCount"
                       android:src="@drawable/dot">
 
                   </ImageView>
 
                   <com.google.android.material.textview.MaterialTextView
+                      android:id="@+id/tx2"
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
-                      android:layout_marginStart="3dp"
+                      android:layout_marginEnd="3dp"
+                      android:layout_toStartOf="@+id/txCreated"
                       android:fontFamily="@font/opensansregular"
                       android:text="@string/created"
-                      android:id="@+id/tx2"
-                      android:layout_toEndOf="@+id/ivDot"
-                      android:textColor="@color/black"
+                      android:textColor="@color/text"
                       android:textSize="12sp" />
+
                   <com.google.android.material.textview.MaterialTextView
+                      android:id="@+id/txCreated"
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
-                      android:layout_marginStart="3dp"
-                      android:fontFamily="@font/opensansmedium"
+                      android:layout_marginEnd="15dp"
+                      android:layout_toStartOf="@+id/ivDot1"
+                      android:fontFamily="@font/opensansbold"
                       android:text="Sep 2022"
-                      android:id="@+id/txCreated"
-                      android:layout_toEndOf="@+id/tx2"
-                      android:textColor="@color/black"
+                      android:textColor="@color/text"
                       android:textSize="12sp" />
 
                   <ImageView
                       android:id="@+id/ivDot1"
                       android:layout_width="15dp"
                       android:layout_height="15dp"
+                      android:layout_toStartOf="@+id/tx3"
                       android:layout_marginEnd="10dp"
-                      android:layout_marginStart="15dp"
-                      android:layout_toEndOf="@+id/txCreated"
-                      android:src="@drawable/dot"/>
+                      android:src="@drawable/dot" />
 
                   <com.google.android.material.textview.MaterialTextView
+                      android:id="@+id/tx3"
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
                       android:layout_marginStart="3dp"
+                      android:layout_toStartOf="@+id/txPercent"
                       android:fontFamily="@font/opensansregular"
                       android:text="@string/creator_fee"
-                      android:id="@+id/tx3"
-                      android:layout_toEndOf="@+id/ivDot1"
-                      android:textColor="@color/black"
+                      android:textColor="@color/text"
                       android:textSize="12sp" />
 
                   <com.google.android.material.textview.MaterialTextView
+                      android:id="@+id/txPercent"
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
+                      android:layout_alignParentEnd="true"
                       android:layout_marginStart="3dp"
-                      android:fontFamily="@font/opensansmedium"
-                      android:text="10 % "
-                      android:layout_toEndOf="@+id/tx3"
-                      android:textColor="@color/black"
+                      android:layout_marginEnd="15dp"
+                      android:fontFamily="@font/opensansbold"
+                      android:text="10% "
+                      android:textColor="@color/text"
                       android:textSize="12sp" />
 
                   <com.google.android.material.textview.MaterialTextView
@@ -213,7 +215,7 @@
                       android:layout_marginTop="15dp"
                       android:fontFamily="@font/opensansregular"
                       android:text="@string/collection"
-                      android:textColor="@color/black"
+                      android:textColor="@color/text"
                       android:textSize="12sp" />
 
                   <com.google.android.material.textview.MaterialTextView
@@ -222,11 +224,11 @@
                       android:layout_height="wrap_content"
                       android:layout_below="@+id/tx4"
                       android:layout_marginStart="15dp"
-                      android:layout_marginTop="4dp"
-                      android:fontFamily="@font/opensansmedium"
+                      android:layout_marginTop="5dp"
+                      android:fontFamily="@font/opensansbold"
                       android:text="#VK1255"
-                      android:textColor="@color/black"
-                      android:textSize="12sp" />
+                      android:textColor="@color/text"
+                      android:textSize="15sp" />
 
 
                   <com.google.android.material.textview.MaterialTextView
@@ -236,7 +238,7 @@
                       android:layout_below="@+id/tx1"
                       android:layout_alignParentEnd="true"
                       android:layout_marginTop="15dp"
-                      android:layout_marginEnd="45dp"
+                      android:layout_marginEnd="15dp"
                       android:fontFamily="@font/opensansregular"
                       android:text="@string/floor_price"
                       android:textColor="@color/black"
@@ -249,12 +251,12 @@
                       android:layout_below="@+id/tx5"
                       android:layout_alignParentEnd="true"
                       android:layout_marginStart="15dp"
-                      android:layout_marginTop="4dp"
-                      android:layout_marginEnd="52dp"
-                      android:fontFamily="@font/opensansmedium"
+                      android:layout_marginTop="5dp"
+                      android:layout_marginEnd="15dp"
+                      android:fontFamily="@font/opensansbold"
                       android:text="₹ 7.954L"
-                      android:textColor="@color/black"
-                      android:textSize="12sp" />
+                      android:textColor="@color/text"
+                      android:textSize="15sp" />
 
                   <com.google.android.material.textview.MaterialTextView
                       android:id="@+id/tx6"
@@ -265,7 +267,7 @@
                       android:layout_marginTop="15dp"
                       android:fontFamily="@font/opensansregular"
                       android:text="@string/volume"
-                      android:textColor="@color/black"
+                      android:textColor="@color/text"
                       android:textSize="12sp" />
 
                   <com.google.android.material.textview.MaterialTextView
@@ -273,24 +275,23 @@
                       android:layout_height="wrap_content"
                       android:layout_below="@+id/tx6"
                       android:layout_marginStart="15dp"
-                      android:fontFamily="@font/opensansmedium"
+                      android:fontFamily="@font/opensansbold"
                       android:text="100L"
                       android:textColor="@color/black"
-                      android:textSize="12sp" />
+                      android:textSize="15sp" />
 
                   <com.google.android.material.textview.MaterialTextView
                       android:id="@+id/percent"
                       android:layout_width="wrap_content"
                       android:layout_height="wrap_content"
-                      android:layout_below="@+id/txPrice"
+                      android:layout_below="@+id/tx6"
                       android:layout_alignParentEnd="true"
                       android:layout_marginStart="15dp"
-                      android:layout_marginTop="20dp"
-                      android:layout_marginEnd="60dp"
-                      android:fontFamily="@font/opensansmedium"
+                      android:layout_marginEnd="15dp"
+                      android:fontFamily="@font/opensansbold"
                       android:text="22.23%"
                       android:textColor="@color/red"
-                      android:textSize="12sp" />
+                      android:textSize="15sp" />
                </RelativeLayout>
 
             </LinearLayout>

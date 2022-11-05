@@ -11,8 +11,7 @@
         android:layout_marginEnd="18dp"
         app:cardBackgroundColor="@color/trans"
         app:cardCornerRadius="15dp"
-        android:layout_marginBottom="2dp"
-        app:cardElevation="3dp">
+        android:layout_marginBottom="2dp">
 
         <RelativeLayout
             android:id="@+id/rl"
@@ -22,11 +21,11 @@
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/ivRply"
-                android:layout_width="42dp"
-                android:layout_height="42dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="15dp"
-                android:src="@drawable/profi">
+                android:src="@drawable/virat">
 
             </de.hdodenhof.circleimageview.CircleImageView>
 
@@ -36,14 +35,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="10dp"
 
                 android:layout_toEndOf="@+id/ivRply"
-                android:fontFamily="@font/opensansbold"
+                android:fontFamily="@font/opensansregular"
                 android:text="Aditya Vaishnav"
-                android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textColor="@color/text"
+                android:textSize="13sp" />
 
 
             <com.google.android.material.textview.MaterialTextView
@@ -52,12 +51,12 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="15dp"
                 android:fontFamily="@font/opensansregular"
-                android:text="Today"
+                android:text="2 Days Ago"
                 android:textColor="@color/text"
-                android:textSize="14sp" />
+                android:textSize="13sp" />
 
 
             <com.google.android.material.textview.MaterialTextView
@@ -69,22 +68,23 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_toEndOf="@+id/ivRply"
-                android:fontFamily="@font/opensansregular"
+                android:fontFamily="@font/opensansmedium"
                 android:text="You’re Stunning!\nHow are you always so perfect?"
-                android:textColor="@color/text"
+                android:textColor="@color/black"
                 android:textSize="14sp" />
 
 
             <LinearLayout
+                android:id="@+id/ll"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/txMsg"
-                android:layout_marginTop="15dp"
-                android:id="@+id/ll"
+                android:layout_marginTop="10dp"
                 android:orientation="horizontal"
                 android:weightSum="2">
 
                 <RelativeLayout
+                    android:id="@+id/rlRp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -94,9 +94,10 @@
                         android:id="@+id/txRplyCount"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
                         android:layout_marginTop="10dp"
                         android:fontFamily="@font/opensansmedium"
-                        android:text="2"
+                        android:text="200"
                         android:textColor="@color/purple_200"
                         android:textSize="13sp" />
 
@@ -112,20 +113,25 @@
                         android:text="@string/reply"
                         android:textColor="@color/purple_200"
                         android:textSize="13sp" />
+
+
+
                 </RelativeLayout>
+
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:gravity="center">
+                    android:gravity="end">
 
                     <ImageView
                         android:id="@+id/ivLike2"
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="15dp"
                         android:layout_toEndOf="@+id/txLikeCount"
-                        android:padding="8dp"
                         android:src="@drawable/comment" />
 
 
@@ -143,8 +149,9 @@
                         android:id="@+id/txLikeCount"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginStart="5dp"
                         android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
                         android:layout_toEndOf="@+id/txLike1"
                         android:fontFamily="@font/opensansmedium"
                         android:text="21"
@@ -152,11 +159,15 @@
                         android:textSize="12sp" />
 
                 </RelativeLayout>
+
+
+
             </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvReply"
-                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/ll">
 

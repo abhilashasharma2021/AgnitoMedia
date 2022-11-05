@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import com.agnitomedia.R;
 import com.agnitomedia.activity.NotificationActivity;
+import com.agnitomedia.activity.SearchActivity;
 import com.agnitomedia.adapers.AllNftAdapter;
 import com.agnitomedia.data.AllNftData;
 import com.agnitomedia.databinding.FragmentAllNftBinding;
@@ -41,6 +42,15 @@ public class AllNftFragment extends Fragment {
                 context.startActivity(new Intent(getActivity(), NotificationActivity.class));
             }
         });
+
+        binding.ivSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                context.startActivity(new Intent(getActivity(), SearchActivity.class));
+            }
+        });
+
+
        /* ReadMoreTextView readMoreTextView = new ReadMoreTextView();
         binding.textView.setText(getResources().getString(R.string.dummy_text));
         readMoreTextView.setTextView(textView);

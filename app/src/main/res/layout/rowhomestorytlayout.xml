@@ -70,35 +70,64 @@
 
         </ImageView>
 
+
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/txTittle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/rlCat"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="12dp"
                 android:fontFamily="@font/opensansbold"
                 android:text="Umaid Bhawan Palace- A Must-See Royal Residence in Jodhpur"
                 android:textColor="@color/yellow"
                 android:textSize="18sp" />
 
+            <RelativeLayout
+                android:id="@+id/rlCat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/black_trns_btn">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/txNotification1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/opensansregular"
+                    android:paddingStart="22dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="Travels"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+            </RelativeLayout>
+
             <com.google.android.material.textview.MaterialTextView
-                android:id="@+id/txDescription"
+                android:id="@+id/txBy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/txTittle"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:maxLines="2"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/opensansmedium"
                 android:text="And because of their excellent acting skills, we have seen a lot of Bollywood actors in Hollywood movies over etc."
                 android:textColor="@color/textDesc"
-                android:textSize="12sp" />
+                android:textSize="14sp" />
 
 
         </RelativeLayout>
@@ -121,6 +150,7 @@
                 android:layout_marginStart="10dp"
                 android:fontFamily="@font/opensansregular"
                 android:text="Pushpendra And "
+                android:visibility="gone"
                 android:textColor="@color/text"
                 android:textSize="11sp" />
 
@@ -128,20 +158,22 @@
                 android:id="@+id/txCountLike2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
                 android:layout_toEndOf="@+id/txLike2"
                 android:fontFamily="@font/opensansbold"
-                android:text="2022K"
-                android:textColor="@color/purple_700"
+                android:text="202K"
+                android:textColor="@color/text"
                 android:textSize="12sp" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
                 android:layout_toEndOf="@+id/txCountLike2"
-                android:fontFamily="@font/opensansbold"
-                android:text=" Others "
+                android:fontFamily="@font/opensansregular"
+                android:text="@string/like"
                 android:textColor="@color/text"
-                android:textSize="11sp" />
+                android:textSize="12sp" />
 
 
         </RelativeLayout>
@@ -157,8 +189,8 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/opensansbold"
                 android:text="800  "
-                android:textColor="@color/purple_700"
-                android:textSize="11sp" />
+                android:textColor="@color/text"
+                android:textSize="12sp" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/txComment2"
@@ -168,7 +200,7 @@
                 android:fontFamily="@font/opensansregular"
                 android:text="@string/comments"
                 android:textColor="@color/text"
-                android:textSize="11sp" />
+                android:textSize="12sp" />
 
 
         </RelativeLayout>
@@ -187,7 +219,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="10dp">
+            android:layout_marginEnd="15dp ">
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/txCountShare2"
@@ -195,8 +227,8 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/opensansbold"
                 android:text="500 "
-                android:textColor="@color/purple_700"
-                android:textSize="11sp" />
+                android:textColor="@color/text"
+                android:textSize="12sp" />
 
             <com.google.android.material.textview.MaterialTextView
                 android:layout_width="wrap_content"
@@ -206,7 +238,7 @@
                 android:text="@string/shares"
 
                 android:textColor="@color/text"
-                android:textSize="11sp" />
+                android:textSize="12sp" />
 
 
         </RelativeLayout>
@@ -275,7 +307,7 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:padding="10dp"
-                    android:src="@drawable/comment" />
+                    android:src="@drawable/comments" />
 
 
                 <com.google.android.material.textview.MaterialTextView

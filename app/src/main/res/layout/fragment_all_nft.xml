@@ -50,8 +50,8 @@
 
         <ImageView
             android:id="@+id/ivchat"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_centerVertical="true"
             android:layout_marginEnd="10dp"
             android:layout_toStartOf="@+id/ivSearch"
@@ -94,7 +94,7 @@
                     android:id="@+id/txPosition"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="2dp"
+                    android:layout_marginStart="4dp"
                     android:layout_toEndOf="@+id/txName1"
                     android:fontFamily="@font/opensansbold"
                     android:text="Market"
@@ -106,6 +106,7 @@
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
+                android:scrollbarThumbHorizontal="@android:color/white"
                 android:layout_height="wrap_content">
 
 
@@ -117,7 +118,7 @@
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="145dp"
+                        android:layout_height="155dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="15dp">
 
@@ -129,8 +130,7 @@
                             android:layout_marginTop="2dp"
                             android:layout_marginBottom="-120dp"
                             app:cardBackgroundColor="@color/white"
-                            app:cardCornerRadius="15dp"
-                            app:cardElevation="3dp">
+                            app:cardCornerRadius="15dp">
 
 
                             <ImageView
@@ -150,7 +150,7 @@
 
                             <com.google.android.material.card.MaterialCardView
                                 android:layout_width="120dp"
-                                android:layout_height="150dp"
+                                android:layout_height="155dp"
                                 android:layout_marginBottom="2dp"
                                 app:cardBackgroundColor="@color/trans"
                                 app:cardCornerRadius="15dp"
@@ -160,7 +160,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="2dp"
-                                    android:layout_marginTop="120dp"
+                                    android:layout_marginTop="125dp"
                                     android:fontFamily="@font/opensansbold"
                                     android:text="Art"
                                     android:textAlignment="center"
@@ -177,14 +177,14 @@
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="145dp"
+                        android:layout_height="155dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="15dp">
 
                         <com.google.android.material.card.MaterialCardView
                             android:id="@+id/cd11"
                             android:layout_width="120dp"
-                            android:layout_height="150dp"
+                            android:layout_height="155dp"
                             android:layout_above="@+id/rlCard1"
                             android:layout_marginTop="2dp"
                             android:layout_marginBottom="-120dp"
@@ -210,7 +210,7 @@
 
                             <com.google.android.material.card.MaterialCardView
                                 android:layout_width="120dp"
-                                android:layout_height="150dp"
+                                android:layout_height="155dp"
                                 android:layout_marginBottom="2dp"
                                 app:cardBackgroundColor="@color/trans"
                                 app:cardCornerRadius="15dp"
@@ -220,7 +220,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="2dp"
-                                    android:layout_marginTop="120dp"
+                                    android:layout_marginTop="125dp"
                                     android:fontFamily="@font/opensansbold"
                                     android:text="Games"
                                     android:textAlignment="center"
@@ -237,14 +237,14 @@
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="145dp"
+                        android:layout_height="155dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="15dp">
 
                         <com.google.android.material.card.MaterialCardView
                             android:id="@+id/cd12"
                             android:layout_width="120dp"
-                            android:layout_height="150dp"
+                            android:layout_height="155dp"
                             android:layout_above="@+id/rlCard2"
                             android:layout_marginTop="2dp"
                             android:layout_marginBottom="-120dp"
@@ -270,7 +270,7 @@
 
                             <com.google.android.material.card.MaterialCardView
                                 android:layout_width="120dp"
-                                android:layout_height="150dp"
+                                android:layout_height="155dp"
                                 android:layout_marginBottom="2dp"
                                 app:cardBackgroundColor="@color/trans"
                                 app:cardCornerRadius="15dp"
@@ -280,7 +280,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="2dp"
-                                    android:layout_marginTop="120dp"
+                                    android:layout_marginTop="125dp"
                                     android:fontFamily="@font/opensansbold"
                                     android:text="Music"
                                     android:textAlignment="center"
@@ -297,7 +297,7 @@
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="145dp"
+                        android:layout_height="155dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="15dp"
                         android:layout_marginEnd="10dp">
@@ -305,7 +305,7 @@
                         <com.google.android.material.card.MaterialCardView
                             android:id="@+id/cd13"
                             android:layout_width="120dp"
-                            android:layout_height="150dp"
+                            android:layout_height="155dp"
                             android:layout_above="@+id/rlCard3"
                             android:layout_marginTop="2dp"
                             android:layout_marginBottom="-120dp"
@@ -331,7 +331,7 @@
 
                             <com.google.android.material.card.MaterialCardView
                                 android:layout_width="120dp"
-                                android:layout_height="150dp"
+                                android:layout_height="155dp"
                                 android:layout_marginBottom="2dp"
                                 app:cardBackgroundColor="@color/trans"
                                 app:cardCornerRadius="15dp"
@@ -341,7 +341,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginStart="2dp"
-                                    android:layout_marginTop="120dp"
+                                    android:layout_marginTop="125dp"
                                     android:fontFamily="@font/opensansbold"
                                     android:text="Photography"
                                     android:textAlignment="center"
@@ -388,7 +388,7 @@
                     android:id="@+id/tx"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
+                    android:layout_marginStart="4dp"
                     android:layout_toEndOf="@+id/txFeatured"
                     android:fontFamily="@font/opensansbold"
                     android:text="NFTs"

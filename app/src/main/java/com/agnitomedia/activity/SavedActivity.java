@@ -51,7 +51,7 @@ ActivitySavedBinding binding;
             @Override
             public void onClick(View view) {
                  SharedHelper.putKey(getApplicationContext(), AppConstant.VIEW_ALL_STATUS,"SavedStories");
-               // startActivity(new Intent(SavedActivity.this,ViewAllSavedActivity.class));
+                startActivity(new Intent(SavedActivity.this,ViewAllSavedActivity.class));
 
             }
         });
@@ -60,7 +60,7 @@ ActivitySavedBinding binding;
             @Override
             public void onClick(View view) {
                 SharedHelper.putKey(getApplicationContext(), AppConstant.VIEW_ALL_STATUS,"SavedNft");
-                //startActivity(new Intent(SavedActivity.this,ViewAllSavedActivity.class));
+                startActivity(new Intent(SavedActivity.this,ViewAllSavedActivity.class));
 
             }
         });
@@ -69,7 +69,7 @@ ActivitySavedBinding binding;
             @Override
             public void onClick(View view) {
                 SharedHelper.putKey(getApplicationContext(), AppConstant.VIEW_ALL_STATUS,"SavedVideo");
-               // startActivity(new Intent(SavedActivity.this,ViewAllSavedActivity.class));
+                startActivity(new Intent(SavedActivity.this,ViewAllSavedActivity.class));
 
             }
         });

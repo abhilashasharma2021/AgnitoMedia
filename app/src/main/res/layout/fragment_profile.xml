@@ -447,12 +447,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="12dp"
                 android:layout_toEndOf="@+id/ivBack"
-                android:fontFamily="@font/opensansmedium"
+                android:fontFamily="@font/opensansbold"
                 android:text="Profile"
                 android:textColor="@color/white"
-                android:textSize="16sp" />
+                android:textSize="18sp" />
 
             <ImageView
                 android:id="@+id/ivSetting"
@@ -491,7 +491,7 @@
                 android:id="@+id/rlEdit"
                 android:background="@drawable/blue_circel"
                 android:layout_toEndOf="@+id/rl"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="20dp"
                 android:layout_marginStart="-35dp"
                 android:layout_alignParentBottom="true"
                 android:layout_height="35dp">
@@ -541,10 +541,9 @@
                 android:background="@drawable/black_strok">
 
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:layout_centerInParent="true"
-                    android:padding="10dp"
                     android:src="@drawable/sharenew" />
             </RelativeLayout>
 
@@ -575,6 +574,7 @@
             android:layout_marginStart="15dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="15dp"
+            android:maxLines="3"
             android:layout_marginBottom="10dp"
             android:fontFamily="@font/opensansregular"
             android:textColor="@color/text"
