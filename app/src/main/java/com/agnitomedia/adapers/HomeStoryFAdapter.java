@@ -53,6 +53,54 @@ public class HomeStoryFAdapter extends RecyclerView.Adapter<HomeStoryFAdapter.My
         });
         if (nftobj != null) {
 
+            holder.rowhomestorytlayoutBinding.ivLike.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    holder.rowhomestorytlayoutBinding.ivLike.setVisibility(View.GONE);
+                    holder.rowhomestorytlayoutBinding.ivLikeFill.setVisibility(View.VISIBLE);
+                }
+            });
+
+            holder.rowhomestorytlayoutBinding.ivLikeFill.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    holder.rowhomestorytlayoutBinding.ivLikeFill.setVisibility(View.GONE);
+                    holder.rowhomestorytlayoutBinding.ivLike.setVisibility(View.VISIBLE);
+                }
+            });
+
+
+            holder.rowhomestorytlayoutBinding.ivComment.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    holder.rowhomestorytlayoutBinding.ivComment.setVisibility(View.GONE);
+                    holder.rowhomestorytlayoutBinding.ivCommentFill.setVisibility(View.VISIBLE);
+                }
+            });
+
+            holder.rowhomestorytlayoutBinding.ivCommentFill.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    holder.rowhomestorytlayoutBinding.ivCommentFill.setVisibility(View.GONE);
+                    holder.rowhomestorytlayoutBinding.ivComment.setVisibility(View.VISIBLE);
+                }
+            });
+            holder.rowhomestorytlayoutBinding.ivShare.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    holder.rowhomestorytlayoutBinding.ivShare.setVisibility(View.GONE);
+                    holder.rowhomestorytlayoutBinding.ivShareFill.setVisibility(View.VISIBLE);
+                }
+            });
+
+            holder.rowhomestorytlayoutBinding.ivShareFill.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    holder.rowhomestorytlayoutBinding.ivShareFill.setVisibility(View.GONE);
+                    holder.rowhomestorytlayoutBinding.ivShare.setVisibility(View.VISIBLE);
+                }
+            });
+
 
         }
     }

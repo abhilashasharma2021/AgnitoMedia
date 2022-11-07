@@ -170,6 +170,11 @@
             android:layout_marginEnd="15dp"
             android:layout_marginStart="15dp"
             android:background="@drawable/blacktrans">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/rlLike"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/ivLike"
@@ -180,12 +185,20 @@
                 android:src="@drawable/like1">
 
             </ImageView>
-
+            <ImageView
+                android:id="@+id/ivLikeFill"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="5dp"
+                android:padding="8dp"
+                android:visibility="gone"
+                android:src="@drawable/filllike" />
+        </RelativeLayout>
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/txLike"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_toEndOf="@+id/ivLike"
+                android:layout_toEndOf="@+id/rlLike"
                 android:fontFamily="@font/opensansregular"
                 android:gravity="center_vertical"
                 android:text="10.5K"
@@ -203,9 +216,14 @@
             android:layout_marginEnd="15dp"
             android:layout_marginStart="15dp"
             android:background="@drawable/blacktrans">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/rlComment"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/ivComm"
+                android:id="@+id/ivComment"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_centerVertical="true"
@@ -213,12 +231,21 @@
                 android:src="@drawable/comments1">
 
             </ImageView>
+            <ImageView
+                android:id="@+id/ivCommentFill"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:src="@drawable/fillcomment" />
+
+        </RelativeLayout>
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/txComment"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_toEndOf="@+id/ivComm"
+                android:layout_toEndOf="@+id/rlComment"
                 android:fontFamily="@font/opensansregular"
                 android:gravity="center_vertical"
                 android:text="400"
@@ -235,6 +262,11 @@
             android:gravity="center"
             android:layout_marginStart="15dp"
             android:background="@drawable/blacktrans">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/rlShare"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/ivShare"
@@ -245,12 +277,19 @@
                 android:src="@drawable/share1">
 
             </ImageView>
-
+            <ImageView
+                android:id="@+id/ivShareFill"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="8dp"
+                android:visibility="gone"
+                android:src="@drawable/fillshare" />
+        </RelativeLayout>
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/txShare"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_toEndOf="@+id/ivShare"
+                android:layout_toEndOf="@+id/rlShare"
                 android:fontFamily="@font/opensansregular"
                 android:gravity="center_vertical"
                 android:text="120"

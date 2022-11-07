@@ -171,6 +171,59 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        binding.ivLike1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+
+        binding.ivLike1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                binding.ivLikeNew1.setVisibility(View.VISIBLE);
+                binding.ivLike1.setVisibility(View.GONE);
+            }
+        });
+        binding.ivLikeNew1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                binding.ivLike1.setVisibility(View.VISIBLE);
+                binding.ivLikeNew1.setVisibility(View.GONE);
+            }
+        });
+
+        binding.ivComment1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                binding.ivCommentFill.setVisibility(View.VISIBLE);
+                binding.ivComment1.setVisibility(View.GONE);
+            }
+        });
+        binding.ivCommentFill.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                binding.ivComment1.setVisibility(View.VISIBLE);
+                binding.ivCommentFill.setVisibility(View.GONE);
+            }
+        });
+
+        binding.ivShare1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                binding.ivShareFill.setVisibility(View.VISIBLE);
+                binding.ivShare1.setVisibility(View.GONE);
+            }
+        });
+        binding.ivShareFill.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                binding.ivShare1.setVisibility(View.VISIBLE);
+                binding.ivShareFill.setVisibility(View.GONE);
+            }
+        });
+
         //  show_AllData();
 
 

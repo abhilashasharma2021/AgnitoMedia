@@ -2,6 +2,7 @@ package com.agnitomedia.adapers;
 import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -43,7 +44,53 @@ public class HomeVideoAdapter extends RecyclerView.Adapter<HomeVideoAdapter.MyVi
         readMoreTextView.setReadMore();
         if (videoObj != null) {
 
+            holder.rowhomevideolayoutBinding.ivLike.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    holder.rowhomevideolayoutBinding.ivLike.setVisibility(View.GONE);
+                    holder.rowhomevideolayoutBinding.ivLikeFill.setVisibility(View.VISIBLE);
+                }
+            });
 
+            holder.rowhomevideolayoutBinding.ivLikeFill.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    holder.rowhomevideolayoutBinding.ivLikeFill.setVisibility(View.GONE);
+                    holder.rowhomevideolayoutBinding.ivLike.setVisibility(View.VISIBLE);
+                }
+            });
+
+
+            holder.rowhomevideolayoutBinding.ivComment.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    holder.rowhomevideolayoutBinding.ivComment.setVisibility(View.GONE);
+                    holder.rowhomevideolayoutBinding.ivCommentFill.setVisibility(View.VISIBLE);
+                }
+            });
+
+            holder.rowhomevideolayoutBinding.ivCommentFill.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    holder.rowhomevideolayoutBinding.ivCommentFill.setVisibility(View.GONE);
+                    holder.rowhomevideolayoutBinding.ivComment.setVisibility(View.VISIBLE);
+                }
+            });
+            holder.rowhomevideolayoutBinding.ivShare.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    holder.rowhomevideolayoutBinding.ivShare.setVisibility(View.GONE);
+                    holder.rowhomevideolayoutBinding.ivShareFill.setVisibility(View.VISIBLE);
+                }
+            });
+
+            holder.rowhomevideolayoutBinding.ivShareFill.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    holder.rowhomevideolayoutBinding.ivShareFill.setVisibility(View.GONE);
+                    holder.rowhomevideolayoutBinding.ivShare.setVisibility(View.VISIBLE);
+                }
+            });
         }
     }
 

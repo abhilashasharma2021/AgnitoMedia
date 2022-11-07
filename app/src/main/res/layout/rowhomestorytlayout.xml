@@ -219,7 +219,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="15dp ">
+            android:layout_marginEnd="15dp">
 
             <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/txCountShare2"
@@ -266,9 +266,13 @@
                 android:layout_height="wrap_content"
 
                 android:layout_weight="1">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/rlLike"
+                android:layout_height="wrap_content">
 
                 <ImageView
-                    android:id="@+id/ivLike2"
+                    android:id="@+id/ivLike"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="5dp"
@@ -276,20 +280,19 @@
                     android:src="@drawable/like" />
 
                 <ImageView
-                    android:id="@+id/ivLikeNew2"
+                    android:id="@+id/ivLikeFill"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="5dp"
                     android:padding="8dp"
-                    android:src="@drawable/like"
                     android:visibility="gone"
-                    app:tint="@color/purple_700" />
-
+                    android:src="@drawable/filllike" />
+            </RelativeLayout>
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:layout_toEndOf="@+id/ivLike2"
+                    android:layout_toEndOf="@+id/rlLike"
                     android:fontFamily="@font/opensansmedium"
                     android:text="@string/like"
                     android:textColor="@color/text"
@@ -301,20 +304,32 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/rlComment"
+                android:layout_height="wrap_content">
 
                 <ImageView
-                    android:id="@+id/ivComment2"
+                    android:id="@+id/ivComment"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:padding="10dp"
                     android:src="@drawable/comments" />
 
+                <ImageView
+                    android:id="@+id/ivCommentFill"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:src="@drawable/fillcomment" />
 
+            </RelativeLayout>
                 <com.google.android.material.textview.MaterialTextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:layout_toEndOf="@+id/ivComment2"
+                    android:layout_toEndOf="@+id/rlComment"
                     android:fontFamily="@font/opensansmedium"
                     android:text="@string/comment"
                     android:textColor="@color/text"
@@ -326,21 +341,32 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
 
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/rlShare"
+                android:layout_height="wrap_content">
 
                 <ImageView
-                    android:id="@+id/ivShare2"
+                    android:id="@+id/ivShare"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:padding="8dp"
                     android:src="@drawable/share" />
 
-
+                <ImageView
+                    android:id="@+id/ivShareFill"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+                    android:visibility="gone"
+                    android:src="@drawable/fillshare" />
+            </RelativeLayout>
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/txShare2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
-                    android:layout_toEndOf="@+id/ivShare2"
+                    android:layout_toEndOf="@+id/rlShare"
                     android:fontFamily="@font/opensansmedium"
                     android:text="@string/share"
                     android:textColor="@color/text"

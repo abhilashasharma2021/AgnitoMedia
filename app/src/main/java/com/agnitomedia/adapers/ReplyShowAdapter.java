@@ -57,6 +57,8 @@ public class ReplyShowAdapter extends RecyclerView.Adapter<ReplyShowAdapter.MyVi
             @Override
             public void onClick(View view) {
 
+               holder.rowShowReplyBinding. rlMainReply.setVisibility(View.VISIBLE);
+
                 layoutManagerImage = new LinearLayoutManager(context, RecyclerView.VERTICAL, false);
                 holder.rowShowReplyBinding.rvReply.setLayoutManager(layoutManagerImage);
                 holder.rowShowReplyBinding.rvReply.setHasFixedSize(true);

@@ -2,6 +2,7 @@ package com.agnitomedia.adapers;
 import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -43,6 +44,54 @@ public class HomeNftFAdapter extends RecyclerView.Adapter<HomeNftFAdapter.MyView
         readMoreTextView.setReadMore();
         if (nftobj != null) {
 
+
+            holder.rowhomenftlayoutBinding.ivLike.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    holder.rowhomenftlayoutBinding.ivLike.setVisibility(View.GONE);
+                    holder.rowhomenftlayoutBinding.ivLikeFill.setVisibility(View.VISIBLE);
+                }
+            });
+
+            holder.rowhomenftlayoutBinding.ivLikeFill.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    holder.rowhomenftlayoutBinding.ivLikeFill.setVisibility(View.GONE);
+                    holder.rowhomenftlayoutBinding.ivLike.setVisibility(View.VISIBLE);
+                }
+            });
+
+
+            holder.rowhomenftlayoutBinding.ivComment.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    holder.rowhomenftlayoutBinding.ivComment.setVisibility(View.GONE);
+                    holder.rowhomenftlayoutBinding.ivCommentFill.setVisibility(View.VISIBLE);
+                }
+            });
+
+            holder.rowhomenftlayoutBinding.ivCommentFill.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    holder.rowhomenftlayoutBinding.ivCommentFill.setVisibility(View.GONE);
+                    holder.rowhomenftlayoutBinding.ivComment.setVisibility(View.VISIBLE);
+                }
+            });
+            holder.rowhomenftlayoutBinding.ivShare.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    holder.rowhomenftlayoutBinding.ivShare.setVisibility(View.GONE);
+                    holder.rowhomenftlayoutBinding.ivShareFill.setVisibility(View.VISIBLE);
+                }
+            });
+
+            holder.rowhomenftlayoutBinding.ivShareFill.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    holder.rowhomenftlayoutBinding.ivShareFill.setVisibility(View.GONE);
+                    holder.rowhomenftlayoutBinding.ivShare.setVisibility(View.VISIBLE);
+                }
+            });
 
         }
     }

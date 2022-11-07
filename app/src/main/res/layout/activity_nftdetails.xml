@@ -542,22 +542,52 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <com.google.android.material.button.MaterialButton
-                        android:id="@+id/btDescription"
-                        android:layout_width="110dp"
-                        android:layout_height="45dp"
-                        android:layout_marginStart="15dp"
-                        android:layout_marginTop="15dp"
-                        android:layout_marginEnd="5dp"
-                        android:background="@drawable/grey_strok"
-                        android:fontFamily="@font/opensansmedium"
-                        android:text="@string/description"
-                        android:textAllCaps="false"
-                        android:textColor="@color/black"
-                        android:textSize="11.5dp"
-                        app:backgroundTint="@null"
-                        app:cornerRadius="50dp"
-                        />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:id="@+id/rlDes"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btDescription"
+                            android:layout_width="110dp"
+                            android:layout_height="45dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@drawable/grey_strok"
+                            android:fontFamily="@font/opensansmedium"
+                            android:text="@string/description"
+                            android:visibility="gone"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="11.5dp"
+                            app:backgroundTint="@null"
+                            app:cornerRadius="50dp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btDesClick"
+                            android:layout_width="110dp"
+                            android:layout_height="45dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="1dp"
+                            android:background="@drawable/trans_strok"
+                            android:fontFamily="@font/opensansmedium"
+                            android:text="@string/description"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="11.5dp"
+                            app:backgroundTint="@null"
+                            app:cornerRadius="50dp" />
+
+                    </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/rlProperty"
+                    android:layout_toEndOf="@+id/rlDes"
+                    android:layout_height="wrap_content">
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/btProperty"
@@ -566,7 +596,6 @@
                         android:layout_marginStart="5dp"
                         android:layout_marginTop="15dp"
                         android:layout_marginEnd="5dp"
-                        android:layout_toEndOf="@+id/btDescription"
                         android:background="@drawable/grey_strok"
                         android:fontFamily="@font/opensansmedium"
                         android:text="@string/property"
@@ -577,13 +606,37 @@
                         app:cornerRadius="50dp" />
 
                     <com.google.android.material.button.MaterialButton
-                        android:id="@+id/btAbout"
+                        android:id="@+id/btPropertyClick"
                         android:layout_width="110dp"
                         android:layout_height="45dp"
                         android:layout_marginStart="5dp"
                         android:layout_marginTop="15dp"
                         android:layout_marginEnd="5dp"
-                        android:layout_toEndOf="@+id/btProperty"
+                        android:visibility="gone"
+                        android:layout_marginBottom="1dp"
+                        android:background="@drawable/trans_strok"
+                        android:fontFamily="@font/opensansmedium"
+                        android:text="@string/property"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:backgroundTint="@null"
+                        app:cornerRadius="50dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/rlAbout"
+                    android:layout_toEndOf="@+id/rlProperty"
+                    android:layout_height="wrap_content">
+
+
+                <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btAbout"
+                        android:layout_width="110dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="15dp"
+                       android:layout_marginEnd="5dp"
                         android:background="@drawable/grey_strok"
                         android:fontFamily="@font/opensansmedium"
                         android:text="@string/about"
@@ -593,12 +646,38 @@
                         app:backgroundTint="@null"
                         app:cornerRadius="50dp"
                         />
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btAboutClick"
+                        android:layout_width="110dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/trans_strok"
+                        android:fontFamily="@font/opensansmedium"
+                        android:text="@string/about"
+                        android:visibility="gone"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:backgroundTint="@null"
+                        app:cornerRadius="50dp"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/rlDetails"
+                    android:layout_below="@+id/rlDes"
+                    android:layout_height="wrap_content">
+
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/btDetails"
                         android:layout_width="110dp"
                         android:layout_height="45dp"
-                        android:layout_below="@+id/btDescription"
                         android:layout_marginStart="15dp"
                         android:layout_marginTop="15dp"
                         android:layout_marginEnd="20dp"
@@ -609,10 +688,28 @@
                         android:textColor="@color/black"
                         android:textSize="12sp"
                         app:backgroundTint="@null"
-                        app:cornerRadius="50dp"
-                        />
+                        app:cornerRadius="50dp" />
 
 
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btDetailsClick"
+                        android:layout_width="110dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="@drawable/trans_strok"
+                        android:fontFamily="@font/opensansmedium"
+                        android:text="@string/details"
+                        android:visibility="gone"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:backgroundTint="@null"
+                        app:cornerRadius="50dp" />
+
+                </RelativeLayout>
                 </RelativeLayout>
 
                 <View
@@ -635,7 +732,7 @@
                     android:fontFamily="@font/opensansregular"
                     android:textColor="@color/text"
                     android:textSize="13sp"
-                    android:visibility="gone" />
+                    android:visibility="visible" />
 
 
             </LinearLayout>
@@ -1030,7 +1127,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="70dp"
-                                android:layout_marginTop="30dp"
+                                android:layout_marginTop="38dp"
                                 android:layout_toEndOf="@+id/txUnitPrice"
                                 android:fontFamily="@font/opensansmedium"
                                 android:text="1"
@@ -1041,7 +1138,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="90dp"
-                                android:layout_marginTop="30dp"
+                                android:layout_marginTop="38dp"
                                 android:id="@+id/txFrom"
                                 android:layout_toEndOf="@+id/txQuantity"
                                 android:fontFamily="@font/opensansmedium"
@@ -1053,7 +1150,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="50dp"
-                                android:layout_marginTop="30dp"
+                                android:layout_marginTop="38dp"
                                 android:id="@+id/txTo"
                                 android:layout_toEndOf="@+id/txFrom"
                                 android:fontFamily="@font/opensansmedium"
@@ -1067,7 +1164,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="20dp"
-                                android:layout_marginTop="15dp"
+                                android:layout_marginTop="30dp"
                                 android:background="@drawable/trans_backgrounds">
 
                                 <com.google.android.material.textview.MaterialTextView
@@ -1155,7 +1252,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="70dp"
-                                android:layout_marginTop="30dp"
+                                android:layout_marginTop="38dp"
                                 android:layout_toEndOf="@+id/txUnitPrice1"
                                 android:fontFamily="@font/opensansmedium"
                                 android:text="1"
@@ -1166,7 +1263,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="90dp"
-                                android:layout_marginTop="30dp"
+                                android:layout_marginTop="38dp"
                                 android:id="@+id/txFrom1"
                                 android:layout_toEndOf="@+id/txQuantity1"
                                 android:fontFamily="@font/opensansmedium"
@@ -1178,7 +1275,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="50dp"
-                                android:layout_marginTop="30dp"
+                                android:layout_marginTop="38dp"
                                 android:id="@+id/txTo11"
                                 android:layout_toEndOf="@+id/txFrom1"
                                 android:fontFamily="@font/opensansmedium"
@@ -1192,7 +1289,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="20dp"
-                                android:layout_marginTop="15dp"
+                                android:layout_marginTop="30dp"
                                 android:background="@drawable/trans_backgrounds">
 
                                 <com.google.android.material.textview.MaterialTextView
@@ -1210,19 +1307,19 @@
 
                             </RelativeLayout>
 
-                            <View
-                                android:layout_width="match_parent"
-                                android:layout_height="1dp"
-                                android:layout_marginTop="15dp"
-                                android:layout_below="@+id/rlFilter1"
-                                android:background="@color/grey1">
-
-                            </View>
                         </RelativeLayout>
 
 
 
                     </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/grey1">
+
+                    </View>
 
                 </LinearLayout>
 

@@ -42,22 +42,126 @@ ActivityNftdetailsBinding binding;
               startActivity(new Intent(NFTDetailsActivity.this, CompleteCheckOutActivity.class));
             }
         });
+        ReadMoreTextView readMoreTextView = new ReadMoreTextView();
+        binding.textView.setText(getResources().getString(R.string.dummyDes));
+        readMoreTextView.setTextView(binding.textView);
+        readMoreTextView.setMaximumLine(5);
+        readMoreTextView.setCollapseText("See Less");
+        readMoreTextView.setExpandText("See More");
+        readMoreTextView.setColorCode("#2CA6E9");
+        readMoreTextView.setReadMore();
+        binding.btDesClick.setVisibility(View.VISIBLE);
+        binding.textView.setVisibility(View.VISIBLE);
+        binding.btDesClick.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                binding.btDesClick.setVisibility(View.GONE);
+                binding.textView.setVisibility(View.GONE);
+                binding.btDescription.setVisibility(View.VISIBLE);
+                binding.btAboutClick.setVisibility(View.GONE);
+                binding.btAbout.setVisibility(View.VISIBLE);
+            }
+        });
 
         binding.btDescription.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                binding.btDesClick.setVisibility(View.VISIBLE);
                 binding.textView.setVisibility(View.VISIBLE);
-                ReadMoreTextView readMoreTextView = new ReadMoreTextView();
-                binding.textView.setText(getResources().getString(R.string.dummyDes));
-                readMoreTextView.setTextView(binding.textView);
-                readMoreTextView.setMaximumLine(5);
-                readMoreTextView.setCollapseText("See Less");
-                readMoreTextView.setExpandText("See More");
-                readMoreTextView.setColorCode("#2CA6E9");
-                readMoreTextView.setReadMore();
-                binding.btDescription.setBackgroundColor(getResources().getColor(R.color.trans));
+                binding.btDescription.setVisibility(View.GONE);
+                binding.btPropertyClick.setVisibility(View.GONE);
+                binding.btProperty.setVisibility(View.VISIBLE);
+                binding.btAboutClick.setVisibility(View.GONE);
+                binding.btAbout.setVisibility(View.VISIBLE);
+                binding.btDetailsClick.setVisibility(View.GONE);
+                binding.btDetails.setVisibility(View.VISIBLE);
             }
         });
+
+        binding.btProperty.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                binding.btDesClick.setVisibility(View.GONE);
+                binding.btPropertyClick.setVisibility(View.VISIBLE);
+                binding.textView.setVisibility(View.GONE);
+                binding.btDescription.setVisibility(View.VISIBLE);
+                binding.btAboutClick.setVisibility(View.GONE);
+                binding.btAbout.setVisibility(View.VISIBLE);
+                binding.btDetails.setVisibility(View.VISIBLE);
+                binding.btDetailsClick.setVisibility(View.GONE);
+            }
+        });
+        binding.btPropertyClick.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                binding.btPropertyClick.setVisibility(View.GONE);
+                binding.btProperty.setVisibility(View.VISIBLE);
+                binding.textView.setVisibility(View.GONE);
+                binding.btDescription.setVisibility(View.VISIBLE);
+                binding.btAboutClick.setVisibility(View.GONE);
+                binding.btAbout.setVisibility(View.VISIBLE);
+                binding.btDetails.setVisibility(View.VISIBLE);
+                binding.btDetailsClick.setVisibility(View.GONE);
+
+            }
+        });
+
+
+
+        binding.btAbout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                binding.btAbout.setVisibility(View.GONE);
+                binding.btAboutClick.setVisibility(View.VISIBLE);
+                binding.btPropertyClick.setVisibility(View.GONE);
+                binding.textView.setVisibility(View.GONE);
+                binding.btProperty.setVisibility(View.VISIBLE);
+                binding.btDetailsClick.setVisibility(View.GONE);
+                binding.btDetails.setVisibility(View.VISIBLE);
+
+            }
+        });
+        binding.btAboutClick.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                binding.btAboutClick.setVisibility(View.GONE);
+                binding.btAbout.setVisibility(View.VISIBLE);
+                binding.textView.setVisibility(View.GONE);
+                binding.btDescription.setVisibility(View.VISIBLE);
+
+            }
+        });
+
+        binding.btDetails.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                binding.btDetails.setVisibility(View.GONE);
+                binding.btDetailsClick.setVisibility(View.VISIBLE);
+                binding.btPropertyClick.setVisibility(View.GONE);
+                binding.textView.setVisibility(View.GONE);
+                binding.btProperty.setVisibility(View.VISIBLE);
+                binding.btDesClick.setVisibility(View.GONE);
+                binding.btDescription.setVisibility(View.VISIBLE);
+                binding.btAboutClick.setVisibility(View.GONE);
+                binding.btAbout.setVisibility(View.VISIBLE);
+            }
+        });
+        binding.btDetailsClick.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                binding.btDetailsClick.setVisibility(View.GONE);
+                binding.btDetails.setVisibility(View.VISIBLE);
+                binding.textView.setVisibility(View.GONE);
+                binding.btDescription.setVisibility(View.VISIBLE);
+                binding.btDesClick.setVisibility(View.GONE);
+                binding.btAboutClick.setVisibility(View.GONE);
+                binding.btProperty.setVisibility(View.VISIBLE);
+                binding.btAbout.setVisibility(View.VISIBLE);
+
+            }
+        });
+
+
         show_Nft();
 
     }
