@@ -34,7 +34,12 @@ ActivityCommentBinding binding;
         readMoreTextView.setColorCode("#2CA6E9");
         readMoreTextView.setReadMore();
 
-
+        binding.ivCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
         binding.ivSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

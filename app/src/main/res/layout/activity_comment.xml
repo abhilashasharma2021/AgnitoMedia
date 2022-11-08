@@ -270,6 +270,7 @@
                                 android:layout_marginStart="10dp"
                                 android:layout_marginTop="15dp"
                                 android:layout_marginEnd="10dp"
+                                android:layout_toStartOf="@+id/ivSend"
                                 android:layout_toEndOf="@+id/ivMeRply"
                                 android:backgroundTint="@color/grey"
                                 android:fontFamily="@font/opensansregular"
@@ -291,13 +292,14 @@
                                 android:layout_alignParentEnd="true"
                                 android:layout_gravity="end"
                                 android:layout_marginTop="20dp"
-                                android:layout_marginEnd="20dp"
+                                android:layout_marginEnd="10dp"
                                 android:src="@drawable/send" />
                         </RelativeLayout>
 
                         <RelativeLayout
                             android:id="@+id/rlReplyShow"
                             android:layout_width="match_parent"
+                            android:layout_marginBottom="10dp"
                             android:layout_height="wrap_content">
 
                             <androidx.recyclerview.widget.RecyclerView

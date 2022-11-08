@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import com.agnitomedia.R;
+import com.agnitomedia.activity.CommentActivity;
 import com.agnitomedia.activity.NotificationActivity;
 import com.agnitomedia.activity.SearchActivity;
 import com.agnitomedia.adapers.HomeAllAdapter;
@@ -100,6 +101,12 @@ public class HomeFragment extends Fragment {
         readMoreTextView2.setColorCode("#2CA6E9");
         readMoreTextView2.setReadMore();
 
+        binding.rllComment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                context.startActivity(new Intent(getActivity(), CommentActivity.class));
+            }
+        });
 
         binding.btNftBlack.setOnClickListener(new View.OnClickListener() {
             @Override

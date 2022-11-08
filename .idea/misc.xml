@@ -51,6 +51,7 @@
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/drawable/white_back.xml" value="0.135" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/drawable/white_drawer.xml" value="0.143" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/drawable/white_round.xml" value="0.135" />
+        <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/drawable/white_strok.xml" value="0.151" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/drawable/whiteround_btn.xml" value="0.125" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/drawable/your_color_selector.xml" value="0.1835" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_all_story.xml" value="0.16" />
@@ -78,7 +79,7 @@
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_splash.xml" value="0.203125" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_story_details.xml" value="0.22" />
-        <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_testing.xml" value="0.203125" />
+        <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_testing.xml" value="0.25" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_view_all_saved.xml" value="0.203125" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/activity_welcome.xml" value="0.22" />
         <entry key="..\:/Users/aamir/AndroidStudioProjects/AgnitoMedia/app/src/main/res/layout/fragment_all_nft.xml" value="0.203125" />

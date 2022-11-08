@@ -4,6 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".activity.TestingActivity">
+    <RelativeLayout
+        android:id="@+id/rlMainReply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:visibility="visible">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivAddRply"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/virat">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <EditText
+            android:id="@+id/etMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@+id/ivSend"
+            android:layout_toEndOf="@+id/ivAddRply"
+            android:backgroundTint="@color/grey_text"
+            android:fontFamily="@font/opensansregular"
+            android:hint="@string/add_a_reply"
+            android:inputType="textShortMessage"
+            android:maxLines="200"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey_text"
+            android:textSize="13sp">
+
+
+        </EditText>
+
+
+        <ImageView
+            android:id="@+id/ivSend"
+            android:layout_width="20dp"
+            android:layout_marginStart="5dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/send"
+            app:tint="@color/purple_700" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/rll"
+        android:layout_toEndOf="@+id/rlMainReply"
+        android:layout_alignParentEnd="true"
+        android:layout_height="wrap_content">
+
+
+
+    </RelativeLayout>
 
 </RelativeLayout>

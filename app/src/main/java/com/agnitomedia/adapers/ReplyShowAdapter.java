@@ -51,20 +51,49 @@ public class ReplyShowAdapter extends RecyclerView.Adapter<ReplyShowAdapter.MyVi
         holder.rec_gymImage.setAdapter(showAllGymImageAdapter);
 */
 
-
-
-        holder.rowShowReplyBinding.txReply.setOnClickListener(new View.OnClickListener() {
+        holder.rowShowReplyBinding.rlTotalRplyVisible.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-               holder.rowShowReplyBinding. rlMainReply.setVisibility(View.VISIBLE);
-
+                holder.rowShowReplyBinding.rvReply.setVisibility(View.VISIBLE);
+                holder.rowShowReplyBinding.rlTotalRplyVisible.setVisibility(View.GONE);
+                holder.rowShowReplyBinding.rlTotalRplyGone.setVisibility(View.VISIBLE);
                 layoutManagerImage = new LinearLayoutManager(context, RecyclerView.VERTICAL, false);
                 holder.rowShowReplyBinding.rvReply.setLayoutManager(layoutManagerImage);
                 holder.rowShowReplyBinding.rvReply.setHasFixedSize(true);
                 sendReplyAdapter = new SendReplyAdapter(sendReplyDataList,context);
                 holder.rowShowReplyBinding.rvReply.setAdapter(sendReplyAdapter);
                 all_SendReply();
+            }
+        });
+
+        holder.rowShowReplyBinding.rlTotalRplyGone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                holder.rowShowReplyBinding.rlTotalRplyVisible.setVisibility(View.VISIBLE);
+                holder.rowShowReplyBinding.rlTotalRplyGone.setVisibility(View.GONE);
+                holder.rowShowReplyBinding.rvReply.setVisibility(View.GONE);
+
+            }
+        });
+
+        holder.rowShowReplyBinding.txReplyVisible.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+               holder.rowShowReplyBinding. rlMainReply.setVisibility(View.VISIBLE);
+               holder.rowShowReplyBinding. txReplyGone.setVisibility(View.VISIBLE);
+                holder.rowShowReplyBinding.txReplyVisible.setVisibility(View.GONE);
+
+            }
+        });
+
+        holder.rowShowReplyBinding.txReplyGone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                holder.rowShowReplyBinding. rlMainReply.setVisibility(View.GONE);
+                holder.rowShowReplyBinding.txReplyGone.setVisibility(View.GONE);
+                holder.rowShowReplyBinding.txReplyVisible.setVisibility(View.VISIBLE);
             }
         });
         if (replyShowData != null) {

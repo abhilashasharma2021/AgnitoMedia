@@ -230,6 +230,7 @@
                             </ImageView>
 
                             <EditText
+                                android:id="@+id/etEmail"
                                 android:layout_width="match_parent"
                                 android:layout_height="65dp"
                                 android:layout_marginEnd="10dp"
@@ -240,7 +241,6 @@
                                 android:imeOptions="actionNext"
                                 android:inputType="textEmailAddress"
                                 android:maxLength="45"
-                                android:id="@+id/etEmail"
                                 android:singleLine="true"
                                 android:textColor="@color/black"
                                 android:textColorHint="@color/grey_text"
@@ -295,14 +295,15 @@
                             </ImageView>
 
                             <EditText
+                                android:id="@+id/etPass"
                                 android:layout_width="match_parent"
                                 android:layout_height="65dp"
-                                android:layout_marginEnd="10dp"
+                                android:layout_marginEnd="1dp"
                                 android:layout_toEndOf="@+id/ivPass"
                                 android:drawablePadding="10dp"
+                                android:layout_toStartOf="@+id/ivEye1"
                                 android:fontFamily="@font/opensansregular"
                                 android:hint="@string/password"
-                                android:id="@+id/etPass"
                                 android:imeOptions="actionNext"
                                 android:inputType="textPassword"
                                 android:maxLength="30"
@@ -369,17 +370,18 @@
                             </ImageView>
 
                             <EditText
+                                android:id="@+id/etConfrmPass"
                                 android:layout_width="match_parent"
                                 android:layout_height="65dp"
-                                android:layout_marginEnd="10dp"
+                                android:layout_marginEnd="1dp"
                                 android:layout_toEndOf="@+id/ivComPass"
                                 android:drawablePadding="10dp"
+                                android:layout_toStartOf="@+id/ivEye2"
                                 android:fontFamily="@font/opensansregular"
                                 android:hint="@string/confirm_password"
                                 android:imeOptions="actionNext"
                                 android:inputType="textPassword"
                                 android:maxLength="30"
-                                android:id="@+id/etConfrmPass"
                                 android:singleLine="true"
                                 android:textColor="@color/black"
                                 android:textColorHint="@color/grey_text"
